@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Muli', sans-serif;
+}
+
+span.liner {
+  margin: 0 auto;
+  width: 65px;
+  background-color: #FFD166;
+}
+
+.contact {
+  color: white;
+  font-weight: 400;
+  background: #b1802d;
+  background: -webkit-gradient(linear, left top, right top, from(#b1802d), color-stop(39%, #cba343), color-stop(78%, #c89f41));
+  background: linear-gradient(90deg, #b1802d 0%, #cba343 39%, #c89f41 78%);
+  height: 40px;
+  line-height: 40px;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 480px) {
+  .contact {
+    display: none;
+  }
+}
+
+.contact .phone i {
+  color: white;
+}
+
+.menu {
+  background: #006801;
+  background: -webkit-gradient(linear, left top, right top, from(#006801), color-stop(50%, #23834c), to(#006801));
+  background: linear-gradient(90deg, #006801 0%, #23834c 50%, #006801 100%);
+}
+
+.menu .navbar-toggler {
+  position: absolute;
+}
+
+@media screen and (max-width: 480px) {
+  .menu .navbar-toggler {
+    right: -1rem;
+  }
+}
+
+.menu .navbar-toggler .navbar-toggler-icon {
+  background-image: url(../images/list-menu.svg) !important;
+}
+
+.menu ._megamenu {
+  width: 50rem;
+  padding: 2rem;
+  border: 5px solid #FFD166;
+}
+
+.menu ._megamenu .item {
+  border-bottom: 1px solid #ccc;
+  padding: 15px;
+  margin: 0 auto;
+  width: 70%;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.menu ._megamenu .item i {
+  color: #f0be43;
+  font-size: 12px;
+  margin-right: 1rem;
+}
+
+.menu .buy {
+  border: 1px solid #FFD166;
+  border-radius: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.menu .buy i {
+  margin-right: 8px;
+}
+
+.menu .__title {
+  color: white !important;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1024px) {
+  .menu .__title {
+    font-size: 11px;
+  }
+}
+
+footer {
+  background-image: url(../images/footer-backround.png);
+  width: 100%;
+  height: 100%;
+  color: white;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer .address {
+  margin-top: 2rem;
+}
+
+footer .address h3 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+footer .address p {
+  font-size: 12px;
+}
+
+footer .address p i {
+  color: #f9d066;
+  margin-right: 5px;
+}
+
+footer .list {
+  color: white;
+  font-size: 12px;
+}
+
+footer .list a {
+  color: white;
+}
+
+footer .list li {
+  margin-top: 5px;
+}
+
+footer button {
+  background-color: #75a75e;
+  color: white;
+  border: none;
+  padding: 10px 0 10px 0;
+  width: 100%;
+  border-radius: 5px;
+}
+
+footer .list-ico span {
+  margin: 0 15px 0 15px;
+}
+
+@media screen and (max-width: 480px) {
+  footer .list-ico {
+    margin-top: 2rem;
+  }
+}
+
+footer .subcribe {
+  padding-top: 2rem;
+}
+
+footer .subcribe p {
+  margin-bottom: 1rem;
+}
+
+footer .subcribe .input-group button {
+  background-color: #d0a437;
+  color: white;
+  font-weight: 500;
+  border: unset;
+  border-color: unset;
+  font-size: 15px;
+  margin-top: unset;
+}
+
+footer .subcribe .input-group input {
+  border-radius: 5px;
+  border: none;
+  border-color: unset;
+  font-size: 15px;
+}
+
+footer .after {
+  margin-top: 18px;
+  position: absolute;
+  width: 100%;
+  background-color: #29472b;
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 480px) {
+  footer .after {
+    display: none;
+  }
+}
+
+footer .after .sdk {
+  text-align: left;
+}
+
+footer .after .note {
+  text-align: right;
+}
+/*# sourceMappingURL=common.css.map */
