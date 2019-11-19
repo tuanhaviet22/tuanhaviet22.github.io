@@ -1,0 +1,47 @@
+
+$mobile : 480px;
+$table: 768px;
+$desktop :1024px;
+$green : #519746;
+.banner {
+    p.breadcumb {
+        font-size: 12px;
+        margin-bottom: unset;
+        height: 40px;
+        line-height: 40px;
+
+        a {
+            color: black;
+        }
+
+        i {
+            font-size: 11px;
+        }
+    }
+    h3{
+        color : #DAA401;
+    }
+}
+.area{
+    .header{
+        h3{
+            color : $green;
+        }
+    }
+    .body{
+        ul{
+           li{
+               font-weight: 600;
+               font-size: 15px;
+               text-align: left;
+               list-style-type: none;
+               margin-top : 1rem;
+               margin-bottom:1rem;
+               i{
+                   color : $green;
+                   font-size: 12px;
+               }
+           } 
+        }
+    }
+}
