@@ -1,0 +1,308 @@
+$mobile : 480px;
+$table: 768px;
+$desktop :1024px;
+$green : #519746;
+
+.banner {
+    p.breadcumb {
+        font-size: 12px;
+        margin-bottom: unset;
+        height: 40px;
+        line-height: 40px;
+
+        a {
+            color: black;
+        }
+
+        i {
+            font-size: 11px;
+        }
+    }
+}
+
+.liner {
+    margin: 0 auto;
+    height: 2px;
+    background-color: #D3A638;
+    margin-top: 1rem;
+    display: block;
+}
+
+.main {
+    margin-top: 2rem;
+
+    .left-column {
+        border: 1px solid #ccc;
+        padding: 20px;
+
+        .header {
+            .liner {
+                margin: unset !important;
+                height: 2px;
+                background-color: #DAA401;
+                margin-top: 1rem;
+                display: block;
+                width: 100px;
+            }
+
+            h3 {
+                color: $green;
+            }
+
+            hr {
+                margin-top: -1px;
+            }
+
+            p.description {
+                font-weight: 600;
+                font-size: 13px;
+            }
+        }
+
+        .body {
+            .content {
+                .title {
+                    a {
+                        color: $green;
+                        font-weight: 600;
+                    }
+                }
+
+                .time {
+                    font-size: 12px;
+
+                    i {
+                        color: #EFA300;
+                        margin-right: 5px;
+                    }
+                }
+
+                .description {
+                    font-weight: 600;
+                    font-size: 13px;
+                }
+
+                p.read-more {
+                    color: #EFA300;
+                    font-size: 13px;
+                    font-weight: 600;
+                    margin-bottom: unset;
+                    position: absolute;
+                    bottom: 0;
+
+                    i {
+                        margin-left: 5px;
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+    }
+
+    .img-product {
+        h3 {
+            font-size: 15px;
+            font-weight: 600;
+            color: $green;
+            margin-top: 10px;
+        }
+
+        .info {
+            .sale {
+                font-size: 14px;
+                font-weight: 600;
+                margin-bottom: unset;
+                strong {
+                    color: red;
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+            }
+
+            .price-origin {
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+.btn-area {
+    i {
+        color: white;
+        line-height: 50px;
+        margin-right: 5px;
+    }
+
+    .buy-area {
+        background: rgb(0, 135, 83);
+        background: linear-gradient(0deg, rgba(0, 135, 83, 1) 0%, rgba(43, 153, 71, 1) 100%);
+        height: 52px;
+        border-radius: 5px;
+
+        // margin-right: 20px;
+        a {
+            color: white;
+        }
+
+        @media screen and (max-width : $mobile) {
+            font-size: 15px;
+        }
+    }
+
+
+    .buy-now {
+        background: rgb(179, 129, 46);
+        background: linear-gradient(0deg, rgba(179, 129, 46, 1) 0%, rgba(207, 157, 58, 1) 81%);
+        border-radius: 5px;
+        height: 52px;
+
+        // margin-left: 20px;
+        @media screen and (max-width : $mobile) {
+            font-size: 15px;
+        }
+
+        a {
+            color: white;
+        }
+    }
+}
+
+.customer {
+    .header {
+        background-color: $green;
+        height: 50px;
+
+        h3 {
+            line-height: 50px;
+            color: white;
+            font-size: 12px;
+            font-weight: 600;
+        }
+    }
+
+    .body {
+        background-color: #f2f2f2;
+        padding: 5px 0 0 10px;
+
+        .text {
+            font-size: 12px;
+            font-weight: 600;
+            padding: 12px;
+        }
+    }
+}
+
+.newsest {
+    .header {
+        h3 {
+            color: #408544;
+            padding: 10px 0 0 10px;
+            font-weight: 700;
+            display: inline;
+            font-size: 18px;
+        }
+    }
+    .body {
+        img {
+            width: 100%;
+        }
+
+        .list-news {
+            li {
+                list-style: none;
+                padding: 10px 15px 10px 15px;
+                border: 1px solid #ccc;
+
+                a {
+                    color: black;
+                    // display: inline-block;
+                    font-size: 12px;
+                    font-weight: 600;
+                }
+
+                i {
+                    color: #feba01;
+                    font-size: 11px;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}
+.rv-star{
+    .body{
+        background-color: unset;
+        .customer-rv{
+            img{
+                border-radius: 50% !important;
+                width: 60%;
+                height: 9rem;
+            }
+            .name{
+                color : black;
+                font-size: 13px;
+                font-weight: 600;
+                margin-top: 10px;
+                margin-bottom: 5px;
+            }
+            .function{
+                font-size: 12px;
+
+            }
+            .talk{
+                text-align: center;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+.contact{
+    height: auto !important;
+    h3{
+        line-height: 50px;
+        color: white;
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .header{
+        height: 52px !important;
+    }
+    .body {
+        background-color: #f2f2f2;
+        height: 100%;
+        form {
+            width: 90%;
+            margin: 0 auto;
+            padding-top :15px;
+            input {
+                height: 60px;
+            }
+
+            input,
+            textarea {
+                display: block;
+                width: 100%;
+                border: 1px solid #D3A638;
+                border-radius: 5px;
+                padding: 10px;
+            }
+
+            button {
+                background-color: $green;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                width: 100%;
+                color: white;
+                font-weight: 500;
+                margin-top: 1rem;
+                @media screen and(max-width : $mobile) {
+                    margin-bottom: 1rem;
+                }
+                i {
+                    margin-left: 1rem;
+                }
+            }
+        }
+    }
+}
