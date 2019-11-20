@@ -2157,7 +2157,6 @@ h3 {
 .fixed-bottom .sub {
   background-color: #27aae2;
   padding: 10px;
-  margin-left: 10px;
   opacity: unset;
 }
 
@@ -2172,5 +2171,51 @@ h3 {
 
 .banner .owl-stage-outer {
   width: 100%;
+}
+
+.regft {
+  display: -webkit-flex;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.4);
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+@media screen and (min-width: 480px) {
+  .regft {
+    display: none;
+  }
+}
+
+.regft a {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 10px 0 10px 10px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  text-align: left;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: normal;
+  text-transform: uppercase;
+  padding-left: 20px;
+  background: #f2ede3;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.regft a:nth-child(2) {
+  margin-right: 10px;
+  background-color: #ef4136;
+}
+
+.regft a:nth-child(1) {
+  margin-right: 10px;
+  background-color: #27aae2;
 }
 /*# sourceMappingURL=all.css.map */
