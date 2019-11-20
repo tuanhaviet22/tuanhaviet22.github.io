@@ -1,5 +1,6 @@
 $(document).ready(function(){
     $('.show-popup').trigger('click')
+    $('.fst-i').trigger('click')
     $('.slider-banner').owlCarousel({
         loop : true ,
         nav: true ,
@@ -57,10 +58,6 @@ $(document).ready(function(){
         }
     })
 })
-
-
-
-
 $('.up').click(function(e){
     // e.preventDefault();
     let quantity = parseInt($('.ip-quantity').val());
@@ -74,4 +71,14 @@ $('.down').click(function(e){
     if(quantity > 1){
     quantity_new = quantity -1 ;
     $('.ip-quantity').val(quantity_new);}
+})
+
+
+let ImgLarge = $(".image-large img");
+$('.list-image .image').click(function(e){
+    e.preventDefault();
+    $(this).addClass('active')
+    $(this).siblings().removeClass('active')
+    let url = $(this).find('img').attr('src')
+    ImgLarge.attr('src',url)
 })

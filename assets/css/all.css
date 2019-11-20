@@ -38,13 +38,7 @@ span.liner {
 }
 
 .menu .navbar-toggler {
-  position: absolute;
-}
-
-@media screen and (max-width: 480px) {
-  .menu .navbar-toggler {
-    right: -1rem;
-  }
+  margin-right: -45px;
 }
 
 .menu .navbar-toggler .navbar-toggler-icon {
@@ -2082,14 +2076,15 @@ h3 {
 }
 
 .quantity input.ip-quantity {
-  width: 50px;
+  width: 60px;
+  height: 40px;
 }
 
 .quantity .change {
   height: 10px;
   cursor: pointer;
   position: absolute;
-  margin-left: -12px;
+  margin-left: -15px;
 }
 
 .quantity .change i {
@@ -2097,7 +2092,7 @@ h3 {
 }
 
 .quantity .up {
-  margin-top: -8px;
+  margin-top: -5px;
 }
 
 .quantity .up:hover {
@@ -2105,10 +2100,25 @@ h3 {
 }
 
 .quantity .down {
-  margin-top: 9px;
+  margin-top: 17px;
 }
 
 .quantity .down:hover {
   color: #519746;
+}
+
+@media screen and (max-width: 480px) {
+  .navbar-brand img {
+    width: 70%;
+  }
+}
+
+.navbar-toggler {
+  border-color: none !important;
+}
+
+.btn-show-menu {
+  border-color: rgba(0, 0, 0, 0) !important;
+  padding: unset;
 }
 /*# sourceMappingURL=all.css.map */

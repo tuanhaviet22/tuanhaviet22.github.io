@@ -30,10 +30,8 @@ $desktop :1024px;
 }
 .menu {
     .navbar-toggler {
-        position: absolute;
-        @media screen and (max-width : $mobile){
-          right: -1rem;
-        }
+        margin-right: -45px;
+       
         .navbar-toggler-icon{
             background-image: url(../images/list-menu.svg) !important;
         }
@@ -2119,7 +2117,8 @@ h3{
 
 .quantity {
     input.ip-quantity{
-        width: 50px;
+        width: 60px;
+        height: 40px;
     }
     .change{
         // border-left: 1px solid #ccc;
@@ -2127,13 +2126,13 @@ h3{
         // margin-top: 10px;
         cursor: pointer;
         position: absolute;
-        margin-left : -12px;
+        margin-left : -15px;
         i{
             font-size: 13px;
         }
     }
     .up { 
-        margin-top : -8px;
+        margin-top : -5px;
         &:hover{
             color : $green;
         }
@@ -2142,7 +2141,22 @@ h3{
         &:hover{
             color : $green;
         }
-        margin-top :9px;
+        margin-top :17px;
     }
     
+}
+.navbar-brand{
+    img{
+        @media screen and (max-width : $mobile) {
+            width : 70%;
+        }
+    }
+}
+.navbar-toggler{
+        border-color: none !important;
+}
+
+.btn-show-menu{
+    border-color: rgba(0,0,0,0) !important;
+    padding : unset;
 }
