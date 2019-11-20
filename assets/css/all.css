@@ -51,10 +51,25 @@ span.liner {
   background-image: url(../images/list-menu.svg) !important;
 }
 
-.menu ._megamenu {
-  width: 50rem;
-  padding: 2rem;
-  border: 5px solid #FFD166;
+@media screen and (min-width: 768px) {
+  .menu ._megamenu {
+    width: 50rem;
+    padding: 2rem;
+    border: 5px solid #FFD166;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .menu ._megamenu {
+    background-color: unset;
+    border: unset;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .menu ._megamenu .row .col-lg-6:last-child {
+    display: none;
+  }
 }
 
 .menu ._megamenu .item {
@@ -64,6 +79,15 @@ span.liner {
   width: 70%;
   font-weight: 600;
   font-size: 13px;
+}
+
+@media screen and (max-width: 480px) {
+  .menu ._megamenu .item {
+    width: unset;
+    border: none;
+    color: white;
+    font-size: 11px;
+  }
 }
 
 .menu ._megamenu .item i {
@@ -125,6 +149,12 @@ footer .address p i {
 footer .list {
   color: white;
   font-size: 12px;
+}
+
+@media screen and (max-width: 480px) {
+  footer .list .col-6:first-child {
+    padding-left: 2rem;
+  }
 }
 
 footer .list a {
@@ -325,6 +355,8 @@ footer .after .note {
   background: linear-gradient(0deg, #008753 0%, #2b9947 100%);
   height: 52px;
   border-radius: 5px;
+  display: block;
+  width: 100%;
 }
 
 .btn-area .buy-area a {
@@ -855,10 +887,13 @@ span.liner {
   height: 52px;
   border-radius: 5px;
   margin-right: 20px;
+  display: block;
+  width: 100%;
+  color: white;
 }
 
-.banner-2 .right-column .list-function .action .buy-area a {
-  color: white;
+.banner-2 .right-column .list-function .action .buy-area:hover {
+  text-decoration: none;
 }
 
 @media screen and (max-width: 480px) {
@@ -873,7 +908,9 @@ span.liner {
   background: linear-gradient(0deg, #b3812e 0%, #cf9d3a 81%);
   border-radius: 5px;
   height: 52px;
-  margin-left: 20px;
+  display: block;
+  width: 100%;
+  color: white;
 }
 
 @media screen and (max-width: 480px) {
@@ -882,8 +919,8 @@ span.liner {
   }
 }
 
-.banner-2 .right-column .list-function .action .buy-now a {
-  color: white;
+.banner-2 .right-column .list-function .action .buy-now:hover {
+  text-decoration: none;
 }
 
 .banner-3 .header .liner {
@@ -1401,8 +1438,11 @@ span.liner {
   margin-bottom: 3rem;
 }
 
-.product .left-column .list-image .image {
+.product .left-column .list-image .active {
   border: 1px solid #FF911E;
+}
+
+.product .left-column .list-image .image {
   margin-top: 2rem;
 }
 
@@ -2034,5 +2074,41 @@ h3 {
 
 .f-white {
   color: white !important;
+  cursor: pointer;
+}
+
+.f-white:hover {
+  text-decoration: none;
+}
+
+.quantity input.ip-quantity {
+  width: 50px;
+}
+
+.quantity .change {
+  height: 10px;
+  cursor: pointer;
+  position: absolute;
+  margin-left: -12px;
+}
+
+.quantity .change i {
+  font-size: 13px;
+}
+
+.quantity .up {
+  margin-top: -8px;
+}
+
+.quantity .up:hover {
+  color: #519746;
+}
+
+.quantity .down {
+  margin-top: 9px;
+}
+
+.quantity .down:hover {
+  color: #519746;
 }
 /*# sourceMappingURL=all.css.map */

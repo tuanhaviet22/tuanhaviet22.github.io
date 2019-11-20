@@ -57,3 +57,21 @@ $(document).ready(function(){
         }
     })
 })
+
+
+
+
+$('.up').click(function(e){
+    // e.preventDefault();
+    let quantity = parseInt($('.ip-quantity').val());
+    quantity_new = quantity +1 ;
+     $('.ip-quantity').val(quantity_new);
+})
+
+$('.down').click(function(e){
+    // e.preventDefault();
+    let quantity = parseInt($('.ip-quantity').val());
+    if(quantity > 1){
+    quantity_new = quantity -1 ;
+    $('.ip-quantity').val(quantity_new);}
+})
