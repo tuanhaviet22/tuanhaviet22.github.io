@@ -2169,4 +2169,8 @@ h3 {
 .fixed-bottom i {
   margin-right: 5px;
 }
+
+.banner .owl-stage-outer {
+  width: 100%;
+}
 /*# sourceMappingURL=all.css.map */
