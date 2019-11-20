@@ -1406,7 +1406,8 @@ span.liner {
 }
 .btn-close-modal{
     @media screen and (max-width : $mobile) {
-        display: none;
+        // display: none;
+        right: 0;
     }
     position: absolute;
     right: -54px;
@@ -1417,6 +1418,9 @@ span.liner {
         padding : 20px;
         padding-top : 7px !important;
         background-color: black;    
+        @media screen and (max-width : $mobile) {
+            background-color: unset;    
+        }
     }
 }
 // End home
@@ -2159,4 +2163,39 @@ h3{
 .btn-show-menu{
     border-color: rgba(0,0,0,0) !important;
     padding : unset;
+}
+
+.menu-fixed{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    @media screen and (min-width : $table) {
+        top : 0;
+    }
+}
+
+.fixed-bottom {
+    @media screen and (min-width : $table) {
+        display: none;
+    }
+    z-index: 99;
+    background: rgba(0,0,0,0.4);
+    height: 60px;
+    line-height: 60px;
+    font-size: 15px;
+    
+    .sub{
+        background-color: #27aae2;
+        padding: 10px;
+        margin-left: 10px;
+        opacity: unset;
+    }
+    .call-red{
+        background-color: #ef4136;
+        padding : 10px;
+       
+    }
+    i{
+        margin-right: 5px;
+    }
 }

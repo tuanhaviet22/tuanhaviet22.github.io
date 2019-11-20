@@ -1402,7 +1402,7 @@ span.liner {
 
 @media screen and (max-width: 480px) {
   .btn-close-modal {
-    display: none;
+    right: 0;
   }
 }
 
@@ -1410,6 +1410,12 @@ span.liner {
   padding: 20px;
   padding-top: 7px !important;
   background-color: black;
+}
+
+@media screen and (max-width: 480px) {
+  .btn-close-modal span {
+    background-color: unset;
+  }
 }
 
 .banner p.breadcumb {
@@ -2120,5 +2126,47 @@ h3 {
 .btn-show-menu {
   border-color: rgba(0, 0, 0, 0) !important;
   padding: unset;
+}
+
+.menu-fixed {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-fixed {
+    top: 0;
+  }
+}
+
+.fixed-bottom {
+  z-index: 99;
+  background: rgba(0, 0, 0, 0.4);
+  height: 60px;
+  line-height: 60px;
+  font-size: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .fixed-bottom {
+    display: none;
+  }
+}
+
+.fixed-bottom .sub {
+  background-color: #27aae2;
+  padding: 10px;
+  margin-left: 10px;
+  opacity: unset;
+}
+
+.fixed-bottom .call-red {
+  background-color: #ef4136;
+  padding: 10px;
+}
+
+.fixed-bottom i {
+  margin-right: 5px;
 }
 /*# sourceMappingURL=all.css.map */
