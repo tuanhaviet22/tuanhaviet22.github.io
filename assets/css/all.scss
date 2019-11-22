@@ -149,8 +149,11 @@ footer {
     padding-top: 3rem;
     padding-bottom: 3rem;
     .logo-column{
-        img{
-            
+        .list-ico{
+            padding-top: 10px;
+            img{
+                width: 70%;
+            }
         }
     }
     .address {
@@ -2314,6 +2317,7 @@ $desktop :1024px;
     }
 
     .body {
+
         img {
             max-height: 255px;
         }
@@ -2368,7 +2372,32 @@ $desktop :1024px;
             margin-left: 5px;
         }
     }
+    .body2 {
+        img {
+            width: 100%;
+        }
 
+        .list-news {
+            li {
+                list-style: none;
+                padding: 10px 15px 10px 15px;
+                border: 1px solid #ccc;
+
+                a {
+                    color: black;
+                    // display: inline-block;
+                    font-size: 12px;
+                    font-weight: 600;
+                }
+
+                i {
+                    color: #feba01;
+                    font-size: 11px;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
     .body {
         .w-100 {
             margin-top: -10px;
@@ -2594,5 +2623,10 @@ h3 {
 .min-height-custom{
     @media screen and (max-width: $mobile) {
         min-height: 150px !important;
+    }
+}
+.d-none-mb{
+    @media screen and (max-width: $mobile) {
+        display: none !important;
     }
 }
