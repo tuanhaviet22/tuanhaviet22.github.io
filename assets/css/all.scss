@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif !important;
+    font-family: 'Muli', sans-serif !important;
 }
 
 span.liner {
@@ -1798,6 +1798,7 @@ $desktop :1024px;
                     // margin-left: 20px;
                     @media screen and (max-width : $mobile) {
                         font-size: 15px;
+                        margin-top: 1rem;
                     }
 
                     a {
@@ -1891,7 +1892,17 @@ $desktop :1024px;
             background-color: #D3A638;
             margin-top: 1rem;
         }
-
+        h3{
+            @media screen  and (max-width: $mobile){
+                text-align: left !important;
+                font-size: 19px;
+            }
+        }
+        .liner{
+            @media screen and (max-width: $mobile) {
+                margin: unset !important;
+            }
+        }
         .description {
             padding: 20px 20px 0 20px;
             background-color: #fffdf8;
@@ -1909,6 +1920,17 @@ $desktop :1024px;
                 background-color: #D3A638;
                 margin: 0 auto;
                 height: 2px;
+            }
+            h3{
+                @media screen  and (max-width: $mobile){
+                    text-align: left !important;
+                    font-size: 19px;
+                }
+            }
+            .liner{
+                @media screen and (max-width: $mobile) {
+                    margin: unset !important;
+                }
             }
         }
 
@@ -2568,4 +2590,9 @@ h3 {
 .regft a:nth-child(1) {
     margin-right: 10px;
     background-color: #27aae2;
+}
+.min-height-custom{
+    @media screen and (max-width: $mobile) {
+        min-height: 150px !important;
+    }
 }
