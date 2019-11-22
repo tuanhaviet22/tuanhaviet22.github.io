@@ -94,3 +94,11 @@ $(window).scroll(function () {
 
     }
 })
+
+
+$('.btn-show-menu').click(function(){
+    $('#navbar').css('left','0')
+})
+$('.icon-close').click(function(){
+    $('#navbar').css('left','-20rem')
+})
