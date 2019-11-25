@@ -9,7 +9,11 @@ $(document).ready(function () {
             renderBullet: function (index, className) {
                 return '<span class="dot-cus '+ className + '">' + '</span>';
             }
-        },
+        },  
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
         loop: true,
         autoplay: {
             delay: 3000,
