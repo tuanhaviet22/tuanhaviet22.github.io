@@ -296,6 +296,20 @@ footer .after .note {
   font-size: 11px;
 }
 
+.banner .swiper-button-next, .banner .swiper-button-prev {
+  color: white;
+  width: 10px;
+  height: 10px;
+}
+
+.banner .swiper-button-prev {
+  left: 30px;
+}
+
+.banner .swiper-button-next {
+  right: 30px;
+}
+
 .liner {
   margin: 0 auto;
   height: 2px;
@@ -2537,6 +2551,10 @@ h3 {
 
 .dot-cus {
   margin: 5px;
+}
+
+.swiper-pagination-bullet {
+  background-color: white;
 }
 
 .banner-4 .swiper-pagination {

@@ -303,6 +303,17 @@ $green-text : #4D8444;
             font-size: 11px;
         }
     }
+    .swiper-button-next, .swiper-button-prev{
+        color : white;
+        width: 10px;
+        height: 10px;
+    }
+    .swiper-button-prev{
+        left: 30px;
+    }
+    .swiper-button-next{
+        right: 30px;
+    }
 }
 
 .liner {
@@ -2642,6 +2653,10 @@ h3 {
 }
 .dot-cus{
     margin: 5px;
+    
+}
+.swiper-pagination-bullet{
+    background-color: white;
 }
 .banner-4{
     .swiper-pagination{

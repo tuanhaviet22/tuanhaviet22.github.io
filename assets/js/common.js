@@ -26,10 +26,10 @@ $(document).ready(function () {
             },
         },
         loop: true,
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false
-        },
+        // autoplay: {
+        //     delay: 3000,
+        //     disableOnInteraction: false
+        // },
         slidesPerView: 3,
         spaceBetween: 20,
         breakpoints: {
@@ -71,7 +71,6 @@ $('.up').click(function (e) {
     quantity_new = quantity + 1;
     $('.ip-quantity').val(quantity_new);
 })
-
 $('.down').click(function (e) {
     // e.preventDefault();
     let quantity = parseInt($('.ip-quantity').val());
