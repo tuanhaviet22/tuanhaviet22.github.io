@@ -898,7 +898,9 @@ span.liner {
     }
 
     .right-column {
-        padding-left: 2rem;
+        @media screen and (min-width: $table) {
+            padding-left: 2rem;
+        }
         .b-white-mb{
             @media screen and (max-width : $mobile) {
                 background-color: white;

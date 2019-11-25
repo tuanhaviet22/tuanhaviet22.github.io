@@ -831,8 +831,10 @@ span.liner {
   }
 }
 
-.banner-2 .right-column {
-  padding-left: 2rem;
+@media screen and (min-width: 768px) {
+  .banner-2 .right-column {
+    padding-left: 2rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
