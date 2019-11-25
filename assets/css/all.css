@@ -513,6 +513,8 @@ footer .after .note {
 .rv-star .body .customer-rv .talk {
   text-align: center;
   font-size: 12px;
+  font-weight: 500;
+  margin-top: 10px;
 }
 
 .contact {
@@ -2527,5 +2529,20 @@ h3 {
   .d-none-mb {
     display: none !important;
   }
+}
+
+.swiper-pagination-bullet-active {
+  background: #CE9506 !important;
+}
+
+.dot-cus {
+  margin: 5px;
+}
+
+.banner-4 .swiper-pagination {
+  position: unset !important;
+  display: block;
+  margin: 0 auto;
+  padding-top: 1.5rem;
 }
 /*# sourceMappingURL=all.css.map */

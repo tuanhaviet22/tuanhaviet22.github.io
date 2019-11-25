@@ -546,6 +546,8 @@ $green-text : #4D8444;
             .talk {
                 text-align: center;
                 font-size: 12px;
+                font-weight: 500;
+                margin-top: 10px;
             }
         }
     }
@@ -2632,5 +2634,20 @@ h3 {
 .d-none-mb{
     @media screen and (max-width: $mobile) {
         display: none !important;
+    }
+}
+
+.swiper-pagination-bullet-active{
+    background: $orange !important;
+}
+.dot-cus{
+    margin: 5px;
+}
+.banner-4{
+    .swiper-pagination{
+        position: unset !important;
+        display: block;
+        margin: 0 auto;
+        padding-top: 1.5rem;
     }
 }

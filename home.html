@@ -9,11 +9,14 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/libs/css/owl.carousel.min.css">
+    <!-- <link rel="stylesheet" href="./assets/libs/css/owl.carousel.min.css"> -->
     <link rel="stylesheet" href="./assets/css/all.css">
     <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="./assets/css/icon.css">
     <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./assets/css/fancybox.min.css"> -->
+    <!-- <link rel="stylesheet" href="./assets/libs/css/owl.theme.default.min.css"> -->
+    <link rel="stylesheet" href="./assets/libs/css/swiper.min.css">
     <title>Home</title>
 </head>
 
@@ -38,9 +41,8 @@
                         <a class="navbar-brand" href="#">
                             <img src="./assets/images/logo.png" class="rounded mx-auto d-block" alt="">
                         </a>
-                        <button class="navbar-toggler btn-show-menu" type="button"
-                            aria-controls="navbars" aria-expanded="false"
-                            aria-label="Toggle navigation">
+                        <button class="navbar-toggler btn-show-menu" type="button" aria-controls="navbars"
+                            aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="" id="navbar">
@@ -49,7 +51,7 @@
                                 <li class="nav-item dropdown megamenu-li">
                                     <a class="nav-link dropdown-toggle __title" href="" id="dropdown01"
                                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Giới thiệu</a>
-                                        <i class="fas fa-chevron-right icon-menu d-md-none"></i>
+                                    <i class="fas fa-chevron-right icon-menu d-md-none"></i>
                                     <div class="dropdown-menu megamenu _megamenu" aria-labelledby="dropdown01">
                                         <div class="row">
                                             <div class="col-sm-6 col-lg-6">
@@ -76,7 +78,7 @@
                                 <li class="nav-item dropdown megamenu-li">
                                     <a class="nav-link dropdown-toggle __title" href="" id="dropdown01"
                                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sản phẩm</a>
-                                        <i class="fas fa-chevron-right icon-menu d-md-none"></i>
+                                    <i class="fas fa-chevron-right icon-menu d-md-none"></i>
                                     <div class="dropdown-menu megamenu _megamenu" aria-labelledby="dropdown01">
                                         <div class="row">
                                             <div class="col-sm-6 col-lg-6">
@@ -124,8 +126,8 @@
                                     <a href="#" class="nav-link __title">follow</a>
                                 </li>
                                 <li class="nav-item megamenu-li d-md-none iconn-menu mt-3">
-                                    <img src="./assets/images/facebook-logo.png" alt="">  
-                                    <img src="./assets/images/youtube2.png" alt="">     
+                                    <img src="./assets/images/facebook-logo.png" alt="">
+                                    <img src="./assets/images/youtube2.png" alt="">
                                     <img src="./assets/images/zalo2.png" alt="">
                                 </li>
                                 <li class="nav-item megamenu-li buy text-center">
@@ -140,11 +142,21 @@
         </div>
     </div>
     <div class="banner">
-        <div class="owl-carousel slider-banner owl-theme">
-            <div class="item">
-                <img src="./assets/images/banner.png" class="w-100" alt="banner">
+        <div class="swiper-container slider-banner w-100">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./assets/images/banner.png" class="w-100" alt="banner">
+                </div>
+                <div class="swiper-slide">
+                        <img src="./assets/images/banner.png" class="w-100" alt="banner">
+                    </div>
+                    <div class="swiper-slide">
+                            <img src="./assets/images/banner.png" class="w-100" alt="banner">
+                        </div>
             </div>
-
+            <div class="swiper-pagination"></div>
+            <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
         </div>
     </div>
 
@@ -156,16 +168,16 @@
                     <img src="./assets/images/iso.png" class="iso" alt="">
                 </div>
                 <div class="col-md-6 col-12 right-column">
-                    
-                            <p class="title text-uppercase">nano mầm đậu nành flagold</p>
-                            <p class="bf-title text-uppercase">được tư vấn bởi viện hàn lâm khoa học việt nam</p>
-                            <span class="liner d-block"></span>
-                            <p class="detail">
-                                Nano mầm đậu nành Flagold là sản phẩm được phân phối độc quyền bởi Công ty TNHH Jido Pharma.
-                                Viên uống Flagold có tác dụng bổ sung
-                                isofla-vone Hỗ trợ cải thiện các rối loạn do suy giảm nội tiết...
-                            </p>
-                            <p class="read-more">Tìm hiểu thêm</p>
+
+                    <p class="title text-uppercase">nano mầm đậu nành flagold</p>
+                    <p class="bf-title text-uppercase">được tư vấn bởi viện hàn lâm khoa học việt nam</p>
+                    <span class="liner d-block"></span>
+                    <p class="detail">
+                        Nano mầm đậu nành Flagold là sản phẩm được phân phối độc quyền bởi Công ty TNHH Jido Pharma.
+                        Viên uống Flagold có tác dụng bổ sung
+                        isofla-vone Hỗ trợ cải thiện các rối loạn do suy giảm nội tiết...
+                    </p>
+                    <p class="read-more">Tìm hiểu thêm</p>
 
                     <div class="list-function">
                         <p>
@@ -221,7 +233,7 @@
             </div>
             <div class="body">
                 <div class="row">
-                  
+
                     <div class="col-md-3 col-6">
                         <div class="img-border">
                             <img src="./assets/images/1x/psAsset 2.png" alt="">
@@ -271,12 +283,12 @@
 
             <div class="_child-banner">
                 <div class="row mt-5">
-                        <div class="_header">
-                              <div class="container">
-                                    <h3 class="text-center text-uppercase">flagold vinh dự nhận giải thưởng</h3>
-                                <h3 class="text-center text-uppercase">"Sản phẩm vàng vì sức khỏe cộng đồng"</h3>
-                              </div>
-                            </div>
+                    <div class="_header">
+                        <div class="container">
+                            <h3 class="text-center text-uppercase">flagold vinh dự nhận giải thưởng</h3>
+                            <h3 class="text-center text-uppercase">"Sản phẩm vàng vì sức khỏe cộng đồng"</h3>
+                        </div>
+                    </div>
                     <div class="col-md-4">
                         <img src="./assets/images/Untitled-3-16.png" class="w-100" alt="">
                     </div>
@@ -335,14 +347,14 @@
         </div>
     </div>
     <div class="banner-4">
-        <div class="container pb-5">
+        <div class="container pb-3">
             <div class="header">
                 <h3 class="text-center text-uppercase">sao việt nói về sản phẩm flagold</h3>
                 <span class="liner"></span>
             </div>
 
             <div class="body">
-                <div class="owl-carousel start-review owl-theme">
+                <!-- <div class="owl-carousel start-review owl-theme">
                     <div class="item">
                         <div class="img-zone">
                             <img src="./assets/images/woman1.png" class="rounded mx-auto d-block" alt="">
@@ -360,46 +372,85 @@
                                 </p>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="img-zone">
-                            <img src="./assets/images/woman1.png" class="rounded mx-auto d-block" alt="">
-                        </div>
-                        <div class="text-zone">
-                            <div class="container">
-                                <img src="./assets/images/quote.png" alt="">
-                                <p class="name text-uppercase">Diễn viên thanh hằng</p>
-                                <p class="content">
-                                    Sở hữu phòng khách rộng và hiện đại, chị Hiền muốn tìm một bộ sofa da sang trọng
-                                    nhưng
-                                    không quá cầu kì. Sau khi tham khảo nhiều nơi, chị đã quyết định mua bộ sofa da của
-                                    thương hiệu nội thất ERADO. Chị Hiền đã lựa chọn bộ sofa phòng khách với gam màu đen
-                                    mạnh mẽ.
-                                </p>
+                    </div>                              
+                </div> -->
+                <div class="swiper-container start-review ">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                    <div class="img-zone">
+                                            <img src="./assets/images/woman1.png" class="rounded mx-auto d-block" alt="">
+                                        </div>
+                                        <div class="text-zone">
+                                            <div class="container">
+                                                <img src="./assets/images/quote.png" alt="">
+                                                <p class="name text-uppercase">Diễn viên thanh hằng</p>
+                                                <p class="content">
+                                                    Sở hữu phòng khách rộng và hiện đại, chị Hiền muốn tìm một bộ sofa da sang trọng
+                                                    nhưng
+                                                    không quá cầu kì. Sau khi tham khảo nhiều nơi, chị đã quyết định mua bộ sofa da của
+                                                    thương hiệu nội thất ERADO. Chị Hiền đã lựa chọn bộ sofa phòng khách với gam màu đen
+                                                    mạnh mẽ.
+                                                </p>
+                                            </div>
+                                        </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="img-zone">
-                            <img src="./assets/images/woman1.png" class="rounded mx-auto d-block" alt="">
-                        </div>
-                        <div class="text-zone">
-                            <div class="container">
-                                <img src="./assets/images/quote.png" alt="">
-                                <p class="name text-uppercase">Diễn viên thanh hằng</p>
-                                <p class="content">
-                                    Sở hữu phòng khách rộng và hiện đại, chị Hiền muốn tìm một bộ sofa da sang trọng
-                                    nhưng
-                                    không quá cầu kì. Sau khi tham khảo nhiều nơi, chị đã quyết định mua bộ sofa da của
-                                    thương hiệu nội thất ERADO. Chị Hiền đã lựa chọn bộ sofa phòng khách với gam màu đen
-                                    mạnh mẽ.
-                                </p>
+                            <div class="swiper-slide">
+                                    <div class="img-zone">
+                                            <img src="./assets/images/woman1.png" class="rounded mx-auto d-block" alt="">
+                                        </div>
+                                        <div class="text-zone">
+                                            <div class="container">
+                                                <img src="./assets/images/quote.png" alt="">
+                                                <p class="name text-uppercase">Diễn viên thanh hằng</p>
+                                                <p class="content">
+                                                    Sở hữu phòng khách rộng và hiện đại, chị Hiền muốn tìm một bộ sofa da sang trọng
+                                                    nhưng
+                                                    không quá cầu kì. Sau khi tham khảo nhiều nơi, chị đã quyết định mua bộ sofa da của
+                                                    thương hiệu nội thất ERADO. Chị Hiền đã lựa chọn bộ sofa phòng khách với gam màu đen
+                                                    mạnh mẽ.
+                                                </p>
+                                            </div>
+                                        </div>
                             </div>
-                        </div>
+                            <div class="swiper-slide">
+                                    <div class="img-zone">
+                                            <img src="./assets/images/woman1.png" class="rounded mx-auto d-block" alt="">
+                                        </div>
+                                        <div class="text-zone">
+                                            <div class="container">
+                                                <img src="./assets/images/quote.png" alt="">
+                                                <p class="name text-uppercase">Diễn viên thanh hằng</p>
+                                                <p class="content">
+                                                    Sở hữu phòng khách rộng và hiện đại, chị Hiền muốn tìm một bộ sofa da sang trọng
+                                                    nhưng
+                                                    không quá cầu kì. Sau khi tham khảo nhiều nơi, chị đã quyết định mua bộ sofa da của
+                                                    thương hiệu nội thất ERADO. Chị Hiền đã lựa chọn bộ sofa phòng khách với gam màu đen
+                                                    mạnh mẽ.
+                                                </p>
+                                            </div>
+                                        </div>
+                            </div>
+                                <div class="swiper-slide">
+                                    <div class="img-zone">
+                                            <img src="./assets/images/woman1.png" class="rounded mx-auto d-block" alt="">
+                                        </div>
+                                        <div class="text-zone">
+                                            <div class="container">
+                                                <img src="./assets/images/quote.png" alt="">
+                                                <p class="name text-uppercase">Diễn viên thanh hằng</p>
+                                                <p class="content">
+                                                    Sở hữu phòng khách rộng và hiện đại, chị Hiền muốn tìm một bộ sofa da sang trọng
+                                                    nhưng
+                                                    không quá cầu kì. Sau khi tham khảo nhiều nơi, chị đã quyết định mua bộ sofa da của
+                                                    thương hiệu nội thất ERADO. Chị Hiền đã lựa chọn bộ sofa phòng khách với gam màu đen
+                                                    mạnh mẽ.
+                                                </p>
+                                            </div>
+                                        </div>
+                            </div>
+                        </div>                    
                     </div>
-                </div>
+                    <div class="swiper-pagination"></div>
             </div>
         </div>
     </div>
@@ -575,7 +626,7 @@
                                 <li>
                                     <i class="fas fa-circle"></i>
                                     <a href="#">
-                                            Mối quan hệ giữa isoflavon với giấc ngủ mỗi ngày, các bạn nên biết
+                                        Mối quan hệ giữa isoflavon với giấc ngủ mỗi ngày, các bạn nên biết
                                     </a>
                                 </li>
                                 <li>
@@ -614,10 +665,10 @@
                             <img src="./assets/images/logo.png" alt="" class="d-block" style="margin: 0 auto;">
                         </div>
                         <div class="list-ico d-flex justify-content-between col-6 d-md-none">
-                                <span><img src="./assets/images/fb.png" class="rounded mx-auto d-block" alt=""></span>
-                                <span><img src="./assets/images/youtube.png" class="rounded mx-auto d-block" alt=""></span>
-                                <span><img src="./assets/images/zalo.png" class="rounded mx-auto d-block" alt=""></span>
-                            </div>
+                            <span><img src="./assets/images/fb.png" class="rounded mx-auto d-block" alt=""></span>
+                            <span><img src="./assets/images/youtube.png" class="rounded mx-auto d-block" alt=""></span>
+                            <span><img src="./assets/images/zalo.png" class="rounded mx-auto d-block" alt=""></span>
+                        </div>
                     </div>
 
                     <div class="address">
@@ -652,10 +703,11 @@
                     </ul>
                     <div class="row">
                         <div class="col-md-12 col-7">
-                            <button class="text-center"><i class="fas fa-phone-alt"></i> Bác sỹ tư vấn 1800 2035</button>
+                            <button class="text-center"><i class="fas fa-phone-alt"></i> Bác sỹ tư vấn 1800
+                                2035</button>
                         </div>
                         <div class="col-5 d-md-none">
-                                <img src="./assets/images/bkt.png " class="mx-auto d-block w-100" alt="">
+                            <img src="./assets/images/bkt.png " class="mx-auto d-block w-100" alt="">
                         </div>
                     </div>
                 </div>
@@ -750,19 +802,21 @@
         </div>
     </div> -->
     <div class="regft hidden-lg hidden-md">
-            <a href="#" data-toggle="modal" class="pop f-white"><i class="fa fa-edit"></i> ĐĂNG KÝ NGAY</a>
-            <a href="" class="f-white"><i class="fa fa-phone"></i> Gọi 1800.2035</a>
-        </div>
+        <a href="#" data-toggle="modal" class="pop f-white"><i class="fa fa-edit"></i> ĐĂNG KÝ NGAY</a>
+        <a href="" class="f-white"><i class="fa fa-phone"></i> Gọi 1800.2035</a>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="./assets/libs/js/jquery-3.4.1.min.js"></script>
-    <script src="./assets/libs/js/owl.carousel.js"></script>
+    <!-- <script src="./assets/libs/js/owl.carousel.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
     </script>
+    <script src="./assets/js/fancybox.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
+    <script src="./assets/libs/js/swiper.min.js"></script>
     <script src="./assets/js/common.js"></script>
 </body>
 
