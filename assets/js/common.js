@@ -1,42 +1,25 @@
 $(document).ready(function () {
     $('.show-popup').trigger('click')
     $('.fst-i').trigger('click')
-    // $('.slider-banner').owlCarousel({
-    //     loop: true,
-    //     nav: true,
-    //     dots: true,
-    //     responsive: {
-    //         0: {
-    //             items: 1
-    //         },
-    //         600: {
-    //             items: 1
-    //         },
-    //         1000: {
-    //             items: 1
-    //         }
-    //     }
-    // })
+
     var swiper = new Swiper('.slider-banner', {
-        // navigation: {
-        //   nextEl: '.swiper-button-next',
-        //   prevEl: '.swiper-button-prev',
-        // },
         pagination: {
-            el: '.swiper-pagination',
+            el: '.slider-banner-pagination',
             clickable: true,
-            // type: 'fraction',
+            renderBullet: function (index, className) {
+                return '<span class="dot-cus '+ className + '">' + '</span>';
+            }
         },
         loop: true,
         autoplay: {
             delay: 3000,
+            disableOnInteraction: false
         },
-        slidesPerView: 1,
-        //   freeMode : true
+        slidesPerView: 1
     });
     var swiper2 = new Swiper(".start-review", {
         pagination: {
-            el: '.swiper-pagination',
+            el: '.start-review-pagination',
             clickable: true,
             renderBullet: function (index, className) {
                 return '<span class="dot-cus ' + className + '">' + '</span>';
@@ -45,6 +28,7 @@ $(document).ready(function () {
         loop: true,
         autoplay: {
             delay: 3000,
+            disableOnInteraction: false
         },
         slidesPerView: 3,
         spaceBetween: 20,
@@ -80,25 +64,6 @@ $(document).ready(function () {
             },
         },
     })
-    // $('.customer-rv').owlCarousel({
-    //     items: 4,
-    //     loop: true,
-    //     margin: 10,
-    //     autoplay: true,
-    //     autoplayTimeout: 1000,
-    //     autoplayHoverPause: true,
-    //     responsive: {
-    //         0: {
-    //             items: 1
-    //         },
-    //         600: {
-    //             items: 1
-    //         },
-    //         1000: {
-    //             items: 1
-    //         }
-    //     }
-    // })
 })
 $('.up').click(function (e) {
     // e.preventDefault();
