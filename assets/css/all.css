@@ -22,8 +22,11 @@ span.liner {
 }
 
 @media screen and (max-width: 480px) {
-  .contact {
+  .contact .list-inline li {
     display: none;
+  }
+  .contact .list-inline li:last-child {
+    display: inline !important;
   }
 }
 
@@ -43,6 +46,18 @@ span.liner {
 
 .menu .navbar-toggler .navbar-toggler-icon {
   background-image: url(../images/list-menu.svg) !important;
+}
+
+.menu .diemban {
+  position: absolute;
+  right: 0;
+  color: white;
+  margin-top: 30px;
+  margin-right: 10px;
+}
+
+.menu .diemban i {
+  padding-left: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -296,7 +311,8 @@ footer .after .note {
   font-size: 11px;
 }
 
-.banner .swiper-button-next, .banner .swiper-button-prev {
+.banner .swiper-button-next,
+.banner .swiper-button-prev {
   color: white;
   width: 10px;
   height: 10px;
@@ -1549,14 +1565,19 @@ span.liner {
 }
 
 .popup .row .popup-right .header {
-  background: #639650;
-  background: -webkit-gradient(linear, left bottom, left top, from(#639650), color-stop(89%, #79a668));
-  background: linear-gradient(0deg, #639650 0%, #79a668 89%);
+  background: #457e55;
+  background: -webkit-gradient(linear, left bottom, left top, from(#457e55), to(#345d3b));
+  background: linear-gradient(0deg, #457e55 0%, #345d3b 100%);
+}
+
+.popup .row .popup-right .header img {
+  width: 40%;
+  padding-top: 15px;
 }
 
 .popup .row .popup-right .header h3 {
   color: white;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 600;
   padding: 20px;
 }
@@ -1577,11 +1598,22 @@ span.liner {
 
 .popup .row .popup-right .body form button {
   width: 100%;
-  background: #b3812e;
-  background: -webkit-gradient(linear, left bottom, left top, from(#b3812e), color-stop(81%, #cf9d3a));
-  background: linear-gradient(0deg, #b3812e 0%, #cf9d3a 81%);
   color: white;
   font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  .popup .row .popup-right .body form button {
+    background: #b3812e;
+    background: -webkit-gradient(linear, left bottom, left top, from(#b3812e), color-stop(81%, #cf9d3a));
+    background: linear-gradient(0deg, #b3812e 0%, #cf9d3a 81%);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .popup .row .popup-right .body form button {
+    background-color: #d4a637;
+  }
 }
 
 .popup .row .popup-right .body form button i {
@@ -2562,5 +2594,84 @@ h3 {
   display: block;
   margin: 0 auto;
   padding-top: 1.5rem;
+}
+
+.banner-in .header-1 {
+  background: -webkit-gradient(linear, left top, right top, from(#006801), color-stop(50%, #23834c), to(#006801));
+  background: linear-gradient(90deg, #006801 0%, #23834c 50%, #006801 100%);
+  color: white;
+  font-weight: 500;
+  font-size: 12px;
+  padding: 10px 0;
+}
+
+.banner-in .header-1 .high {
+  color: #fed523;
+  font-size: 19px;
+  margin-bottom: 5px;
+}
+
+.banner-in .f2 .header-2 {
+  color: white;
+  font-weight: 500;
+  font-size: 10px;
+  padding: 10px 0;
+  background-color: #529746 !important;
+}
+
+.banner-in .f2 .header-2 p {
+  margin-bottom: unset;
+}
+
+.banner-in .f2 .header-2 .high {
+  color: #fed523;
+  font-size: 19px;
+  margin-bottom: 5px;
+}
+
+.banner-in .f2 .body {
+  background-color: #fbf5e9;
+  padding-top: 15px;
+  padding-bottom: 1px;
+}
+
+.banner-in .f2 .body .fj-3 {
+  color: red;
+  background-color: white;
+  font-weight: 600;
+  border: 1px solid red;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.banner-in .f2 .body form input,
+.banner-in .f2 .body form textarea {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #fbd17f;
+  padding: 10px;
+  margin: 10px 0;
+  color: black;
+}
+
+.banner-in .f2 .body form .row a {
+  height: 100%;
+  line-height: 38px;
+  color: white;
+  border-radius: 5px;
+  background-color: #529746;
+}
+
+.banner-in .f2 .body form .row button {
+  background-color: #daa501;
+  width: 100%;
+  color: white;
+}
+
+.banner-in .f2 .body form .sm-t {
+  color: black;
+  font-weight: 600;
+  font-size: 11px;
 }
 /*# sourceMappingURL=all.css.map */

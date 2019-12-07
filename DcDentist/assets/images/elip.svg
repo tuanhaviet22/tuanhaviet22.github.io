@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="195.915" viewBox="0 0 1920 195.915">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #00465a;
+        stroke: #f7c961;
+        stroke-width: 5.83px;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="-4273" y="-10378" width="10571" height="10571" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dy="2" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="3.606"/>
+      <feFlood result="flood" flood-color="#434343" flood-opacity="0.56"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g style="fill: #00465a; filter: url(#filter)">
+    <circle id="circle" class="cls-1" cx="1012" cy="-5095" r="5273" style="stroke: inherit; filter: none; fill: inherit"/>
+  </g>
+  <use xlink:href="#circle" style="stroke: #f7c961; filter: none; fill: none"/>
+</svg>

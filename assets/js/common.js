@@ -1,10 +1,41 @@
 $(document).ready(function () {
+
+    let content = $('.content_1').text().trim();
+    if(content.length > 259){
+        let over = content.substring(0,255) +  "...";
+        $('.content_1').text(over)
+    }
+
+   
+
+
+
+
     $('.show-popup').trigger('click')
     $('.fst-i').trigger('click')
 
     var swiper = new Swiper('.slider-banner', {
         pagination: {
             el: '.slider-banner-pagination',
+            clickable: true,
+            renderBullet: function (index, className) {
+                return '<span class="dot-cus '+ className + '">' + '</span>';
+            }
+        },  
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false
+        },
+        slidesPerView: 1
+    });
+    var swiper_banner_mb = new Swiper('.slider-banner-mb', {
+        pagination: {
+            el: '.slider-banner-pagination-mb',
             clickable: true,
             renderBullet: function (index, className) {
                 return '<span class="dot-cus '+ className + '">' + '</span>';
@@ -97,7 +128,7 @@ $('.list-image .image').click(function (e) {
 $(window).scroll(function () {
     var scroll = $(window).scrollTop();
     if (scroll >= 63.8) {
-
+        $('#navbar').removeClass('navbar-scroll')
         $(".menu").addClass("menu-fixed");
     } else {
         $(".menu").removeClass("menu-fixed");
@@ -112,3 +143,5 @@ $('.btn-show-menu').click(function () {
 $('.icon-close').click(function () {
     $('#navbar').css('left', '-20rem')
 })
+
+
