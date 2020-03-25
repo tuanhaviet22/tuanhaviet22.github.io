@@ -711,7 +711,7 @@ span{
 }
 
 .header-middle{
-    padding: 20px 0;
+    padding: 5px 0;
     background-image: -webkit-linear-gradient( -3deg, rgb(254,104,15) 2%, rgb(247,88,20) 39%, rgb(239,72,25) 94%)
 }
 
@@ -1260,7 +1260,7 @@ span{
 }
 
 .banner-section {
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 30px;
     position: relative;
     background-image: url("../images/banner-1.jpg");
@@ -3349,7 +3349,7 @@ td{
 
 .search-widget-area--style{
     padding-bottom: 0;
-    margin-top: -200px;
+    /* margin-top: -200px; */
     position: relative;
     z-index: 9;
 }

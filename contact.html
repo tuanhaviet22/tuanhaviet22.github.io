@@ -50,15 +50,15 @@
         <div class="header-middle d-none d-xl-block">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-10 pl-lg-0">
-                        <div class="header-wrapper">
+                    <div class="col-lg-12 pl-lg-0">
+                        <div class="header-wrapper d-flex justify-content-end">
                             <div class="header-info">
                                 <div class="info-item">
                                     <div class="info-thumb">
                                         <i class="flaticon-clock"></i>
                                     </div>
                                     <div class="info-content">
-                                        <h6 class="title">working hours</h6>
+                                        <!-- <h6 class="title">working hours</h6> -->
                                         <span>24/7 hours</span>
                                     </div>
                                 </div>
@@ -67,7 +67,7 @@
                                         <i class="fas fa-phone-alt"></i>
                                     </div>
                                     <div class="info-content">
-                                        <h6 class="title">hotline 1</h6>
+                                        <!-- <h6 class="title">hotline 1</h6> -->
                                         <span>0123456789</span>
                                     </div>
                                 </div>
@@ -76,7 +76,7 @@
                                         <i class="fas fa-phone-alt"></i>
                                     </div>
                                     <div class="info-content">
-                                        <h6 class="title">hotline 2</h6>
+                                        <!-- <h6 class="title">hotline 2</h6> -->
                                         <span>0123456789</span>
                                     </div>
                                 </div>
@@ -165,9 +165,83 @@
             <button type="submit"><i class="flaticon-search-interface-symbol"></i></button>
         </div>
     </form>
-
+    <div class="banner-section search-widget-area search-widget-area--style">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="search-widget">
+                        <div class="checkbox-form d-flex flex-wrap">
+                            <div class="checkbox-area">
+                                <input type="checkbox">
+                                <label>One Way</label>
+                            </div>
+                            <div class="checkbox-area">
+                                <input type="checkbox">
+                                <label>Round Trip</label>
+                            </div>
+                            <div class="checkbox-area">
+                                <input type="checkbox">
+                                <label>Multi City</label>
+                            </div>
+                        </div>
+                        <div class="rt-input-group">
+                            <div class="single-input  col-rt-in-3">
+                                <input type="text" placeholder="form:">
+                                <span class="input-iconbadge"><img src="assets/images/icon-1.png" alt=""
+                                        draggable="false"></span>
+                                <span class="input-iconbadge-right"><img src="assets/images/icon-5.png" alt=""
+                                        draggable="false"></span>
+                            </div>
+                            <div class="single-input  col-rt-in-3">
+                                <input type="text" placeholder="to:">
+                                <span class="input-iconbadge"><img src="assets/images/icon-1.png" alt=""
+                                        draggable="false"></span>
+                            </div>
+                            <div class="single-input  col-rt-in-3">
+                                <input type='text' id="booking_date_from" name="booking_date_from"
+                                    class='datepicker-here' data-language='en' placeholder="depart">
+                                <span class="input-iconbadge"><img src="assets/images/icon-2.png" alt=""
+                                        draggable="false"></span>
+                            </div>
+                            <div class="single-input  col-rt-in-3">
+                                <input type='text' id="booking_date_from" name="booking_date_from"
+                                    class='datepicker-here' data-language='en' placeholder="return">
+                                <span class="input-iconbadge"><img src="assets/images/icon-2.png" alt=""
+                                        draggable="false"></span>
+                            </div>
+                            <div class="single-input  col-rt-in-3">
+                                <input type="submit" class="cmn-btn" value="search">
+                            </div>
+                        </div>
+                        <div class="rt-input-group rt-input-group--style">
+                            <div class="single-input  col-rt-in-3">
+                                <select class="select-bar">
+                                    <option data-display="Passengers">Passengers</option>
+                                    <option value="1">Option-1</option>
+                                    <option value="2">Option-2</option>
+                                    <option value="3">Option-3</option>
+                                </select>
+                                <span class="input-iconbadge"><img src="assets/images/icon-3.png" alt=""
+                                        draggable="false"></span>
+                            </div>
+                            <div class="single-input  col-rt-in-3">
+                                <select class="select-bar">
+                                    <option data-display="Business">Business</option>
+                                    <option value="1">Option-1</option>
+                                    <option value="2">Option-2</option>
+                                    <option value="3">Option-3</option>
+                                </select>
+                                <span class="input-iconbadge"><img src="assets/images/icon-4.png" alt=""
+                                        draggable="false"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- banner-section start -->
-    <section class="inner-banner-section pt-120 pb-120">
+    <section class="inner-banner-section pt-120 mt-5 pb-120">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
