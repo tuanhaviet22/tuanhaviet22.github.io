@@ -225,7 +225,7 @@ var swiper = new Swiper('.brand-wrapper', {
   loop: true,
   autoplay: {
     speeds: 1000,
-    delay: 3000,
+    delay: 2000,
   },
   breakpoints: {
     991: {

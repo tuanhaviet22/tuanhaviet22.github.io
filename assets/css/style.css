@@ -2191,6 +2191,7 @@ span{
 
 .blog-section{
     background-color: #fafafa;
+    padding-top: 80px;
 }
 
 .client-section{
@@ -3249,7 +3250,7 @@ td{
 }
 
 .contact-section {
-    margin-top: 120px;
+    margin-top: 80px;
     padding-top: 60px;
     padding-left: 40px;
     position: relative;
@@ -3259,6 +3260,7 @@ td{
     width: 60%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 50px;
 }
 
 .contact-section::after {
@@ -4273,6 +4275,12 @@ td{
         text-align: center;
         margin-right: 0;
     }
+    .blog-section h1{
+        font-size: 25px;
+    }
+    .blog-section{
+        padding-top: 25px;
+    }
 }
 @media only screen and (max-width : 376px){
     .blog-footer--style .meta-writer{
@@ -4321,4 +4329,17 @@ td{
 }
 footer .map{
     height: 13rem;
+}
+.blog-section h3.name-cate{
+    font-size: 25px;
+    margin: 2rem 0;
+}
+.brand-section{
+    padding: 80px 0 ;
+}
+.brand-homepage .brand-item{
+    border-right: unset;
+}
+.brand-homepage{
+    padding: 60px 0;
 }
