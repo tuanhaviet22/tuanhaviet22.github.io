@@ -4281,6 +4281,9 @@ td{
     .blog-section{
         padding-top: 25px;
     }
+    .brand-section .item{
+        margin: 10px 0;
+    }
 }
 @media only screen and (max-width : 376px){
     .blog-footer--style .meta-writer{
@@ -4342,4 +4345,14 @@ footer .map{
 }
 .brand-homepage{
     padding: 60px 0;
+}
+.brand-homepage img{
+    width: 100%;
+}
+.brand-homepage .item{
+    padding: 24px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #e8e8e8;
 }
