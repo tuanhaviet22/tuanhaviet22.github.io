@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arion - Air Ticket Booking Html Template</title>
+    <!-- fontawesome css link -->
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <!-- flaticon css -->
+    <link rel="stylesheet" href="assets/font/flaticon.css">
+    <!-- magnific popup -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!-- nice-select css -->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <!-- bootstrap css link -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- swipper css link -->
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
+    <!-- animate.css -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- datepicker.css -->
+    <link rel="stylesheet" href="assets/css/datepicker.min.css">
+    <!-- main style css link -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- responsive css link -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+
+    <!--Start Preloader-->
+    <div class="preloader">
+        <div class="d-table">
+            <div class="d-table-cell align-middle">
+                <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Preloader-->
+
+    <!-- header-section start -->
+    <header class="header-section">
+        <div class="header-middle d-none d-xl-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 pl-lg-0">
+                        <div class="header-wrapper">
+                            <div class="header-info">
+                                <div class="info-item">
+                                    <div class="info-thumb">
+                                        <i class="flaticon-clock"></i>
+                                    </div>
+                                    <div class="info-content">
+                                        <h6 class="title">working hours</h6>
+                                        <span>24/7 hours</span>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-thumb">
+                                        <i class="fas fa-phone-alt"></i>
+                                    </div>
+                                    <div class="info-content">
+                                        <h6 class="title">hotline 1</h6>
+                                        <span>0123456789</span>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-thumb">
+                                        <i class="fas fa-phone-alt"></i>
+                                    </div>
+                                    <div class="info-content">
+                                        <h6 class="title">hotline 2</h6>
+                                        <span>0123456789</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>            
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="row header-border align-items-center justify-content-between">
+                    <a class="site-logo site-title" href="index.html"><img src="assets/images/logo.png"
+                            alt="site-logo"></a>
+                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="fas fa-bars"></span>
+                    </button>
+                    <!-- <div class="header-bar d-lg-none">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div> -->
+                    <!-- <div class="header-btn-group d-lg-none">
+                        <div class="header-top-btn">
+                            <a href="#" class=" custom-btn--style">Sign in</a>
+                            <a href="#" class="custom-btn">Create an account</a>
+                        </div>
+                    </div> -->
+                    <nav class="navbar navbar-expand-lg p-0">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav main-menu ml-auto">
+                                <li class="menu_has_children"><a href="#0">Home<i class="fas fa-caret-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="index.html">Home One</a></li>
+                                        <li><a href="index-2.html">Home Two</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="about.html">About</a></li>
+                                <li class="menu_has_children"><a href="#0">Flight<i class="fas fa-caret-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="flight.html">Flight</a></li>
+                                        <li><a href="flight-facilities.html">Flight Facilities</a></li>
+                                        <li><a href="search-1.html">Search Flight One</a></li>
+                                        <li><a href="search-2.html">Search Flight Two</a></li>
+                                        <li><a href="search-3.html">Search Flight Three</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu_has_children"><a href="#0">Page<i class="fas fa-caret-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="privacy.html">Privacy Page</a></li>
+                                        <li><a href="gallery.html">Gallery Page</a></li>
+                                        <li><a href="booking.html">booking Page</a></li>
+                                        <li><a href="faq.html">Faq Page</a></li>
+                                        <li><a href="404.html">404 Page</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu_has_children"><a href="#0">Hotel<i class="fas fa-caret-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="hotel.html">Hotel</a></li>
+                                        <li><a href="hotel-details.html">Hotel Details</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu_has_children"><a href="#0">Blog<i class="fas fa-caret-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="blog-1.html">Blog Post One</a></li>
+                                        <li><a href="blog-2.html">Blog Post Two</a></li>
+                                        <li><a href="blog-3.html">Blog Post Three</a></li>
+                                        <li><a href="blog-details.html">Blog Details</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                            <div class="search-bar">
+                                <a href="#0"><i class="flaticon-search-interface-symbol"></i></a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <form class="header-form">
+        <div class="skip"><i class="fas fa-times"></i></div>
+        <div class="header-form-area">
+            <input type="text" placeholder="Search Here">
+            <button type="submit"><i class="flaticon-search-interface-symbol"></i></button>
+        </div>
+    </form>
+
+    <!-- banner-section start -->
+    <section class="banner-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <div class="banner-content">
+                        <h2 class="title">book your air ticket easy & fast</h2>
+                        <p>Pellentesque eros mattis pulvinar varius turpis ipsum. Congue lobortis mattis odio augue
+                            risus, condimentum quam sed lobortisorem nulla dui accumsan </p>
+                        <!-- <div class="btn-area">
+                            <a href="contact.html" class="cmn-btn">know more us</a>
+                            <a href="register.html" class="cmn-btn-active">Contact us</a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner-section end -->
+
+
+    <a href="#" class="scrollToTop"><i class="fas fa-angle-up"></i></a>
+
+
+    <!-- search-widget-area start -->
+    <div class="search-widget-area search-widget-area--style">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="search-widget">
+                        <div class="checkbox-form d-flex flex-wrap">
+                            <div class="checkbox-area">
+                                <input type="checkbox">
+                                <label>One Way</label>
+                            </div>
+                            <div class="checkbox-area">
+                                <input type="checkbox">
+                                <label>Round Trip</label>
+                            </div>
+                            <div class="checkbox-area">
+                                <input type="checkbox">
+                                <label>Multi City</label>
+                            </div>
+                        </div>
+                        <div class="rt-input-group">
+                            <div class="single-input  col-rt-in-3">
+                                <input type="text" placeholder="form:">
+                                <span class="input-iconbadge"><img src="assets/images/icon-1.png" alt=""
+                                        draggable="false"></span>
+                                <span class="input-iconbadge-right"><img src="assets/images/icon-5.png" alt=""
+                                        draggable="false"></span>
+                            </div>
+                            <div class="single-input  col-rt-in-3">
+                                <input type="text" placeholder="to:">
+                                <span class="input-iconbadge"><img src="assets/images/icon-1.png" alt=""
+                                        draggable="false"></span>
+                            </div>
+                            <div class="single-input  col-rt-in-3">
+                                <input type='text' id="booking_date_from" name="booking_date_from"
+                                    class='datepicker-here' data-language='en' placeholder="depart">
+                                <span class="input-iconbadge"><img src="assets/images/icon-2.png" alt=""
+                                        draggable="false"></span>
+                            </div>
+                            <div class="single-input  col-rt-in-3">
+                                <input type='text' id="booking_date_from" name="booking_date_from"
+                                    class='datepicker-here' data-language='en' placeholder="return">
+                                <span class="input-iconbadge"><img src="assets/images/icon-2.png" alt=""
+                                        draggable="false"></span>
+                            </div>
+                            <div class="single-input  col-rt-in-3">
+                                <input type="submit" class="cmn-btn" value="search">
+                            </div>
+                        </div>
+                        <div class="rt-input-group rt-input-group--style">
+                            <div class="single-input  col-rt-in-3">
+                                <select class="select-bar">
+                                    <option data-display="Passengers">Passengers</option>
+                                    <option value="1">Option-1</option>
+                                    <option value="2">Option-2</option>
+                                    <option value="3">Option-3</option>
+                                </select>
+                                <span class="input-iconbadge"><img src="assets/images/icon-3.png" alt=""
+                                        draggable="false"></span>
+                            </div>
+                            <div class="single-input  col-rt-in-3">
+                                <select class="select-bar">
+                                    <option data-display="Business">Business</option>
+                                    <option value="1">Option-1</option>
+                                    <option value="2">Option-2</option>
+                                    <option value="3">Option-3</option>
+                                </select>
+                                <span class="input-iconbadge"><img src="assets/images/icon-4.png" alt=""
+                                        draggable="false"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- search-widget-area end -->
+
+
+    <!-- service-section start -->
+    <section class="service-section mb-4 pt-120">
+        <div class="container">
+            <div class="row justify-content-center mb-30-none">
+                <div class="col-lg-4 col-md-6 col-sm-8 mb-30">
+                    <div class="service-item d-flex flex-wrap">
+                        <div class="service-icon">
+                            <i class="flaticon-startup"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="title"><a href="#0">fast & easy booking</a></h3>
+                            <p>Mauris pede dui in eunam nlnulla odio ut sitac Lacus eleifend frinlla scelerisque
+                                vitaeorci</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8 mb-30">
+                    <div class="service-item d-flex flex-wrap">
+                        <div class="service-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="title"><a href="#0">giá tốt nhất</a></h3>
+                            <p>Mauris pede dui in eunam nlnulla odio ut sitac Lacus eleifend frinlla scelerisque
+                                vitaeorci</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8 mb-30">
+                    <div class="service-item d-flex flex-wrap">
+                        <div class="service-icon">
+                            <i class="fas fa-undo-alt"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="title"><a href="#0">cam kết hoàn tiền</a></h3>
+                            <p>Mauris pede dui in eunam nlnulla odio ut sitac Lacus eleifend frinlla scelerisque
+                                vitaeorci</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- service-section end -->
+    <!-- flight-section start -->
+    <section class="flight-section pt-120 pb-120">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <div class="section-header">
+                        <h2 class="section-title">upcoming Flight</h2>
+                        <span class="title-border title-border-center"></span>
+                        <p> Augue eros ultrices amet, viverra nec nunc massa magna. Sit a, lacus mattis odio sem
+                            placerat ante, lacus aliquam sit id ligula est ante fringilla </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-30-none">
+                <div class="col-lg-4 col-md-6 col-sm-8 mb-30">
+                    <div class="flight-item">
+                        <div class="flight-thumb">
+                            <img src="assets/images/flight-1.jpg" alt="image">
+                            <h3 class="flight-overlay">form $250</h3>
+                        </div>
+                        <div class="flight-details">
+                            <a href="flight-facilities.html">
+                                <h3 class="title">Dhaka</h3>
+                                <i class="flaticon-exchange"></i>
+                                <h3 class="title">las vegas</h3>
+                            </a>
+                            <ul class="flight-content">
+                                <li><i class="flaticon-clock"></i> 13:00 ----- 13h00 ----- 08:10</li>
+                                <li><i class="flaticon-calendar"></i> dec 14 - dec 22</li>
+                                <li><i class="flaticon-plane"></i> dhaka air line</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8 mb-30">
+                    <div class="flight-item">
+                        <div class="flight-thumb">
+                            <img src="assets/images/flight-2.jpg" alt="image">
+                            <h3 class="flight-overlay">form $400</h3>
+                        </div>
+                        <div class="flight-details">
+                            <a href="flight-facilities.html">
+                                <h3 class="title">Dhaka</h3>
+                                <i class="flaticon-exchange"></i>
+                                <h3 class="title">singapur</h3>
+                            </a>
+                            <ul class="flight-content">
+                                <li><i class="flaticon-clock"></i> 14:00 ----- 15h00 ----- 10:10</li>
+                                <li><i class="flaticon-calendar"></i> dec 15 - dec 30</li>
+                                <li><i class="flaticon-plane"></i> dhaka air line</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8 mb-30">
+                    <div class="flight-item">
+                        <div class="flight-thumb">
+                            <img src="assets/images/flight-3.jpg" alt="image">
+                            <h3 class="flight-overlay">form $658</h3>
+                        </div>
+                        <div class="flight-details">
+                            <a href="flight-facilities.html">
+                                <h3 class="title">Dhaka</h3>
+                                <i class="flaticon-exchange"></i>
+                                <h3 class="title">Dubai city</h3>
+                            </a>
+                            <ul class="flight-content">
+                                <li><i class="flaticon-clock"></i> 15:00 ----- 10h00 ----- 10:10</li>
+                                <li><i class="flaticon-calendar"></i> dec 09 - dec 30</li>
+                                <li><i class="flaticon-plane"></i> dhaka air line</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8 mb-30">
+                    <div class="flight-item">
+                        <div class="flight-thumb">
+                            <img src="assets/images/flight-4.jpg" alt="image">
+                            <h3 class="flight-overlay">form $479</h3>
+                        </div>
+                        <div class="flight-details">
+                            <a href="flight-facilities.html">
+                                <h3 class="title">Dhaka</h3>
+                                <i class="flaticon-exchange"></i>
+                                <h3 class="title">thailand</h3>
+                            </a>
+                            <ul class="flight-content">
+                                <li><i class="flaticon-clock"></i> 14:00 ----- 15h00 ----- 11:10</li>
+                                <li><i class="flaticon-calendar"></i> dec 14 - dec 22</li>
+                                <li><i class="flaticon-plane"></i> dhaka air line</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8 mb-30">
+                    <div class="flight-item">
+                        <div class="flight-thumb">
+                            <img src="assets/images/flight-5.jpg" alt="image">
+                            <h3 class="flight-overlay">form $350</h3>
+                        </div>
+                        <div class="flight-details">
+                            <a href="flight-facilities.html">
+                                <h3 class="title">Dhaka</h3>
+                                <i class="flaticon-exchange"></i>
+                                <h3 class="title">Canada</h3>
+                            </a>
+                            <ul class="flight-content">
+                                <li><i class="flaticon-clock"></i> 09:00 ----- 18h00 ----- 08:10</li>
+                                <li><i class="flaticon-calendar"></i> dec 15 - dec 30</li>
+                                <li><i class="flaticon-plane"></i> dhaka air line</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8 mb-30">
+                    <div class="flight-item">
+                        <div class="flight-thumb">
+                            <img src="assets/images/flight-6.jpg" alt="image">
+                            <h3 class="flight-overlay">form $590</h3>
+                        </div>
+                        <div class="flight-details">
+                            <a href="flight-facilities.html">
+                                <h3 class="title">Dhaka</h3>
+                                <i class="flaticon-exchange"></i>
+                                <h3 class="title">london</h3>
+                            </a>
+                            <ul class="flight-content">
+                                <li><i class="flaticon-clock"></i> 13:00 ----- 13h00 ----- 08:10</li>
+                                <li><i class="flaticon-calendar"></i> dec 09 - dec 30</li>
+                                <li><i class="flaticon-plane"></i> dhaka air line</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- flight-section end -->
+    <!-- client-section start -->
+    <section class="client-section pt-120 pb-120">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <div class="section-header">
+                        <h2 class="section-title">our happy passengers</h2>
+                        <span class="title-border title-border-center"></span>
+                        <p> Augue eros ultrices amet, viverra nec nunc massa magna. Sit a, lacus mattis odio sem
+                            placerat ante, lacus aliquam sit id ligula est ante fringilla </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="client-slider-area">
+                        <div class="client-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="client-item d-flex flex-wrap">
+                                        <div class="client-thumb">
+                                            <img src="assets/images/client-1.png" alt="image">
+                                        </div>
+                                        <div class="client-content">
+                                            <h3 class="title">robin hook</h3>
+                                            <span>business man</span>
+                                        </div>
+                                        <p>Cursus nunc fames rutruetnuutate nec ullamcorper nibh eget. Viverra vitae ac
+                                            ultricies eget, et donec sed bibendum. Ornare enim euulum in magna maecenas
+                                        </p>
+                                        <div class="meta-ratings">
+                                            <a href="#">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <span>3.0</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="client-item d-flex flex-wrap">
+                                        <div class="client-thumb">
+                                            <img src="assets/images/client-2.png" alt="image">
+                                        </div>
+                                        <div class="client-content">
+                                            <h3 class="title">martin jobs</h3>
+                                            <span>business man</span>
+                                        </div>
+                                        <p>Cursus nunc fames rutruetnuutate nec ullamcorper nibh eget. Viverra vitae ac
+                                            ultricies eget, et donec sed bibendum. Ornare enim euulum in magna maecenas
+                                        </p>
+                                        <div class="meta-ratings">
+                                            <a href="#">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <span>4.5</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="client-item d-flex flex-wrap">
+                                        <div class="client-thumb">
+                                            <img src="assets/images/client-3.png" alt="image">
+                                        </div>
+                                        <div class="client-content">
+                                            <h3 class="title">zihad kuna</h3>
+                                            <span>business man</span>
+                                        </div>
+                                        <p>Cursus nunc fames rutruetnuutate nec ullamcorper nibh eget. Viverra vitae ac
+                                            ultricies eget, et donec sed bibendum. Ornare enim euulum in magna maecenas
+                                        </p>
+                                        <div class="meta-ratings">
+                                            <a href="#">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <span>5.0</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="navi d-flex justify-content-between">
+                            <span class="navi-prev"><i class="far fa-chevron-left"></i>
+                            </span>
+                            <span class="navi-next"><i class="far fa-chevron-right"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- client-section end -->
+
+
+    <!-- blog-section start -->
+    <section class="blog-section pt-120 pb-120">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <div class="section-header">
+                        <h2 class="section-title">our recent post</h2>
+                        <span class="title-border title-border-center"></span>
+                        <p> Augue eros ultrices amet, viverra nec nunc massa magna. Sit a, lacus mattis odio sem
+                            placerat ante, lacus aliquam sit id ligula est ante fringilla </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-30-none">
+                <div class="col-lg-4 col-md-6 col-sm-8 text-center mb-30">
+                    <div class="blog-item">
+                        <div class="blog-thumb">
+                            <img src="assets/images/blog-1.jpg" alt="image">
+                        </div>
+                        <div class="blog-content">
+                            <h3 class="title"><a href="blog-details.html">Gravida Vitae soci Lectus Velit Risus Ipsum
+                                    Proin.</a> </h3>
+                            <p>Scelerisque cras ipsum platea poberen nullam magna vitae. Proin midiam amet at in.
+                                acsuscipit morbi </p>
+                        </div>
+                        <div class="blog-footer d-flex flex-wrap justify-content-between">
+                            <div class="meta-date">
+                                <a href="#"><i class="far fa-calendar"></i> <span>05 may 2019 </span></a>
+                            </div>
+                            <div class="meta-writer">
+                                <div class="count-view">
+                                    <i class="fas fa-eye"></i> 252 lượt xem
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8 text-center mb-30">
+                    <div class="blog-item">
+                        <div class="blog-thumb">
+                            <img src="assets/images/blog-2.jpg" alt="image">
+                        </div>
+                        <div class="blog-content">
+                            <h3 class="title"><a href="blog-details.html">Porttitor Inceptos Saente Curabitur Arcu
+                                    Lectus</a> </h3>
+                            <p>Scelerisque cras ipsum platea poberen nullam magna vitae. Proin midiam amet at in.
+                                acsuscipit morbi </p>
+                        </div>
+                        <div class="blog-footer d-flex flex-wrap justify-content-between">
+                            <div class="meta-date">
+                                <a href="#"><i class="far fa-calendar"></i> <span>05 may 2019 </span></a>
+                            </div>
+                            <div class="meta-writer">
+                                <div class="count-view">
+                                    <i class="fas fa-eye"></i> 252 lượt xem
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8 text-center mb-30">
+                    <div class="blog-item">
+                        <div class="blog-thumb">
+                            <img src="assets/images/blog-3.jpg" alt="image">
+                        </div>
+                        <div class="blog-content">
+                            <h3 class="title"><a href="blog-details.html">Metusnibh Donec Etduin Platea Dictumnullam</a>
+                            </h3>
+                            <p>Scelerisque cras ipsum platea poberen nullam magna vitae. Proin midiam amet at in.
+                                acsuscipit morbi </p>
+                        </div>
+                        <div class="blog-footer d-flex flex-wrap justify-content-between">
+                            <div class="meta-date">
+                                <a href="#"><i class="far fa-calendar"></i> <span>05 may 2019 </span></a>
+                            </div>
+                            <div class="meta-writer">
+                                <div class="count-view">
+                                    <i class="fas fa-eye"></i> 252 lượt xem
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- blog-section end -->
+
+
+
+    <!-- footer-section start -->
+    <footer class="footer-section pt-120 pb-120">
+        <div class="container">
+            <div class="row mb-30-none">
+                <div class="col-lg-3 col-sm-6 mb-30">
+                    <div class="footer-widget widget-menu">
+                        <img src="./assets/images/logo.png" class=" logo-footer d-block" alt="">
+                        <div class="about mt-3">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus officiis assumenda
+                                ducimus mollitia eveniet a, beatae iure. Facere, possimus autem?</p>
+                        </div>
+                        <ul class="footer-social">
+                            <li><a href="#0"><i class="fab fa-facebook-f"></i></a></li>
+                            <!-- <li><a href="#0" class="active"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#0"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#0"><i class="fab fa-linkedin-in"></i></a></li> -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-6 mb-30">
+                    <div class="footer-widget widget-menu">
+                        <h3 class="widget-title">company</h3>
+                        <ul>
+                            <li><a href="#"><i class="fas fa-angle-double-right"></i>About</a></li>
+                            <li><a href="#"><i class="fas fa-angle-double-right"></i>Booking</a></li>
+                            <li><a href="#"><i class="fas fa-angle-double-right"></i>Air Line Fee</a></li>
+                            <li><a href="#"><i class="fas fa-angle-double-right"></i>Careers</a></li>
+                            <li><a href="#"><i class="fas fa-angle-double-right"></i>Partners</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-30">
+                    <div class="footer-widget widget-menu">
+                        <h3 class="widget-title">Fanpage Facebook</h3>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-30">
+                    <div class="footer-widget widget-menu">
+                        <h3 class="widget-title">Bản đồ</h3>
+                        <div class="map">
+                            <iframe frameborder="0" width="100%" height="100%" id="ban-do"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.5270761173288!2d106.64501431382244!3d10.770884262243579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ebe05e0b98b%3A0xde735e3d3718c480!2zNTA2LzQ5LzcgTOG6oWMgTG9uZyBRdcOibiwgUGjGsOG7nW5nIDUsIFF14bqtbiAxMSwgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1547541817201"
+                            style="border: 0;" width="auto"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="privacy-area wow fadeIn" data-wow-duration="0.5" data-wow-delay="0.5s">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>Copyright © 2019 . All rights reserved </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer-section end -->
+
+
+
+
+
+    <!-- jquery -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <!-- migarate-jquery -->
+    <script src="assets/js/jquery-migrate-3.0.0.js"></script>
+    <!-- bootstrap js -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- magnific-popup js -->
+    <script src="assets/js/jquery.magnific-popup.js"></script>
+    <!-- isotope -->
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <!-- nice-select js-->
+    <script src="assets/js/jquery.nice-select.js"></script>
+    <!-- swipper js -->
+    <script src="assets/js/swiper.min.js"></script>
+    <!-- waypoints js link -->
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <!-- counterup js -->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!-- paroller js -->
+    <script src="assets/js/jquery.paroller.min.js"></script>
+    <!-- datepicker js -->
+    <script src="assets/js/datepicker.min.js"></script>
+    <!-- datepicker js -->
+    <script src="assets/js/datepicker.en.js"></script>
+    <!-- main -->
+    <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>
