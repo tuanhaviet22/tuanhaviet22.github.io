@@ -975,7 +975,7 @@ span{
 }
 @media only screen and (min-width :485px) and (max-width : 599px){
     .site-logo img{
-        width: 17%;
+        width: 17% !important;
     }
 }
 
