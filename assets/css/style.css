@@ -2837,6 +2837,11 @@ blockquote .quote-content {
 		margin-bottom: 20px;
 	}
 }
+@media only screen and (max-width : 768px){
+    .navbar-expand-lg{
+        margin-top: 13px;
+    }
+}
 
 .comment-item:last-child{
     margin-bottom: 0;
@@ -4336,6 +4341,7 @@ td{
     .count-view{
         padding-left: 10px;
     }
+  
 }
 
 .recent-news .title{
