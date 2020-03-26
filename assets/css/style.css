@@ -2192,7 +2192,7 @@ span{
 
 .blog-section{
     background-color: #fafafa;
-    padding-top: 80px;
+    padding-top: 40px;
 }
 
 .client-section{
@@ -4342,11 +4342,19 @@ footer .map{
     height: 13rem;
 }
 .blog-section h3.name-cate{
-    font-size: 25px;
+    font-size: 30px;
     margin: 2rem 0;
 }
 .brand-section{
     padding: 80px 0 ;
+}
+.brand-section .item{
+    box-shadow: 0px 0px 9.5px 0.5px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    transition: 0.7s;
+}
+.brand-section .item:hover{
+    box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.1);
 }
 .brand-homepage .brand-item{
     border-right: unset;
@@ -4378,6 +4386,12 @@ footer .map{
     border: 1px solid #ddd;
     cursor: pointer;
     padding: 10px 0 ;
+    box-shadow: 0px 0px 9.5px 0.5px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    transition: 0.7s;
+}
+.payment-method .info .active{
+    border-color: var(--main-color);
 }
 #myTabContent{
     border-left: 1px solid #ddd;
