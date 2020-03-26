@@ -4351,6 +4351,10 @@ td{
     .brand-section .item{
         margin: 10px 0;
     }
+    .payment-method-2 h3 i{
+        font-size: 30px;
+        margin-right: 1px !important;
+    }
 }
 @media only screen and (max-width : 376px){
     .blog-footer--style .meta-writer{
@@ -4566,7 +4570,7 @@ footer .map{
     font-weight: bold;
     color: black;
 }
-.payment-method-2 h3 span::before{
+/* .payment-method-2 h3 span::before{
     position: absolute;
     content: "";
     width: 5px;
@@ -4574,8 +4578,8 @@ footer .map{
     background-color: var(--main-color);
     left: -15px;
     transform: rotate(15deg);
-}
-.payment-method-2 h3::after{
+} */
+/* .payment-method-2 h3::after{
     content: "";
     position: absolute;
     right: 15px;
@@ -4585,9 +4589,13 @@ footer .map{
     background: var(--main-color);
     z-index: -1;
     margin-left: -95px;
-}
+} */
 .payment-method-2{
     padding: 40px 0;
+}
+.payment-method-2 h3 i{
+    font-size: 30px;
+    margin-right: 1rem;
 }
 .payment-method-2 .list-steps .item{
     position: relative;
@@ -4595,7 +4603,7 @@ footer .map{
     border-right: 0;
     padding: 10px 0 10px 40px;
     margin-bottom: 10px;
-    border-radius: 50px 0 0 50px;
+    border-radius: 12px;
     background-color: #ececec;
 }
 .payment-method-2 .list-steps .item .num{
@@ -4614,21 +4622,33 @@ footer .map{
     display: flex;
 }
 .payment-method-2 .list-methods .item .image{
-    width: 30%;
+    width: 21%;
     opacity: 0.6;
     padding: 10px;
 }
 .payment-method-2 .list-methods .item .title{
     text-transform: uppercase;
     font-weight: bold;
+    cursor: pointer;
+}
+.payment-method-2 .list-methods .item .title i{
+    transition: 0.5s;
+
+}
+.payment-method-2 .list-methods .item .title .show{
+    transform: rotate(180deg);
 }
 .payment-method-2 .list-methods .item p{
     font-size: 14px;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+    transition: 0.6s;
+}
+.payment-method-2 .list-methods .item .show-all{
+    display: unset;
 }
 .payment-method-2 .list-methods .detail{
     margin-left: 15px;
