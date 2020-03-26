@@ -419,7 +419,6 @@ $('.click-show-more').click(function(){
   let panel = $(this).parent().find('.panel p');
   let icon = $(this).find('i')
   let status = $(this).data('status')
-    console.log(status);  
   if(!status){
     icon.addClass('show')
     panel.addClass('show-all');
