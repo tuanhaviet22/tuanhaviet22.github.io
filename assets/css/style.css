@@ -903,6 +903,24 @@ span{
     .navbar-expand-lg{
         margin-top: 24px;
     }
+    .payment-method-2 h3 span{
+        font-size: 20px !important;
+    }
+    .payment-method-2 h3::after{
+        display: none;
+    }
+    .payment-method-2 .list-methods .item .image{
+        width: 90% !important;
+    }
+    .payment-method-2 .list-methods .item .title{
+        font-size: 14px;        
+    }
+    .payment-method-2 .list-methods .item p{
+        font-size: 12px !important;
+    }
+    .payment-method-2 .list-methods .item{
+        padding : 5px 0 ;
+    }
 }
 @media (max-width: 991px) {
     .site-logo img{
@@ -4483,3 +4501,140 @@ footer .map{
         width: 20%;
     }
 }
+
+.sale-news-block .item .news-detail a{
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;    
+}
+.sale-news-block .item .news-detail a:hover{
+    color: var(--main-color);
+    font-size: 16px;
+}
+.sale-news-block .item  .news-detail{
+    padding: 10px;
+    background-color: white;
+}
+.sale-news-block .item  .news-detail p{
+    font-size: 14px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.sale-news-block{
+    padding : 40px 0;
+    background-color: var(--main-color);
+    
+}
+.sale-news-block .main{
+    position: relative;
+}
+.sale-news-block .item{
+    border-radius: 12px;
+    /* box-shadow: rgba(0, 0, 0, 0.14) 0px 1px 1px 1px; */
+    /* border: 1px solid #ddd; */
+    margin : 2px 0 ;
+    overflow: hidden;
+}
+.sale-news-block h2{
+    color: white;
+}
+.sale-news-block .title-border, .sale-news-block .title-border::after , .sale-news-block .title-border::before{
+    background-color: white;
+}
+.sale-news-block .navi {
+    top: 43%;
+}
+.sale-news-block .navi-prev{
+    margin-left: -20px;
+}
+.sale-news-block  .flight-thumb a{
+    display: block;
+}
+.sale-news-block .swiper-pagination-bullet{
+    margin: 5px;
+}
+.sale-news-block .swiper-pagination-bullet-active{
+    background-color: white;
+}
+
+.payment-method-2 h3 span{
+    position: relative;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}
+.payment-method-2 h3 span::before{
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 35px;
+    background-color: var(--main-color);
+    left: -15px;
+    transform: rotate(15deg);
+}
+.payment-method-2 h3::after{
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 10%;
+    width: 109px;
+    height: 2px;
+    background: var(--main-color);
+    z-index: -1;
+    margin-left: -95px;
+}
+.payment-method-2{
+    padding: 40px 0;
+}
+.payment-method-2 .list-steps .item{
+    position: relative;
+    border: 2px solid #fff;
+    border-right: 0;
+    padding: 10px 0 10px 40px;
+    margin-bottom: 10px;
+    border-radius: 50px 0 0 50px;
+    background-color: #ececec;
+}
+.payment-method-2 .list-steps .item .num{
+    position: absolute;
+    left: 15px;
+    top: -5px;
+    font-weight: 700;
+    font-size: 32px;
+    color: #e90003;
+}
+.payment-method-2 .list-steps .item .text {
+    font-size: 14px;
+    color: black;
+}
+.payment-method-2 .list-methods .item{
+    display: flex;
+}
+.payment-method-2 .list-methods .item .image{
+    width: 30%;
+    opacity: 0.6;
+    padding: 10px;
+}
+.payment-method-2 .list-methods .item .title{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.payment-method-2 .list-methods .item p{
+    font-size: 14px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.payment-method-2 .list-methods .detail{
+    margin-left: 15px;
+}
+.payment-method-2 .list-methods .item{
+    border-bottom: 1px solid #ddd;
+    margin-top:10px;
+}
+

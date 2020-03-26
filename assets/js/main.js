@@ -239,6 +239,37 @@ var swiper = new Swiper('.brand-wrapper', {
     },
   }
 });
+var sale_news = new Swiper('.sale-news', {
+  slidesPerView: 4,
+  loop: true,
+  spaceBetween : 20,
+  autoplay: {
+    speeds: 1000,
+    delay: 2000,
+  },
+  breakpoints: {
+    1024 :{
+      slidesPerView: 4
+    },
+    991: {
+      slidesPerView: 3,
+    },
+    767: {
+      slidesPerView: 2,
+    },
+    575: {
+      slidesPerView: 1,
+    },
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+  },
+  navigation: {
+    nextEl: '.navi-next',
+    prevEl: '.navi-prev',
+  },
+});
   
 $(window).on('load', function() {
   // filter functions
