@@ -4256,10 +4256,17 @@ td{
     .banner-section {
         height: 500px;
     }
+    .payment-method .col-md-2{
+        width: 12.5%;
+        padding-left: 10px;
+        padding-right: 0;
+        flex: 0 0 12.5%;
+    }
 }
 .logo-footer{
     margin : 0 auto ;
 }
+
 .footer-section .about p{
     font-size: 15px;    
 }
@@ -4355,4 +4362,30 @@ footer .map{
     display: flex;
     justify-content: center;
     border: 1px solid #e8e8e8;
+}
+
+.payment-method #home , .payment-method #profile , #contact{
+    padding: 10px 25px;
+    height: auto;
+    font-size: 15px;
+}
+.payment-method .info .image img {
+    width: 100px;
+    height: 40px;
+}
+.payment-method .info .image {
+    border: 1px solid #ddd;
+    cursor: pointer;
+    padding: 10px 0 ;
+}
+#myTabContent{
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.pd-left-20{
+    padding-left: 20px;
+}
+.payment-method{
+    padding: 80px 0;
 }
