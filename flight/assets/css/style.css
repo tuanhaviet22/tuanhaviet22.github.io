@@ -4635,6 +4635,9 @@ footer .map{
     opacity: 0.6;
     padding: 10px;
 }
+.payment-method-2 .list-methods .item .image i{
+    font-size: 45px;
+}
 .payment-method-2 .list-methods .item .title{
     text-transform: uppercase;
     font-weight: bold;
