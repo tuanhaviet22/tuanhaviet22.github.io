@@ -32,4 +32,34 @@
     margin-bottom: 3rem;
   }
 }
+
+.single-blog-style-one h3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.justify-content-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.count-view {
+  color: black;
+  opacity: 0.6;
+  font-size: 14px;
+}
+
+.count-view i {
+  margin-right: 3px;
+}
 /*# sourceMappingURL=custom.css.map */

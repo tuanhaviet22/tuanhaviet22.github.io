@@ -32,3 +32,20 @@
         margin-bottom: 3rem;
     }
 }
+.single-blog-style-one h3{
+    @include line-clamp(2)
+}
+.d-flex{
+    display: flex;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.count-view{
+    color: black;
+    opacity: 0.6;
+    font-size: 14px;
+    i{
+        margin-right: 3px;
+    }
+}
