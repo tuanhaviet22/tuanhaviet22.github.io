@@ -21,3 +21,14 @@
 .single-blog-style-one p{
     @include line-clamp(3);
 }
+.cs-list{
+    margin-top: -75px;
+}
+@media only screen and (max-width : 728px){
+    .d-none-mb{
+        display: none !important;
+    }
+    .header-top .logo{
+        margin-bottom: 3rem;
+    }
+}

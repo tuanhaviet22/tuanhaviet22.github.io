@@ -19,4 +19,17 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.cs-list {
+  margin-top: -75px;
+}
+
+@media only screen and (max-width: 728px) {
+  .d-none-mb {
+    display: none !important;
+  }
+  .header-top .logo {
+    margin-bottom: 3rem;
+  }
+}
 /*# sourceMappingURL=custom.css.map */
