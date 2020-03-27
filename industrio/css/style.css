@@ -38,6 +38,7 @@
 * 1. imported styles 
 ***************************/
 @import url(https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i|Rubik:300,300i,400,400i,500,500i,700,700i|Playfair+Display:700i);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 @import url(bootstrap.min.css);
 @import url(bootstrap-select.min.css);
 @import url(owl.carousel.css);
@@ -53,11 +54,12 @@
 @import url(../plugins/bands-icon/style.css);
 @import url(../plugins/fontawesome-5/css/fontawesome-all.min.css);
 @import url(../plugins/industrio-icon/style.css);
+@import url(./custom.css);
 /************************** 
 * 2. miscelnious styles 
 ***************************/
 body {
-  font-family: 'Rubik';
+  font-family: 'Open Sans', sans-serif;
   color: #555555;
   font-size: 16px;
   line-height: 27px;
@@ -134,7 +136,7 @@ a:active {
   color: #262626;
   font-weight: 600;
   font-size: 32px;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
 }
 .sec-title h3:after {
   display: inline-block;
@@ -322,7 +324,7 @@ body.active-preloader-ovh {
   background: #fe5a0e;
   color: #ffffff;
   font-size: 16px;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   padding: 26.5px 39px;
   -webkit-transition: all .4s ease;
@@ -413,7 +415,7 @@ body.active-preloader-ovh {
 }
 .header-navigation ul.navigation-box > li > a {
   padding: 0;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   color: #262626;
   font-size: 16px;
   -webkit-transition: all .4s ease;
@@ -598,7 +600,7 @@ body.active-preloader-ovh {
   font-size: 14px;
 }
 .header-top .single-header-right-info .text-box h3 {
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   letter-spacing: .01em;
   color: #ffffff;
@@ -1173,7 +1175,7 @@ body.active-preloader-ovh {
   margin-right: 0;
 }
 .slider-home-one .content h2 {
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   color: #ffffff;
   font-size: 45px;
   line-height: 60px;
@@ -1218,7 +1220,7 @@ body.active-preloader-ovh {
   width: 205px;
   height: 54px;
   line-height: 54px;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 500;
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
@@ -1336,7 +1338,7 @@ body.active-preloader-ovh {
   font-weight: 700;
   line-height: 1.3em;
   padding-bottom: 20px;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   color: #ffffff;
   font-size: 45px;
   font-weight: 600;
@@ -1467,7 +1469,7 @@ body.active-preloader-ovh {
   vertical-align: middle;
   text-align: center;
   padding: 14px 44px;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 500;
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
@@ -1613,7 +1615,7 @@ body.active-preloader-ovh {
 .hidden-sidebar .sidebar-content .navigation-box li a {
   color: #FFFFFF;
   font-size: 20px;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
@@ -1709,7 +1711,7 @@ footer.site-footer .footer-widget .title h3 {
   font-size: 18px;
   color: #262626;
   font-weight: 600;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
 }
 footer.site-footer .footer-widget p {
   font-size: 15px;
@@ -1743,7 +1745,7 @@ footer.site-footer .footer-widget.about-widget {
 footer.site-footer .footer-widget.about-widget h3 {
   font-size: 18px;
   font-weight: 600;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   margin-top: 45px;
   margin-bottom: 20px;
 }
@@ -1755,7 +1757,7 @@ footer.site-footer .footer-widget.subscribe-widget h3 {
   font-size: 18px;
   font-weight: 600;
   color: #fe5a0e;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   line-height: 1em;
   margin-bottom: 15px;
 }
@@ -1837,7 +1839,7 @@ footer.site-footer .bottom-footer p {
   margin: 0;
 }
 .award-winning .title h3 {
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   color: #FFFFFF;
   font-size: 32px;
@@ -1961,7 +1963,7 @@ footer.site-footer .bottom-footer p {
   font-size: 18px;
   line-height: 27px;
   color: #262626;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
@@ -1978,7 +1980,7 @@ footer.site-footer .bottom-footer p {
 }
 .blog-style-one .single-blog-style-one a.read-more {
   color: #FE5A0E;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
@@ -2017,7 +2019,7 @@ footer.site-footer .bottom-footer p {
   font-size: 18px;
   line-height: 27px;
   font-weight: 600;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
 }
 .blog-style-one .blog-list-sidebar .single-blog-list p {
   color: #888888;
@@ -2049,7 +2051,7 @@ footer.site-footer .bottom-footer p {
   color: #FE5A0E;
   font-size: 16px;
   font-weight: 600;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   letter-spacing: .01em;
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
@@ -2100,7 +2102,7 @@ footer.site-footer .bottom-footer p {
   margin: 0;
   font-size: 28px;
   font-weight: 600;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   color: #262626;
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
@@ -2116,7 +2118,7 @@ footer.site-footer .bottom-footer p {
 .single-blog-style-two .text-box .meta-info a {
   color: #555555;
   font-size: 15px;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
 }
@@ -2143,7 +2145,7 @@ footer.site-footer .bottom-footer p {
   height: 54px;
   text-align: center;
   color: #fff;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-weight: 600;
   line-height: 54px;
@@ -2289,7 +2291,7 @@ footer.site-footer .bottom-footer p {
   margin: 0;
   color: #262626;
   font-size: 24px;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
 }
 .blog-details-page .title-blog-details-page h3 span {
@@ -2352,7 +2354,7 @@ footer.site-footer .bottom-footer p {
   font-size: 18px;
   color: #150A33;
   font-weight: 600;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   margin-bottom: 15px;
 }
 .blog-details-page .comment-box-wrapper .single-comment-box .text-box p {
@@ -2444,7 +2446,7 @@ footer.site-footer .bottom-footer p {
   margin-left: auto;
   margin-right: auto;
   color: #fff;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
 }
 .blog-details-page .comment-form button.thm-btn:before {
@@ -2475,7 +2477,7 @@ footer.site-footer .bottom-footer p {
 }
 .single-testimonials-style-one h3 {
   font-size: 20px;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   color: #252525;
   font-weight: 600;
   margin-bottom: 15px;
@@ -2518,7 +2520,7 @@ footer.site-footer .bottom-footer p {
   color: #545454;
   font-size: 18px;
   font-weight: 600;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
 }
 .single-testimonials-style-one .name-box .text-box span {
   font-size: 16px;
@@ -2608,7 +2610,7 @@ footer.site-footer .bottom-footer p {
   color: #FFFFFF;
   font-size: 22px;
   font-weight: 600;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
 }
 .single-testimonial-style-two .client-info-box .text-box p {
   margin: 0;
@@ -2820,7 +2822,7 @@ footer.site-footer .bottom-footer p {
   color: #252525;
   font-size: 24px;
   font-weight: 600;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   margin-bottom: 5px;
 }
 .testimonials-style-four .single-testimonial-style-four .top-box .text-box h4 {
@@ -2866,7 +2868,7 @@ footer.site-footer .bottom-footer p {
   font-size: 28px;
   color: #fff;
   font-weight: 600;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
 }
 .rqa-box h3 span {
   color: #FE5A0E;
@@ -2939,7 +2941,7 @@ footer.site-footer .bottom-footer p {
   background: #FE5A0E;
   color: #FFFFFF;
   font-size: 16px;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   line-height: 44px;
 }
@@ -2984,7 +2986,7 @@ footer.site-footer .bottom-footer p {
   font-size: 18px;
   color: #262626;
   font-weight: 600;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
 }
 .faq-style-one .accrodion-grp .accrodion .accrodion-title h4:before {
   content: "\f063";
@@ -3026,7 +3028,7 @@ footer.site-footer .bottom-footer p {
   color: #FE5A0E;
   font-size: 16px;
   font-weight: 600;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   letter-spacing: .01em;
   display: inline-block;
   margin-top: 35px;
@@ -3059,7 +3061,7 @@ footer.site-footer .bottom-footer p {
   font-size: 18px;
   line-height: 1.2em;
   font-weight: 600;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   padding: 17px 0;
   z-index: 4;
   position: relative;
@@ -3170,7 +3172,7 @@ footer.site-footer .bottom-footer p {
 }
 .single-team-style-two .text-box h3 {
   color: #262626;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   font-weight: 600;
   margin-top: 30px;
@@ -3260,7 +3262,7 @@ footer.site-footer .bottom-footer p {
 }
 .feature-style-one .single-feature-style-one .text-box h3 {
   font-size: 24px;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   color: #262626;
 }
@@ -3310,7 +3312,7 @@ footer.site-footer .bottom-footer p {
   font-size: 22px;
   line-height: 27px;
   color: #252525;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   letter-spacing: -0.025em;
   margin-top: 18px;
@@ -3348,7 +3350,7 @@ footer.site-footer .bottom-footer p {
   margin: 0;
 }
 .contact-info-style-one .title h3 {
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   color: #FFFFFF;
   font-size: 32px;
@@ -3409,13 +3411,13 @@ footer.site-footer .bottom-footer p {
 }
 .contact-info-style-one .contact-infos .single-contact-infos .text-box h3 {
   font-size: 28px;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   color: #FE5A0E;
   font-weight: 600;
 }
 .contact-info-style-one .contact-infos .single-contact-infos .text-box p {
   font-size: 18px;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   color: #FFFFFF;
 }
 
@@ -3427,7 +3429,7 @@ footer.site-footer .bottom-footer p {
   margin: 0;
   font-size: 24px;
   color: #262626;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 500;
   margin-bottom: 30px;
   margin-top: 10px;
@@ -3498,7 +3500,7 @@ footer.site-footer .bottom-footer p {
   background: #FE5A0E;
   color: #FFFFFF;
   font-size: 16px;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   line-height: 45px;
 }
@@ -3537,7 +3539,7 @@ footer.site-footer .bottom-footer p {
 .contact-info-style-two .left-content .inner h3 {
   font-size: 36px;
   line-height: 44px;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   color: #FFFFFF;
 }
@@ -3553,7 +3555,7 @@ footer.site-footer .bottom-footer p {
   color: #FFFFFF;
   font-size: 18px;
   font-weight: 600;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   margin-top: 25px;
 }
 .contact-info-style-two .left-content .inner .social {
@@ -3579,7 +3581,7 @@ footer.site-footer .bottom-footer p {
   color: #fff;
   font-size: 18px;
   font-weight: 600;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -3610,7 +3612,7 @@ footer.site-footer .bottom-footer p {
 }
 .inner-banner h3 {
   font-size: 36px;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   color: #FFFFFF;
   margin-bottom: 5px;
@@ -3676,7 +3678,7 @@ footer.site-footer .bottom-footer p {
   font-size: 80px;
   color: #FE5A0E;
   font-weight: 600;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
 }
 .error-404 .box .content p {
   font-size: 36px;
@@ -3764,7 +3766,7 @@ footer.site-footer .bottom-footer p {
   font-size: 80px;
   color: #FFFFFF;
   font-weight: 600;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   margin-bottom: 20px;
 }
 .coming-soon-block .box .content h3 span {
@@ -3800,7 +3802,7 @@ footer.site-footer .bottom-footer p {
   margin: 0;
   color: #FE5A0E;
   font-size: 40px;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   line-height: 1em;
   display: block;
@@ -3821,7 +3823,7 @@ footer.site-footer .bottom-footer p {
   background: #FE5A0E;
   font-size: 16px;
   font-weight: 600;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   color: #fff;
   width: 205px;
   height: 54px;
@@ -3912,7 +3914,7 @@ footer.site-footer .bottom-footer p {
   color: #262626;
   font-size: 16px;
   font-weight: 600;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   cursor: pointer;
   line-height: 25px;
   position: relative;
@@ -3979,7 +3981,7 @@ footer.site-footer .bottom-footer p {
   font-size: 14px;
 }
 .portfolio-style-two .single-portfolio-style-two .img-box .overlay .box .content h3 {
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-weight: 600;
   color: #fff;
@@ -4030,7 +4032,7 @@ footer.site-footer .bottom-footer p {
   color: #252525;
   font-size: 30px;
   font-weight: 600;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
 }
 .project-details .project-details-content p {
   font-size: 15px;
@@ -4064,7 +4066,7 @@ footer.site-footer .bottom-footer p {
 .project-details .project-details-content ul.meta-info li span {
   color: #252525;
   font-size: 15px;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 500;
   margin-right: 5px;
 }
@@ -4103,7 +4105,7 @@ footer.site-footer .bottom-footer p {
   font-size: 20px;
   letter-spacing: .01em;
   font-weight: 600;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   color: #262626;
   margin: 0;
   margin-left: auto;
@@ -4132,7 +4134,7 @@ footer.site-footer .bottom-footer p {
   margin: 0;
   color: #FE5A0E;
   font-size: 20px;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   margin-bottom: 15px;
 }
@@ -4227,7 +4229,7 @@ footer.site-footer .bottom-footer p {
   font-size: 18px;
   line-height: 25px;
   font-weight: 600;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
 }
 .single-service-style-two .hover {
   position: absolute;
@@ -4278,7 +4280,7 @@ footer.site-footer .bottom-footer p {
   font-size: 18px;
   line-height: 25px;
   font-weight: 600;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
 }
 .single-service-style-two .hover .text-box p {
   margin: 0;
@@ -4290,7 +4292,7 @@ footer.site-footer .bottom-footer p {
 }
 .single-service-style-two .hover .text-box a.more {
   color: #FE5A0E;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   font-size: 13px;
   font-weight: 600;
   line-height: 1em;
@@ -4404,7 +4406,7 @@ footer.site-footer .bottom-footer p {
 }
 .single-service-style-three .text-box .inner h3 {
   font-size: 24px;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   margin-top: 25px;
   margin-bottom: 15px;
@@ -4419,7 +4421,7 @@ footer.site-footer .bottom-footer p {
 .single-service-style-three .text-box .inner a.more {
   font-size: 15px;
   font-weight: 600;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   color: #FE5A0E;
   display: block;
   margin-top: 10px;
@@ -4520,7 +4522,7 @@ footer.site-footer .bottom-footer p {
   color: #FFFFFF;
   font-weight: 300;
   font-size: 28px;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   line-height: 1.2em;
   margin: 0;
   margin-top: 15px;
@@ -4534,7 +4536,7 @@ footer.site-footer .bottom-footer p {
   background: #FE5A0E;
   color: #fff;
   font-size: 16px;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   display: inline-block;
   line-height: 38px;
@@ -4675,7 +4677,7 @@ footer.site-footer .bottom-footer p {
   font-size: 28px;
   color: #252525;
   font-weight: 600;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
 }
 .service-details-page .service-details-content p {
   font-size: 16px;
@@ -4685,7 +4687,7 @@ footer.site-footer .bottom-footer p {
 .service-details-page .service-details-content h4 {
   font-size: 24px;
   color: #252525;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
 }
 .service-details-page .service-details-content ul.list-items {
@@ -4744,7 +4746,7 @@ footer.site-footer .bottom-footer p {
   font-size: 32px;
   color: #262626;
   font-weight: 600;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
 }
 .about-style-one .about-content h3 span {
   color: #FE5A0E;
@@ -4804,7 +4806,7 @@ footer.site-footer .bottom-footer p {
   font-size: 16px;
   text-align: center;
   font-weight: 600;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   line-height: 54px;
   width: 295px;
   color: #fff;
@@ -4842,7 +4844,7 @@ footer.site-footer .bottom-footer p {
 .about-style-two .about-content h3 {
   margin: 0;
   font-size: 32px;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   font-size: 32px;
   font-weight: 600;
   color: #262626;
@@ -4871,7 +4873,7 @@ footer.site-footer .bottom-footer p {
   color: #272727;
   font-size: 18px;
   line-height: 28px;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   margin: 0;
   margin-top: 20px;
@@ -4919,7 +4921,7 @@ footer.site-footer .bottom-footer p {
   color: #fff;
   background: #FE5A0E;
   font-size: 16px;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   display: inline-block;
   max-width: 295px;
@@ -4976,11 +4978,11 @@ footer.site-footer .bottom-footer p {
   color: #FFFFFF;
   font-size: 18px;
   font-weight: 500;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
 }
 .about-style-three .about-img-box .content h3 {
   margin: 0;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   font-size: 32px;
   line-height: 36px;
   color: #fff;
@@ -5007,7 +5009,7 @@ footer.site-footer .bottom-footer p {
   line-height: 38px;
   color: #252525;
   font-weight: 600;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
 }
 .about-style-three .about-content p {
@@ -5024,7 +5026,7 @@ footer.site-footer .bottom-footer p {
   line-height: 45px;
   color: #fff;
   background: #FD5912;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 16px;
   text-align: center;
@@ -5137,7 +5139,7 @@ footer.site-footer .bottom-footer p {
   line-height: 1em;
   color: #FE5A0E;
   font-size: 36px;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   margin-bottom: 15px;
 }
@@ -5331,7 +5333,7 @@ footer.site-footer .bottom-footer p {
   font-size: 24px;
   color: #252525;
   font-weight: 600;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
 }
 .time-line .tab-content p {
   font-size: 16px;
@@ -5383,7 +5385,7 @@ footer.site-footer .bottom-footer p {
   font-size: 24px;
   font-weight: 600;
   color: #252525;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
 }
 .strategy-wrapper .single-strategy .text-box p {
   font-size: 15px;
@@ -5395,7 +5397,7 @@ footer.site-footer .bottom-footer p {
 .strategy-wrapper .single-strategy .text-box span {
   color: #252525;
   font-size: 24px;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
 }
 .strategy-wrapper .single-strategy.light h3, .strategy-wrapper .single-strategy.light p, .strategy-wrapper .single-strategy.light span {
@@ -5421,7 +5423,7 @@ footer.site-footer .bottom-footer p {
   color: #252525;
   font-size: 30px;
   font-weight: 600;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   margin-bottom: 10px;
 }
 .ceo-message-wrapper .ceo-message-content span {
@@ -5464,7 +5466,7 @@ footer.site-footer .bottom-footer p {
   margin: 0;
   color: #262626;
   font-size: 22px;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
 }
 .sidebar .single-sidebar .title h3:after {
@@ -5578,7 +5580,7 @@ footer.site-footer .bottom-footer p {
   letter-spacing: .01em;
   font-weight: 600;
   margin-bottom: 10px;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
 }
@@ -5683,7 +5685,7 @@ footer.site-footer .bottom-footer p {
 .sidebar .single-sidebar.broucher-sidebar a.broucher-btn {
   display: block;
   background: #F5F5F5;
-  font-family: 'Poppins';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 45px;
