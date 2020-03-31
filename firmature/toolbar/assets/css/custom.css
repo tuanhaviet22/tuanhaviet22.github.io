@@ -22,4 +22,12 @@
   font-style: italic;
   font-size: 14px !important;
 }
+
+.title-cs {
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #202020;
+  margin: 2rem 0;
+}
 /*# sourceMappingURL=custom.css.map */
