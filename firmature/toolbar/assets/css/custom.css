@@ -7,4 +7,19 @@
   width: 100%;
   height: 100%;
 }
+
+#map-contact {
+  width: 100%;
+  height: 500px;
+}
+
+#map-contact iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.quote-cs {
+  font-style: italic;
+  font-size: 14px !important;
+}
 /*# sourceMappingURL=custom.css.map */
