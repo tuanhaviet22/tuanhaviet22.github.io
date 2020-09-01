@@ -1,0 +1,200 @@
+$root-color : #FB0D45;
+$second-color : #753F65;
+$mobile : 1024px;
+$table: 768px;
+$desktop :1024px;
+
+@mixin mobile {
+    @media (max-width: #{$mobile - 1px}) {
+        @content;
+    }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+@mixin tablet {
+    @media (min-width: #{$table}) and (max-width: #{$desktop - 1px}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+@mixin xl-desktop {
+    @media (min-width: 1500px) {
+        @content;
+    }
+}
+
+
+.bg-f2 {
+    background-color: #f2f2f2;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-f1 {
+    background-color: #f1f1f1;
+}
+
+.no-focus {
+    &:focus {
+        outline: none;
+    }
+}
+.container{
+    @include desktop(){
+        min-width: 1250px;
+    }
+}
+.list-store-pagination {
+    text-align: center;
+}
+
+@mixin box-shadow {
+    border-image: initial !important;
+    -webkit-box-direction: normal !important;
+    -webkit-box-orient: horizontal !important;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 8px;
+    white-space: normal;
+}
+
+@mixin line-clamp($number) {
+    display: -webkit-box;
+    -webkit-line-clamp: $number;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.d-none-mb {
+    @include mobile() {
+        display: none !important;
+    }
+}
+
+.nd-none-mb {
+    @media only screen and (min-width: $mobile) {
+        display: none !important;
+    }
+}
+
+
+.tab-fixed-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    z-index: 90;
+    background-color: white;
+    -webkit-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    border-top: 1px solid #f0f2f5;
+
+    @include desktop() {
+        width: auto;
+        right: 0;
+        border-bottom-left-radius: 25px;
+        border-top-left-radius: 25px;
+        top: 35%;
+        display: block;
+        left: unset;
+        bottom: unset;
+        -webkit-box-shadow: -12px 2px 19px -2px rgba(0, 0, 0, 0.37);
+        -moz-box-shadow: -12px 2px 19px -2px rgba(0, 0, 0, 0.37);
+        box-shadow: -12px 2px 19px -2px rgba(0, 0, 0, 0.37);
+    }
+
+    .item {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 0%;
+        flex: 1 1 0%;
+        text-decoration: none;
+        color: black;
+
+        @include desktop() {
+            display: block;
+            padding: 8px;
+            border-top: 1px solid #f2f2f2;
+
+            &:first-child {
+                border-top: none;
+            }
+        }
+
+        .block {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            height: 60px;
+
+            .icon {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                text-align: center;
+                width: 36px;
+                height: 36px;
+                margin: 0px;
+
+                img {
+                    width: 35px;
+                }
+            }
+
+            .title {
+                font-size: 11px;
+                height: 16px;
+                line-height: 16px;
+                width: 100%;
+                text-align: center;
+
+                @include desktop() {
+                    font-size: 13px;
+                    line-height: 20px;
+                    height: 20px;
+                    display: none;
+                }
+            }
+        }
+    }
+
+}
