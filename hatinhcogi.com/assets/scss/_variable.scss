@@ -198,3 +198,38 @@ input[type=number] {
     }
 
 }
+
+.view-more{
+    color: $root-color;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    margin: 2rem 0;
+    text-decoration: none;
+    &:hover{
+        color: $root-color;
+        text-decoration: none;
+    }
+    img{
+        width: 18px;
+        margin-right: 5px;
+        /* margin-top: -3px; */
+        margin-bottom: 4px;
+    }
+}
+section{
+    ._head {
+        h3 {
+            color: $root-color;
+            text-align: center;
+            font-size: 26px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .detail {
+            text-align: center;
+            color: #818181;
+            font-size: 16px;
+        }
+    }
+}

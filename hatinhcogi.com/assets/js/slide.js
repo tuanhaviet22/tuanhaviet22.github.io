@@ -21,3 +21,16 @@ var header_slide = new Swiper('.header-slide',{
         prevEl: '.h-prev',
     },
 })
+
+var sale_slide = new Swiper('.sale-slide',{
+    slidesPerView : 4,
+    spaceBetween: 15,
+    loop: true,    
+    pagination: {
+        el: '.sale-slide-pagination',      
+      },
+      navigation: {
+        nextEl: '.s-right',
+        prevEl: '.s-left',
+    },
+})
