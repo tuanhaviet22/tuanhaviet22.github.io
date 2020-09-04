@@ -45,7 +45,6 @@ header.fixed {
 
 section.menu-top {
     background-color: $root-color;
-
     ul {
         display: flex;
         margin-bottom: 0;
@@ -273,8 +272,22 @@ section.search-block {
             width: 50%;
             display: flex;
             justify-content: center;
-
-            .item {
+            .active{
+                position: relative;
+                &::after{
+                    bottom: -25px;
+                    content: "";
+                    height: 30px;
+                    width: 30px;
+                    display: block;
+                    background-color: white;
+                    position: absolute;
+                    left: 40%;
+                    transform: rotate(45deg);
+                    transition: .6s;
+                }
+            }
+            .item { 
                 margin: 0 10px;
                 color: white;
                 cursor: pointer;
@@ -294,10 +307,13 @@ section.search-block {
 section.top-local {
     padding: 2rem 0 1rem;
     background-color: #F8F8F8;
-
+    .active{
+        display: block !important;
+    }
     .block {
+        display: none;
         .item-local {
-            width: 19% !important;
+            // width: 19% !important;
             display: block;
             background: #FFFFFF 0% 0% no-repeat padding-box;
             box-shadow: 0px 2px 6px #00000029;
@@ -384,7 +400,7 @@ section.services {
 
 section.sale {
     background-color: #F8F8F8;
-    padding: 3rem 0;
+    padding: 3rem 0 4rem;
 
     
 
@@ -435,13 +451,15 @@ section.sale {
             margin-bottom: 1rem;
         }
         .slide-block {
+            .swiper-pagination{
+                margin-top: 1rem;
+            }
+            .active{
+                display: block !important;
+            }
             margin-top: 2rem;
             position: relative;
-            .sale-slide-pagination {
-                text-align: center;
-                width: 100%;
-                left: 0;
-            }
+            
 
             .sale-slide-navication {
                 position: absolute;
@@ -474,18 +492,9 @@ section.sale {
                 .s-right {}
             }
 
-            .swiper-pagination-bullet {
-                background-color: #B7B7B7;
-                margin: 0 5px;
-                transition: .6;
-            }
-
-            .swiper-pagination-bullet-active {
-                background-color: $root-color;
-            }
-
+            
             .block {
-                .sale-slide {
+                display: none;
                     .item {
                         background: #FFFFFF 0% 0% no-repeat padding-box;
                         -webkit-box-shadow: 0px 2px 6px #00000029;
@@ -541,22 +550,27 @@ section.sale {
                             }
                         }
                     }
-                }
+                
             }
         }
     }
 }
 section.store-night{
     padding: 2rem 0;
+    .swiper-pagination{
+        bottom: -25px;
+    }
     ._body{
         margin-top: 2rem;
         .list-store{
+            position: relative;
             display: flex;
             justify-content: space-between;            
             .item{
-                width: 19%;
+                width: 100%;                
+                background-color: #F31348;
                 .time{
-                    background-color: #F31348;
+                   
                     height: 50px;
                     line-height: 50px;
                     width: 100%;
@@ -565,12 +579,14 @@ section.store-night{
                     font-weight: 600;
                     text-align: center;
                 }
-                ._block{
-                    
-                    background-color: $root-color;
+                ._block{                    
+                    background-image: url('../raw/918655-amazing-desktop-wallpaper-pattern-2000x1150-for-iphone-7.png');
                     text-align: center;
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
                     position: relative;
-                    padding: 0 10px 1rem;
+                    padding: 10px 10px 1rem;
                     .name{
                         color: white;                        
                         font-size:13px;    
@@ -652,8 +668,7 @@ section.fix-services{
             display: flex;
             justify-content: space-between;
             .item{
-                border: 1px solid #E2E2E2;
-                width: 19%;                
+                border: 1px solid #E2E2E2;                              
                 .image{
                     img{
                         width: 100%;
@@ -699,4 +714,68 @@ section.fix-services{
             }
         }
     }
+}
+
+section.category-block{
+    padding: 3rem 0;
+    border-top: 8px solid $root-color;
+    .item{
+        .title{
+            color: $root-color;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: .75rem;
+        }
+        ul{
+            li{
+                list-style: none;
+                a{
+                    color: #6B6B6B;
+                    display: block;
+                    line-height: 30px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+footer{
+    background-color: #FB0D45;
+    padding: 2rem 0;
+    .info-company{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        a.name{
+            color: white;
+            text-transform: uppercase;
+            font-size : 26px;
+            font-weight: bold;
+        }
+        .line{
+            color: white;
+            font-size: 15px;
+        }
+    }
+    .link-block{
+        ul{
+            li{
+                list-style: none;
+                a{
+                    color: white;
+                    text-decoration: none;
+                    font-size: 14px;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}
+section.end-block{
+    background-color: #050613;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    font-size: 14px;
 }

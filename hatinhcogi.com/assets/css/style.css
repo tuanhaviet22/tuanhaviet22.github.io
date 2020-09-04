@@ -192,6 +192,28 @@ section ._head .detail {
   font-size: 16px;
 }
 
+.swiper-pagination-bullet {
+  background-color: #B7B7B7;
+  margin: 0 5px;
+  -webkit-transition: .6;
+  transition: .6;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #FB0D45;
+}
+
+.sale-slide-pagination {
+  text-align: center;
+  width: 100%;
+  left: 0;
+}
+
+.swiper-pagination {
+  width: 100%;
+  left: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -486,6 +508,25 @@ section.search-block .footer .list-item {
           justify-content: center;
 }
 
+section.search-block .footer .list-item .active {
+  position: relative;
+}
+
+section.search-block .footer .list-item .active::after {
+  bottom: -25px;
+  content: "";
+  height: 30px;
+  width: 30px;
+  display: block;
+  background-color: white;
+  position: absolute;
+  left: 40%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
 section.search-block .footer .list-item .item {
   margin: 0 10px;
   color: white;
@@ -505,8 +546,15 @@ section.top-local {
   background-color: #F8F8F8;
 }
 
+section.top-local .active {
+  display: block !important;
+}
+
+section.top-local .block {
+  display: none;
+}
+
 section.top-local .block .item-local {
-  width: 19% !important;
   display: block;
   background: #FFFFFF 0% 0% no-repeat padding-box;
   -webkit-box-shadow: 0px 2px 6px #00000029;
@@ -589,7 +637,7 @@ section.services .item img {
 
 section.sale {
   background-color: #F8F8F8;
-  padding: 3rem 0;
+  padding: 3rem 0 4rem;
 }
 
 section.sale ._body .icon i {
@@ -645,10 +693,12 @@ section.sale ._body .slide-block {
   position: relative;
 }
 
-section.sale ._body .slide-block .sale-slide-pagination {
-  text-align: center;
-  width: 100%;
-  left: 0;
+section.sale ._body .slide-block .swiper-pagination {
+  margin-top: 1rem;
+}
+
+section.sale ._body .slide-block .active {
+  display: block !important;
 }
 
 section.sale ._body .slide-block .sale-slide-navication {
@@ -685,29 +735,22 @@ section.sale ._body .slide-block .sale-slide-navication div i {
   color: #B7B7B7;
 }
 
-section.sale ._body .slide-block .swiper-pagination-bullet {
-  background-color: #B7B7B7;
-  margin: 0 5px;
-  -webkit-transition: .6;
-  transition: .6;
+section.sale ._body .slide-block .block {
+  display: none;
 }
 
-section.sale ._body .slide-block .swiper-pagination-bullet-active {
-  background-color: #FB0D45;
-}
-
-section.sale ._body .slide-block .block .sale-slide .item {
+section.sale ._body .slide-block .block .item {
   background: #FFFFFF 0% 0% no-repeat padding-box;
   -webkit-box-shadow: 0px 2px 6px #00000029;
   box-shadow: 0px 2px 6px #00000029;
   border: 1px solid #E5E5E5;
 }
 
-section.sale ._body .slide-block .block .sale-slide .item .image {
+section.sale ._body .slide-block .block .item .image {
   position: relative;
 }
 
-section.sale ._body .slide-block .block .sale-slide .item .image .name {
+section.sale ._body .slide-block .block .item .image .name {
   position: absolute;
   bottom: 0;
   height: 40px;
@@ -720,15 +763,15 @@ section.sale ._body .slide-block .block .sale-slide .item .image .name {
   font-size: 14px;
 }
 
-section.sale ._body .slide-block .block .sale-slide .item .image img {
+section.sale ._body .slide-block .block .item .image img {
   width: 100%;
 }
 
-section.sale ._body .slide-block .block .sale-slide .item .detail {
+section.sale ._body .slide-block .block .item .detail {
   padding: 10px 0;
 }
 
-section.sale ._body .slide-block .block .sale-slide .item .detail .sale-text {
+section.sale ._body .slide-block .block .item .detail .sale-text {
   color: #FB0D45;
   text-align: center;
   font-weight: 600;
@@ -736,7 +779,7 @@ section.sale ._body .slide-block .block .sale-slide .item .detail .sale-text {
   text-transform: uppercase;
 }
 
-section.sale ._body .slide-block .block .sale-slide .item .detail .count-down {
+section.sale ._body .slide-block .block .item .detail .count-down {
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
@@ -745,7 +788,7 @@ section.sale ._body .slide-block .block .sale-slide .item .detail .count-down {
   line-height: 35px;
 }
 
-section.sale ._body .slide-block .block .sale-slide .item .detail .address {
+section.sale ._body .slide-block .block .item .detail .address {
   font-size: 15px;
   text-align: center;
   font-weight: bold;
@@ -756,11 +799,16 @@ section.store-night {
   padding: 2rem 0;
 }
 
+section.store-night .swiper-pagination {
+  bottom: -25px;
+}
+
 section.store-night ._body {
   margin-top: 2rem;
 }
 
 section.store-night ._body .list-store {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -770,11 +818,11 @@ section.store-night ._body .list-store {
 }
 
 section.store-night ._body .list-store .item {
-  width: 19%;
+  width: 100%;
+  background-color: #F31348;
 }
 
 section.store-night ._body .list-store .item .time {
-  background-color: #F31348;
   height: 50px;
   line-height: 50px;
   width: 100%;
@@ -785,10 +833,13 @@ section.store-night ._body .list-store .item .time {
 }
 
 section.store-night ._body .list-store .item ._block {
-  background-color: #FB0D45;
+  background-image: url("../raw/918655-amazing-desktop-wallpaper-pattern-2000x1150-for-iphone-7.png");
   text-align: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
-  padding: 0 10px 1rem;
+  padding: 10px 10px 1rem;
 }
 
 section.store-night ._body .list-store .item ._block .name {
@@ -878,7 +929,6 @@ section.fix-services ._body .list-store {
 
 section.fix-services ._body .list-store .item {
   border: 1px solid #E2E2E2;
-  width: 19%;
 }
 
 section.fix-services ._body .list-store .item .image img {
@@ -924,5 +974,74 @@ section.fix-services ._body .list-store .item .time {
   line-height: 25px;
   text-align: center;
   margin: 10px auto;
+}
+
+section.category-block {
+  padding: 3rem 0;
+  border-top: 8px solid #FB0D45;
+}
+
+section.category-block .item .title {
+  color: #FB0D45;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: .75rem;
+}
+
+section.category-block .item ul li {
+  list-style: none;
+}
+
+section.category-block .item ul li a {
+  color: #6B6B6B;
+  display: block;
+  line-height: 30px;
+  font-size: 15px;
+}
+
+footer {
+  background-color: #FB0D45;
+  padding: 2rem 0;
+}
+
+footer .info-company {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .info-company a.name {
+  color: white;
+  text-transform: uppercase;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+footer .info-company .line {
+  color: white;
+  font-size: 15px;
+}
+
+footer .link-block ul li {
+  list-style: none;
+}
+
+footer .link-block ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+section.end-block {
+  background-color: #050613;
+  height: 45px;
+  line-height: 45px;
+  color: white;
+  font-size: 14px;
 }
 /*# sourceMappingURL=style.css.map */

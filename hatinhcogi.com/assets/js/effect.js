@@ -55,12 +55,7 @@ $(document).ready(function () {
         wrapperAction(0);
         closeMenu();
     })
-
-    $('.function-slider .list-btn .slide').click(function(){
-        let id = $(this).data('id');                
-        functionSlide.slideTo(id,600,false)
-    })
-
+    
     setTimeout(function(){
         $('#exampleModalCenter').modal('show')
     },30000)
@@ -72,26 +67,30 @@ $(document).ready(function () {
 
     $('.close-modal').click(function(){
         $('#modalSubscribe').modal('hide')
-    });
-
-    $('.dkn').click(function(e){        
-        $('#modalSubscribe').modal('show')
-    })
+    });   
     $('.goToTop').click(function(){
         $('html, body').animate({ scrollTop: 0 }, 'slow');
     })
-
-
     $('.menu-icon').click(function(){
         $('header .menu').css('left',0);
         wrapperAction(1)
-    })
+    })    
 
-    $('.book').click(function(e){
-        e.preventDefault();
-        openModal();
-    });
-    $('span.close').click(function () {
-        closeMenu();
-    })     
+    $('.search-block .list-item .item').click(function(){
+        let id = $(this).data('id');
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+        $('.top-local').find(`.block-${id}`).fadeIn()
+        $('.top-local').find(`.block-${id}`).siblings().removeClass('active')
+        $('.top-local').find(`.block-${id}`).siblings().hide()
+    })   
+    
+    $('.types .item').click(function(){
+        let id = $(this).data('id');
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+        $(this).closest('._body').find(`.block-${id}`).fadeIn();
+        $(this).closest('._body').find(`.block-${id}`).siblings().removeClass('active');
+        $(this).closest('._body').find(`.block-${id}`).siblings().hide();
+    })
 })

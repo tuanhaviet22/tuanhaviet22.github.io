@@ -233,3 +233,23 @@ section{
         }
     }
 }
+
+.swiper-pagination-bullet {
+    background-color: #B7B7B7;
+    margin: 0 5px;
+    transition: .6;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: $root-color;
+}
+
+.sale-slide-pagination {
+    text-align: center;
+    width: 100%;
+    left: 0;
+}
+.swiper-pagination{
+    width: 100%;
+    left: 0;
+}
