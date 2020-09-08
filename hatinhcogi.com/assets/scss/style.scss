@@ -312,6 +312,7 @@ section.top-local {
     }
     .block {
         display: none;
+        position: relative;
         .item-local {
             // width: 19% !important;
             display: block;
@@ -321,11 +322,12 @@ section.top-local {
             text-decoration: none;
             color: black;
             padding-bottom: 20px;
-
+            
             .image {
                 position: relative;
-
+                overflow: hidden;
                 img {
+                    transition: transform .2s;
                     width: 100%;
                 }
 
@@ -562,6 +564,9 @@ section.store-night{
     }
     ._body{
         margin-top: 2rem;
+        .navication-slide{
+            top: 45%;
+        }
         .list-store{
             position: relative;
             display: flex;
@@ -595,6 +600,7 @@ section.store-night{
                     }
                     .image{
                         margin-bottom: 1rem;
+                        padding: 1rem 0;
                     }
                     .rate{
                         img{
@@ -639,6 +645,7 @@ section.gift{
     padding: 2rem 0;
     ._body{
         margin-top: 2rem;
+        position: relative;
         .item{
             background-color: white;
             border: 1px solid #E2E2E2;
@@ -664,6 +671,7 @@ section.fix-services{
     padding: 2rem 0;
     ._body{
         margin-top: 2rem;
+        position: relative;
         .list-store{
             display: flex;
             justify-content: space-between;

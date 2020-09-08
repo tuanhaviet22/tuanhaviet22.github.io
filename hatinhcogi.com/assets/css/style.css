@@ -214,6 +214,57 @@ section ._head .detail {
   left: 0;
 }
 
+.navication-slide {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  z-index: 1;
+  top: 40%;
+}
+
+.navication-slide div:focus {
+  outline: none;
+}
+
+.navication-slide div i {
+  font-size: 30px;
+}
+
+.navication-slide ._left {
+  margin-left: -30px;
+}
+
+.navication-slide ._right {
+  margin-right: -30px;
+}
+
+.slide-block .item:hover .image img, .slide-block .item-local:hover .image img {
+  /* IE 9 */
+  -webkit-transform: scale(1.1);
+  /* Safari 3-8 */
+  transform: scale(1.1);
+}
+
+.slide-block .item .image, .slide-block .item-local .image {
+  overflow: hidden;
+}
+
+.slide-block .item .image img, .slide-block .item-local .image img {
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+.swiper-pagination-bullet:focus {
+  outline: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -552,6 +603,7 @@ section.top-local .active {
 
 section.top-local .block {
   display: none;
+  position: relative;
 }
 
 section.top-local .block .item-local {
@@ -567,9 +619,14 @@ section.top-local .block .item-local {
 
 section.top-local .block .item-local .image {
   position: relative;
+  overflow: hidden;
 }
 
 section.top-local .block .item-local .image img {
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
   width: 100%;
 }
 
@@ -807,6 +864,10 @@ section.store-night ._body {
   margin-top: 2rem;
 }
 
+section.store-night ._body .navication-slide {
+  top: 45%;
+}
+
 section.store-night ._body .list-store {
   position: relative;
   display: -webkit-box;
@@ -851,6 +912,7 @@ section.store-night ._body .list-store .item ._block .name {
 
 section.store-night ._body .list-store .item ._block .image {
   margin-bottom: 1rem;
+  padding: 1rem 0;
 }
 
 section.store-night ._body .list-store .item ._block .address {
@@ -886,6 +948,7 @@ section.gift {
 
 section.gift ._body {
   margin-top: 2rem;
+  position: relative;
 }
 
 section.gift ._body .item {
@@ -916,6 +979,7 @@ section.fix-services {
 
 section.fix-services ._body {
   margin-top: 2rem;
+  position: relative;
 }
 
 section.fix-services ._body .list-store {
