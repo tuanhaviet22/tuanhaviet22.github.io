@@ -225,11 +225,17 @@ section{
             font-size: 26px;
             text-transform: uppercase;
             font-weight: bold;
+            @include mobile(){
+                font-size: 22px;
+            }
         }
         .detail {
             text-align: center;
             color: #818181;
             font-size: 16px;
+            @include mobile(){
+                font-size: 14px;
+            }
         }
     }
 }
@@ -256,6 +262,9 @@ section{
 
 
 .navication-slide{
+    @include mobile(){
+        display: none;
+    }
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -281,7 +290,11 @@ section{
 
 .slide-block{
     .item,.item-local{
-        &:hover{
+        transition: .2s;
+        
+        &:hover{      
+            box-shadow:  -1px 10px 11px -9px  rgba(0, 0, 0, 0.2) !important;   
+            transform: scale(1.02); 
             .image{
                 img{
                     -ms-transform: scale(1.1); /* IE 9 */
@@ -302,5 +315,11 @@ section{
 .swiper-pagination-bullet{
     &:focus{
         outline: none;
+    }
+}
+
+section{
+    .swiper-container{
+        padding: 1rem 0;
     }
 }

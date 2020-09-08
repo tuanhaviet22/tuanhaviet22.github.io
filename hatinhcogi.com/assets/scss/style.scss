@@ -66,20 +66,31 @@ section.menu-top {
 header {
     background-color: #F5F5F5;
     padding: 2rem 0 1rem 0;
-
+    @include mobile{
+        padding: 0;
+    }
     .main {
         display: flex;
         width: 100%;
         justify-content: space-between;
-
+        @include mobile{
+            position: relative;
+        }
         .logo {
             width: 17%;
             line-height: 83px;
             margin-right: 2rem;
-
+            @include mobile{
+                width: 100%;
+                text-align: center;
+                margin-right: 0;
+            }
             a {
                 img {
                     width: 100%;
+                    @include mobile{
+                        width: 50%;
+                    }
                 }
             }
         }
@@ -109,6 +120,10 @@ header {
                     height: 80px;
                     min-width: 80px;
                     border-radius: 5px;
+                    @include mobile{
+                        height: 50px;
+                        min-width: 50px;
+                    }
                 }
             }
         }
@@ -118,7 +133,14 @@ header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-
+            @include mobile{
+                position: absolute;
+                height: 100%;
+                display: flex;
+                justify-items: center;
+                right: 0;
+                width: unset;
+            }
             .navication {
                 div {
                     &:focus {
@@ -167,6 +189,20 @@ header {
             font-weight: bold;
             border-radius: 40px;
         }
+        .icon-user{
+            background-color: white;
+            text-align: center;
+            height: 45px;
+            line-height: 45px;
+            width: 45px;
+            border: none;
+            box-shadow: 0px 0px 3px #00000029;
+            color: black;
+            border-radius: 50%;
+            i{
+                font-size: 16px;
+            }
+        }
     }
 }
 
@@ -197,14 +233,22 @@ section.search-block {
         display: flex;
         border: 1px solid white;
         overflow: hidden;
-
+        @include mobile{
+            width: 100%;
+            height: 45px;
+            line-height: 45px;
+        }
         .icon {
             width: 10%;
             text-align: center;
             display: block;
             margin-bottom: 0;
 
-            img {}
+            img {
+                @include mobile{
+                    width: 20px;
+                }
+            }
         }
 
         .input {
@@ -231,6 +275,9 @@ section.search-block {
                 right: 5px;
                 top: 15px;
                 z-index: 1;
+                @include mobile{
+                    top: 6px;
+                }
             }
         }
 
@@ -242,6 +289,10 @@ section.search-block {
             text-align: center;
             cursor: pointer;
             font-size: 16px;
+            @include mobile{
+                width: 25%;
+                font-size: 13px;
+            }
         }
     }
 
@@ -250,12 +301,18 @@ section.search-block {
         width: 60%;
         margin: 0 auto;
         justify-content: center;
-
+        @include mobile{
+            width: 100%;
+        }
         .item {
             margin: 0 1rem;
             color: white;
             text-align: center;
             line-height: 30px;
+            @include mobile{
+                margin: 0 10px;
+                line-height: 20px;
+            }
         }
     }
 
@@ -285,6 +342,10 @@ section.search-block {
                     left: 40%;
                     transform: rotate(45deg);
                     transition: .6s;
+                    @include mobile{
+                        height: 25px;
+                        left: 0%;
+                    }
                 }
             }
             .item { 
@@ -294,10 +355,19 @@ section.search-block {
                 text-transform: uppercase;
                 font-weight: 600;
                 font-size: 14px;
-
+                @include mobile{
+                    margin: 0 20px;
+                    span{
+                        display: none;
+                    }
+                }
                 img {
                     margin-right: 3px;
                     margin-top: -5px;
+                    @include mobile{
+                        margin: 0;
+                        width: 25px;
+                    }
                 }
             }
         }
@@ -379,7 +449,27 @@ section.top-local {
 
 section.services {
     padding: 2rem 0;
-
+    @include mobile{
+        .css{
+            width: 25px !important;
+        }
+        .col-6{
+            &:nth-child(1){
+                padding-right: 3px;
+            }
+            &:nth-child(3){
+                padding-right: 3px;
+                margin-top: 10px;
+            }
+            &:nth-child(2){
+                padding-left: 3px;
+            }
+            &:nth-child(4){
+                padding-left: 3px;
+                margin-top: 10px;
+            }
+        }
+    }
     .item {
         background-color: $root-color;
         color: white;
@@ -391,8 +481,16 @@ section.services {
         display: block;
         font-weight: 600;
         border-radius: 38px;
-
+        @include mobile{
+            height: 40px;
+            line-height: 40px;
+            font-size: 10px;
+        }
         img {
+            @include mobile{
+                width: 20px;
+                margin-right: 5px;
+            }
             width: 30px;
             margin-right: 10px;
             margin-bottom: 3px;
@@ -420,7 +518,6 @@ section.sale {
 
             .active {
                 position: relative;
-
                 &::before {
                     content: "";
                     position: absolute;
@@ -431,10 +528,14 @@ section.sale {
                     height: 2px;
                     margin: 0 auto;
                     display: block;
-
                 }
             }
-
+            ._item-2{
+                img{
+                    margin-top: 3px !important;
+                }
+            }
+            
             .item {
                 cursor: pointer;
                 margin: 0 1rem;
@@ -442,7 +543,10 @@ section.sale {
                 text-transform: uppercase;
                 font-weight: bold;
                 font-size: 14px;
-
+                @include mobile{
+                    font-size: 10px;
+                    margin: 0 5px;                    
+                }
                 img {
                     margin: 0 5px 7px;
                     width: 15px;
@@ -460,6 +564,9 @@ section.sale {
                 display: block !important;
             }
             margin-top: 2rem;
+            @include mobile{
+                margin-top: 1rem;
+            }
             position: relative;
             
 
@@ -517,6 +624,11 @@ section.sale {
                                 text-transform: uppercase;
                                 font-weight: 600;
                                 font-size: 14px;
+                                @include mobile{
+                                    font-size: 12px;
+                                    height: 30px;
+                                    line-height: 30px;
+                                }
                             }
 
                             img {
@@ -533,6 +645,9 @@ section.sale {
                                 font-weight: 600;
                                 font-size: 18px;
                                 text-transform: uppercase;
+                                @include mobile{
+                                    font-size: 14px;
+                                }
                             }
 
                             .count-down {
@@ -542,6 +657,9 @@ section.sale {
                                 font-weight: bold;
                                 color: #585858;
                                 line-height: 35px;
+                                @include mobile{
+                                    font-size: 14px;
+                                }
                             }
 
                             .address {
@@ -549,6 +667,9 @@ section.sale {
                                 text-align: center;
                                 font-weight: bold;
                                 color: #585858;
+                                @include mobile{
+                                    font-size: 13px;
+                                }
                             }
                         }
                     }
@@ -574,6 +695,13 @@ section.store-night{
             .item{
                 width: 100%;                
                 background-color: #F31348;
+                &:hover{
+                    .image{
+                        img{
+                            transform: rotate(40deg);
+                        }
+                    }
+                }
                 .time{
                    
                     height: 50px;
@@ -601,6 +729,9 @@ section.store-night{
                     .image{
                         margin-bottom: 1rem;
                         padding: 1rem 0;
+                        img{
+                            
+                        }
                     }
                     .rate{
                         img{
@@ -708,6 +839,7 @@ section.fix-services{
                     color: #686868;
                     text-align: center;
                     font-size: 14px;
+                    padding: 0 5px;
                 }
                 .time{
                     background-color: $root-color;
@@ -718,6 +850,9 @@ section.fix-services{
                     line-height: 25px;
                     text-align: center;
                     margin: 10px auto;
+                    @include mobile{
+                        width: 55%;
+                    }
                 }
             }
         }
@@ -733,6 +868,9 @@ section.category-block{
             font-size: 18px;
             font-weight: bold;
             margin-bottom: .75rem;
+            @include mobile{
+                font-size: 16px;
+            }
         }
         ul{
             li{
@@ -742,6 +880,10 @@ section.category-block{
                     display: block;
                     line-height: 30px;
                     font-size: 15px;
+                    @include mobile{
+                        font-size: 13px;
+                        line-height: 20px;
+                    }
                 }
             }
         }
@@ -760,13 +902,26 @@ footer{
             text-transform: uppercase;
             font-size : 26px;
             font-weight: bold;
+            @include mobile{
+                text-align: center;
+                display: block;
+            }
         }
         .line{
             color: white;
             font-size: 15px;
+            @include mobile{
+                font-size: 13px;
+                text-align: justify;
+            }
         }
     }
     .link-block{
+        @include mobile{
+            border-top: 1px solid white;
+            padding-top: 1rem;
+            margin-top: 1rem;
+        }
         ul{
             li{
                 list-style: none;
