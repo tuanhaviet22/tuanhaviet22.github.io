@@ -942,3 +942,216 @@ section.end-block{
     color: white;
     font-size: 14px;
 }
+
+section.search-block-page{
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    .search{
+        height: 50px;
+        line-height: 50px;
+        width: 50%;
+    }
+    .input::after{
+        top: 10px !important; 
+    }
+}
+
+
+section.main-block{
+    background-color: #F8F8F8;
+    padding-bottom: 2rem;
+    .list-store{
+        .head-box{
+            display: flex;
+            justify-content: space-between;
+            padding: 0 10px;
+            background-color: white;
+            height: 40px;
+            line-height: 40px;
+            border: 1px solid #F6F6F6;
+            .name{
+                color: $root-color;
+                font-weight: bold;
+                font-size: 14px;
+            }
+            .type{
+                width: 3rem;
+                display: flex;
+                justify-content: space-between;                
+                div{
+                    cursor: pointer;
+                    i{
+                        font-size: 16px;
+                        color: #B4B4B4;
+                        transition: .6s;
+                    }
+                }
+                .active{
+                    i{
+                        color: $root-color;
+                    }
+                }
+            }
+        }
+        .list-box{
+            .item{
+                border: 1px solid #F2F2F2;
+                display: flex;
+                background-color: white;
+                border-radius: 5px;
+                overflow: hidden;
+                margin-top: 1rem;
+                justify-content: space-between;
+                .image{
+                    width: 30%;
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat ;
+                }
+                .info{                    
+                    padding: 1rem 0 1rem 1rem;
+                    width: 50%;
+                    .name{
+                        color: #818181;
+                        font-size: 18px;
+                        display: block;
+                        text-decoration: none;
+    
+                    }
+                    .address{
+                        color: #BFBFBF;
+                        font-size: 14px;
+                    }
+                    .phone{
+                        color: $root-color;
+                        font-size: 14px;
+                    }
+                    .content{
+                        color: #9E9E9E;
+                        text-align: justify;
+                        @include line-clamp(3);
+                    }
+                }
+                .badge{
+                    text-align: center;
+                    width: 20%;
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    &::before{
+                        content: "";
+                        height: 80%;
+                        width: 1px;
+                        border-left: 1px dashed $root-color;
+                        left: 3px;
+                        left: 10px;
+                        position: absolute;
+                    }
+                    .badge-image{
+                        text-align: center;
+                        img{
+                            width: 30px;
+                        }
+                    }
+                    .badge-name{
+                        font-size: 12px;
+                        color: $root-color;
+                        margin: 5px 0;
+                    }
+                    .badge-rate{
+                        img{
+                            width: 12px;
+                        }
+                    }
+                    .badge-view{
+                        background-color: $root-color;
+                        display: block;
+                        text-decoration: none;
+                        color: white;
+                        text-align: center;
+                        height: 30px;
+                        line-height: 30px;
+                        margin-top: 10px;
+                        font-size: 14px;
+                        padding: 0 15px;
+                    }
+                }
+            }
+            
+        }
+    }
+    .right-col{
+        .item{
+            margin-bottom: 1rem;
+            position: relative;
+            overflow: hidden;
+            &:hover{
+                .name{
+                    bottom: 0;
+                }
+            }
+            img{
+                width: 100%;
+                max-width: 220px;
+            }
+            .name{
+                transition: .2s;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                bottom: -40px;
+                font-weight: 600;
+                text-decoration: none;
+                display: block;
+                color: white;
+                width: 100%;
+                position: absolute;
+                background-color: rgba(0,0,0,0.7);
+            }
+        }
+    }
+    .hot-store{
+        background-color: white;
+        border: 1px solid #E8E8E8;
+        
+        .head-box{
+            height: 50px;
+            line-height: 50px;
+            padding: 0 10px;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #E8E8E8;
+            .title{
+                color: $root-color;
+                font-weight: bold;
+                font-size: 18px;
+            }
+            a{
+                display: block;
+                font-size: 13px;
+                color: #747474;
+                text-decoration: none;
+            }
+        }
+        .body-box{
+            padding: 15px;
+            .item{
+                display: block;
+                text-decoration: none;
+                .image{
+                    img{
+                        width: 100%;
+                    }
+                }
+                .name{
+                    color: #707070;
+                    font-size: 13px;
+                    font-weight: bold;
+                    text-align: center;
+                    padding: 5px 15px;
+                }
+            }
+        }
+    }
+}
