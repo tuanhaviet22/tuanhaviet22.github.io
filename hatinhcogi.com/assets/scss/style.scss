@@ -1155,3 +1155,291 @@ section.main-block{
         }
     }
 }
+
+// Store page
+section.banner-store{
+    background-image: url('../images/food2-1920x400.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 20rem;
+}
+section.head-store{
+    background-color: #1A1A1A;
+    height: 80px;
+
+    .box{     
+        display: flex;   
+        height: 80px;
+        justify-content: space-between;        
+        .image{
+            width: 20%;
+            margin-top: -70px;
+            img{
+                width: 100%;
+            }
+        }
+        .nav{
+            width: 50%;
+            padding-left:1rem;
+            ul{
+                display: flex;
+                li{
+                    list-style: none;
+                    margin: 0 0.5rem;
+                    a{
+                        line-height: 80px;
+                        color: white;
+                        text-decoration: none ;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        .search-box{
+            align-items: center;
+            width: 30%;
+            display: flex;
+            .input{
+                position: relative;
+                &::before{
+                    content: "\f002";
+                    font-family: "Font Awesome 5 Pro";
+                    position: absolute;
+                    color: #9E9E9E;
+                    left: 5px;
+    top: 15px;
+                }
+                input{
+                    display: block;
+                    background-color: white;
+                    border: none;
+                    height: 100%;
+                    height: 50px;
+                    padding-left: 25px;
+                }
+            }
+            button{
+                display: block;
+                color: white;
+                text-align: center;
+                border: none;
+                width: 7rem;
+                height: 50px;
+                line-height: 50px;
+                font-size: 14px;
+                &:focus{
+                    outline: none;
+                }
+            }
+            .search-all{
+                background-color: #FB0D45;
+            }
+            .search-per-store{
+                background-color: #BC002C;
+            }
+        }
+    }
+}
+
+section.main-store{
+    background-color: #F8F8F8;
+    .title-store{
+        .left-col{
+            width: 20%;
+        }
+        .center-col{
+            width: 80%;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            padding-left: 2rem;
+            h1{
+                font-weight: bold;
+                font-size: 32px;
+                color: $root-color;
+            }
+            .desc{
+                color: #707070;
+                font-size: 16px;
+            }
+        }
+        .right-col{
+    
+        }
+    }
+    .main-box{
+        display: flex;
+        justify-content: space-between;
+        .card{
+            border: 1px solid #E8E8E8;
+            background-color: white;
+            .head{
+                height: 40px;
+                line-height: 40px;
+                border-bottom: 1px solid #E8E8E8;
+                font-size: 13px;
+                padding: 0 15px;
+                color: #707070;
+                font-weight: bold;
+                i{
+                    font-size: 16px;
+                    color: $root-color;
+                    margin-right: 5px;
+                }
+            }
+            .body{
+                padding: 1rem 0 ;
+                .badge-store{                        
+                    text-align: center;
+                    .badge-image{
+                        width: 35px;
+                    }
+                    .point{
+
+                    }
+                    .name{
+                        color: #A3744D;
+                        font-weight: bold;
+                        font-size: 13px;
+                    }
+                }
+                .owner{
+                    color: #707070;
+                    font-size: 13px;
+                    font-weight: bold;
+                    text-align: center;
+                    span{
+                        color: $root-color;
+                        font-size: 13px;
+                    }
+                }
+                .online-now{
+                    height: 30px;
+                    width: 8rem;
+                    margin: 15px auto;
+                    text-align: center;
+                    color: white;
+                    background-color: #460000;
+                    line-height: 30px;
+                    font-size: 14px;
+                    border-radius: 40px;
+                    i{
+                        color: $root-color;
+
+                    }
+                }
+                .ship-count{
+                    margin: 0 auto;
+                    text-align: center;
+                    .num{
+                        color: #707070;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+        .left-col{
+            width: 19%;           
+        }
+        .center-col{
+            width: 60%;
+            padding-bottom: 3rem;
+            .list-item{
+                .item{
+                    border-radius: 6px;
+                    overflow: hidden;
+                    background-color: white;
+                    margin-top: 1rem;
+                    .image{
+                        img{
+                            width: 100%;
+                        }                        
+                    }
+                    .name{
+                        text-align: center;
+                        color: #818181;
+                        font-size: 16px;
+                        line-height: 28px;
+                        font-weight: 600;
+                    }
+                    .price{
+                        color: $root-color;
+                        font-weight: bold;
+                        font-size: 20px;
+                        text-align: center;
+                    }
+                    .action{
+                        color: #818181;
+                        font-size: 12px;   
+                        line-height: 25px; 
+                        width: 90%;
+                        margin: 10px auto;
+                        input{
+                            width: 3rem;
+                            height: 25px;
+                            text-align: center;
+                            border: 1px solid #E5E5E5;
+                            margin-right: 7px;
+                        }    
+                        button{
+                            border: none;
+                            background-color: $root-color;
+                            color: white;
+                            width: 25px;
+                            height: 25px;
+                            line-height: 25px;
+                            font-weight: bold;
+                            font-size: 16px;
+                        }              
+                    }
+                    .liner{
+                        width: 90%;
+                        margin: 0 auto;
+                        margin-top: 1rem;
+                        height: 1px;
+                        border-top: 1px dashed #818181;
+                    }
+                    .info{
+                        display: flex;
+                        justify-content: center;
+                        height: 30px;
+                        div{
+                            margin: 0 8px;
+                            font-size: 13px;
+                            line-height: 30px;
+                            i{
+                                font-size: 13px;
+                                color: #818181;
+                            }
+                        }
+                        .comment{
+                            position: relative;
+                            margin: 0 10px;
+                            &::before{
+                                content: "";
+                                border-right: 1px dashed #818181;
+                                width: 1px;
+                                height: 17px;
+                                position: absolute;
+                                left: -10px;
+                                top: 7px;
+                            }
+                            &::after{
+                                content: "";
+                                border-right: 1px dashed #818181;
+                                width: 1px;
+                                height: 17px;
+                                position: absolute;
+                                right: -10px;
+                                top: 7px;
+                            }
+                        }
+                    }
+                }
+            }
+        }   
+        .right-col{
+            width: 19%;
+        }
+    }
+}
