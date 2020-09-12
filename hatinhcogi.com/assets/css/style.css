@@ -298,7 +298,7 @@ section .swiper-container {
 }
 
 div.breadcumb {
-  margin: 20px 0;
+  padding: 20px 0;
 }
 
 div.breadcumb a {
@@ -2098,5 +2098,44 @@ section.main-store .main-box .center-col .list-item .item .info .comment::after 
 
 section.main-store .main-box .right-col {
   width: 19%;
+}
+
+section.main-block-store-2 {
+  background-color: #F8F8F8;
+}
+
+section.main-block-store-2 .main-box .left-col .item {
+  border: 1px solid #F2F2F2;
+  border-radius: 6px;
+  background-color: white;
+  padding: 1rem;
+}
+
+section.main-block-store-2 .main-box .left-col .item .title-box {
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.main-block-store-2 .main-box .left-col .item .title-box h1 {
+  color: #FB0D45;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+section.main-block-store-2 .main-box .left-col .item .title-box .status {
+  margin-left: 1rem;
+  color: #32AA00;
+  font-weight: bold;
+  line-height: 30px;
+  display: block;
+}
+
+section.main-block-store-2 .main-box .left-col .item .title-box .status i {
+  color: #32AA00;
+  font-size: 13px;
+  margin-right: 3px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1443,3 +1443,39 @@ section.main-store{
         }
     }
 }
+
+section.main-block-store-2{
+    background-color: #F8F8F8;
+    .main-box{
+        .left-col{
+            .item{
+                border: 1px solid #F2F2F2;
+                border-radius: 6px;
+                background-color: white;
+                padding: 1rem ;
+                .title-box{
+                    height: 30px;
+                    display: flex;
+                    h1{
+                        color: $root-color;
+                        font-weight: bold;
+                        font-size: 24px;                        
+                        line-height: 30px;
+                    }
+                    .status{
+                        i{
+                            color: #32AA00;
+                            font-size: 13px;
+                            margin-right: 3px;
+                        }
+                        margin-left: 1rem;
+                        color: #32AA00;
+                        font-weight: bold;
+                        line-height: 30px;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
