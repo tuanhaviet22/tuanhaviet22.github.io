@@ -92,5 +92,18 @@ $(document).ready(function () {
         $(this).closest('._body').find(`.block-${id}`).fadeIn();
         $(this).closest('._body').find(`.block-${id}`).siblings().removeClass('active');
         $(this).closest('._body').find(`.block-${id}`).siblings().hide();
+    });
+
+    $('.btn-viewmore').click(function(){
+        let $this = $(this);
+        if($this.hasClass('mininal')){
+            $(this).removeClass('mininal');
+            $(this).closest('.ticket-box').removeClass('show');
+        }else{
+            $(this).addClass('mininal');
+            $(this).closest('.ticket-box').addClass('show');
+        }
+        
+
     })
 })

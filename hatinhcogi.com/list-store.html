@@ -7,6 +7,7 @@
     <title>Hatinhcogi.com</title>
     <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/style.min.css">
+	
 </head>
 
 <body>
@@ -134,12 +135,57 @@
                 <a href="#" class="current">Quán ăn Hà Tĩnh</a>
             </div>
             <div class="row">
-                <div class="col-md-3 left-col">
+                <!-- <div class="col-md-3 left-col">
 
-                </div>
-                <div class="col-md-7 list-store">
+                </div> -->
+                <div class="col-md-12 list-store">
                     <div class="head-box">
-                        <div class="name">Quán ăn (xem dưới dạng danh sách)</div>
+                        <div class="filter-box">
+                            <div class="checkbox">
+                                <div class="text-center w-100">
+                                    Lọc bằng tay
+                                    <div class="check-box">
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="navication">
+                                <ul class="main">
+                                    <li>
+                                        <a href="#">Tất cả</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Bán được nhiều nhất</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Tất cả</a>
+                                    </li>
+                                    <li class="has-submenu">
+                                        <a href="#">Giá bán <i class="far fa-chevron-down"></i></a>
+                                        <ul class="submenu">
+                                            <li>
+                                                <a href="#">
+                                                    Giá từ thấp đến cao
+                                                </a>
+                                            </li> 
+                                            <li>
+                                                <a href="#">
+                                                    Giá từ thấp đến cao
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Giá từ thấp đến cao
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                         <div class="type">
                             <div class="grid ">
                                 <i class="fas fa-th-large"></i>
@@ -147,6 +193,190 @@
                             <div class="list active">
                                 <i class="fas fa-list"></i>
                             </div>
+                        </div>
+                        <div class="pagination">
+                            <a href="#" class="prev" title="Trang trước">
+                                <i class="fas fa-chevron-left"></i>
+                            </a>
+                            <div class="number" title="Trang kế">
+                                <span>1</span>/100
+                            </div>
+                            <a href="#" class="next">
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                            <div class="mininal" title="Đóng">
+                                <i class="far fa-minus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="big-filter-box">
+                        <div class="search-col column">
+                            <div class="title">
+                                Lọc theo từ khóa
+                            </div>
+                            <div class="input">
+                                <img src="./assets/raw/iconfinder_icon-ios7-search-strong_211817.png" alt="">
+                                <input type="text" class="no-focus" placeholder="Nhập từ khoá">
+                            </div>
+                            <div class="suggets">
+                                <div class="item">
+                                    Món ngon
+                                </div>
+                                <div class="item">
+                                    Nhà hàng tốt
+                                </div>
+                                <div class="item">
+                                    View đẹp
+                                </div>
+                                <div class="item">
+                                    Sang trọng
+                                </div>
+                            </div>
+                            <div class="reset">
+                                <a href="#" class="viewmore">Xem thêm gợi ý khác</a>
+                                <div>Đặt lại</div>
+                            </div>
+                        </div>
+                        <div class="radio-col column">
+                            <div class="title">
+                                Phạm vi quán ăn
+                            </div>
+                            <ul>
+                                <li>
+                                    <label class="container-radio"><strong>500m</strong> quanh bạn
+                                        <input type="radio" name="radio">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="container-radio"><strong>500m</strong> quanh bạn
+                                        <input type="radio" name="radio">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="container-radio"><strong>500m</strong> quanh bạn
+                                        <input type="radio" name="radio">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="container-radio"><strong>500m</strong> quanh bạn
+                                        <input type="radio" name="radio">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+                            </ul>
+                            <div class="title mt-3">
+                                Theo mức giá
+                            </div>
+                            <div class="input-range">
+                                <input type="number" class="no-focus" min="0">
+                                <div>
+                                    đến
+                                </div>
+                                <input type="number" class="no-focus" min="0">
+                            </div>
+                        </div>
+                        <div class="radio-col column">
+                            <div class="title">
+                                Tiện ích & dịch vụ hiện có
+                            </div>
+                            <ul>
+                                <li>
+                                    <div class="form-group">
+                                        <input type="checkbox" id="Free Ship">
+                                        <label for="Free Ship">Wifi miễn phí</label>
+                                      </div>
+                                </li>
+                                <li>
+                                    <div class="form-group">
+                                        <input type="checkbox" id="Free Ship">
+                                        <label for="Free Ship">Chỗ để xe ô tô</label>
+                                      </div>
+                                </li>
+                                <li>
+                                    <div class="form-group">
+                                        <input type="checkbox" id="Free Ship">
+                                        <label for="Free Ship">Thanh toán quẹt thẻ</label>
+                                      </div>
+                                </li>
+                                <li>
+                                    <div class="form-group">
+                                        <input type="checkbox" id="Free Ship">
+                                        <label for="Free Ship">Wifi miễn phí</label>
+                                      </div>
+                                </li>
+                            </ul> 
+                            <div class="reset justify-content-end">                                
+                                <div>Đặt lại</div>
+                            </div>                       
+                        </div>
+                        <div class="time-open-col column">
+                            <div class="title">
+                                Thời gian mở cửa
+                            </div>
+                            <div class="input-range">
+                                <input type="number" class="no-focus" min="0">
+                                <div>
+                                    đến
+                                </div>
+                                <input type="number" class="no-focus" min="0">
+                                <select name="" id="" class="no-focus">
+                                    <option value="" selected>Hôm nay</option>
+                                </select>
+                            </div>
+                            <div class="slide-range">
+                                <div data-role="rangeslider">
+                                    <input type="range" name="range-1a" id="range-1a" min="0" max="100" value="12">                                  
+                                    <input type="range" name="range-1b" id="range-1b" min="0" max="100" value="12">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ticket-box">
+                        <div class="line-1">
+                            <div class="item">
+                                <div class="form-group">
+                                    <input type="checkbox" id="Free Ship">
+                                    <label for="Free Ship">Free Ship</label>
+                                  </div>
+                            </div>
+                            <div class="item">
+                                <div class="form-group">
+                                    <input type="checkbox" id="item2">
+                                    <label for="item2">Thanh toán khi nhận hàng</label>
+                                  </div>
+                            </div>
+                            <div class="item">
+                                <div class="form-group">
+                                    <input type="checkbox" id="item3">
+                                    <label for="item3">Mới đăng lên</label>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="line-1 line-2">
+                            <div class="item">
+                                <div class="form-group">
+                                    <input type="checkbox" id="Free Ship">
+                                    <label for="Free Ship">Free Ship</label>
+                                  </div>
+                            </div>
+                            <div class="item">
+                                <div class="form-group">
+                                    <input type="checkbox" id="item2">
+                                    <label for="item2">Thanh toán khi nhận hàng</label>
+                                  </div>
+                            </div>
+                            <div class="item">
+                                <div class="form-group">
+                                    <input type="checkbox" id="item3">
+                                    <label for="item3">Mới đăng lên</label>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="btn-viewmore">
+                            Thêm <i class="far fa-chevron-down"></i>
                         </div>
                     </div>
                     <div class="list-box">
