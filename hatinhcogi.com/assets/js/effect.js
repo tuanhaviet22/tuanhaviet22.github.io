@@ -104,22 +104,7 @@ $(document).ready(function () {
             $(this).closest('.ticket-box').addClass('show');
         }        
     });
-    var sliderRange = document.getElementById('slider-range');    
-    noUiSlider.create(sliderRange, {
-        start: [0, 24],
-        step: 1,
-        range: {
-          'min': [0],
-          'max': [24]
-        },
-        connect: true
-      });
-      sliderRange.noUiSlider.on('update', function(values, handle) {
-        let start = values[0].toString().split(".")[0];
-        let end = values[1].toString().split(".")[0];
-        $('#start-time').val(start)
-        $('#end-time').val(end)
-      });
+    
 
 
       $('#filter-checkbox').change(function() {
@@ -138,5 +123,15 @@ $(document).ready(function () {
     $('.pagination .mininal').click(function(){
         $('.filter-box').find('.text').text('Lọc thông minh')
             $('.big-filter-box').addClass('hidden-box')
-    })
+    });
+    $('.widget .mininal').click(function(){
+        let $this = $(this);
+        if($this.hasClass('up')){
+            $this.removeClass('up');
+            $this.closest('.widget').removeClass('mininal-widget');
+        }else{
+            $this.addClass('up');
+            $this.closest('.widget').addClass('mininal-widget');
+        }
+    });
 })
