@@ -102,8 +102,41 @@ $(document).ready(function () {
         }else{
             $(this).addClass('mininal');
             $(this).closest('.ticket-box').addClass('show');
+        }        
+    });
+    var sliderRange = document.getElementById('slider-range');    
+    noUiSlider.create(sliderRange, {
+        start: [0, 24],
+        step: 1,
+        range: {
+          'min': [0],
+          'max': [24]
+        },
+        connect: true
+      });
+      sliderRange.noUiSlider.on('update', function(values, handle) {
+        let start = values[0].toString().split(".")[0];
+        let end = values[1].toString().split(".")[0];
+        $('#start-time').val(start)
+        $('#end-time').val(end)
+      });
+
+
+      $('#filter-checkbox').change(function() {
+          let $this = $(this)
+        if(this.checked) {
+            $this.closest('.checkbox').addClass('on').removeClass('off')
+            $('.filter-box').find('.text').text('Lọc thông minh')
+            $('.big-filter-box').addClass('hidden-box')
+        }else{
+            $this.closest('.checkbox').addClass('off').removeClass('on')
+            $('.filter-box').find('.text').text('Lọc bằng tay')
+            $('.big-filter-box').removeClass('hidden-box')
         }
         
-
+    });
+    $('.pagination .mininal').click(function(){
+        $('.filter-box').find('.text').text('Lọc thông minh')
+            $('.big-filter-box').addClass('hidden-box')
     })
 })

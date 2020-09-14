@@ -7,7 +7,8 @@
     <title>Hatinhcogi.com</title>
     <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/style.min.css">
-	
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/8.3.0/nouislider.min.css"> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/8.3.0/nouislider.min.js"></script>
 </head>
 
 <body>
@@ -138,15 +139,15 @@
                 <!-- <div class="col-md-3 left-col">
 
                 </div> -->
-                <div class="col-md-12 list-store">
+                <div class="col-md-12 filter-section">
                     <div class="head-box">
                         <div class="filter-box">
-                            <div class="checkbox">
+                            <div class="checkbox off">
                                 <div class="text-center w-100">
-                                    Lọc bằng tay
+                                    <span class="text">Lọc bằng tay</span>
                                     <div class="check-box">
                                         <label class="switch">
-                                            <input type="checkbox">
+                                            <input id="filter-checkbox" type="checkbox">
                                             <span class="slider round"></span>
                                         </label>
                                     </div>
@@ -184,6 +185,14 @@
                                         </ul>
                                     </li>
                                 </ul>
+                            </div>
+                            <div class="filter-price">
+                                <div>
+                                    <input type="number" min="0">
+                                    <div>-</div>
+                                    <input type="number" min="0">
+                                    <button type="button">Lọc giá</button>
+                                </div>
                             </div>
                         </div>
                         <div class="type">
@@ -317,21 +326,49 @@
                                 Thời gian mở cửa
                             </div>
                             <div class="input-range">
-                                <input type="number" class="no-focus" min="0">
+                                <input type="number" id="start-time" class="no-focus" min="0">
                                 <div>
                                     đến
                                 </div>
-                                <input type="number" class="no-focus" min="0">
-                                <select name="" id="" class="no-focus">
+                                <input type="number" id="end-time" class="no-focus" min="0">
+                                <select name=""  class="no-focus">
                                     <option value="" selected>Hôm nay</option>
                                 </select>
                             </div>
                             <div class="slide-range">
                                 <div data-role="rangeslider">
-                                    <input type="range" name="range-1a" id="range-1a" min="0" max="100" value="12">                                  
-                                    <input type="range" name="range-1b" id="range-1b" min="0" max="100" value="12">
+                                    <div id="slider-range"></div>
                                 </div>
                             </div>
+                            <ul>
+                                <li>
+                                    <div class="form-group">
+                                        <input type="checkbox" id="Free Ship">
+                                        <label for="Free Ship">Wifi miễn phí</label>
+                                      </div>
+                                </li>
+                                <li>
+                                    <div class="form-group">
+                                        <input type="checkbox" id="Free Ship">
+                                        <label for="Free Ship">Chỗ để xe ô tô</label>
+                                      </div>
+                                </li>
+                                <li>
+                                    <div class="form-group">
+                                        <input type="checkbox" id="Free Ship">
+                                        <label for="Free Ship">Thanh toán quẹt thẻ</label>
+                                      </div>
+                                </li>
+                                <li>
+                                    <div class="form-group">
+                                        <input type="checkbox" id="Free Ship">
+                                        <label for="Free Ship">Wifi miễn phí</label>
+                                      </div>
+                                </li>
+                            </ul> 
+                            <div class="reset justify-content-end">                                
+                                <div>Đặt lại</div>
+                            </div>  
                         </div>
                     </div>
                     <div class="ticket-box">
@@ -379,6 +416,8 @@
                             Thêm <i class="far fa-chevron-down"></i>
                         </div>
                     </div>
+                </div>
+                <div class="col-md-10 list-store">                    
                     <div class="list-box">
                         <div class="item">
                             <div class="image" style="background-image: url(./assets/images/garan.png);">
@@ -593,10 +632,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3 d-none-mb">
-
-                </div>
-                <div class="col-md-9">
+                <div class="col-md-10">
                     <div class="hot-store">
                         <div class="head-box">
                             <div class="title">
