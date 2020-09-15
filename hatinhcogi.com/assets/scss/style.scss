@@ -2841,9 +2841,8 @@ section.main-block-news {
                             border: 1px solid #FFFFFF;
                             border-radius: 6px;
                             transition: .2s;
-                            img {
-                                margin-top: 0;
-                                width: 100%;
+                            svg{
+                                width: 20px;
                             }
                         }
                         .text {

@@ -3723,9 +3723,8 @@ section.main-block-news .content .suggest .body .slide-block .swiper-slide .icon
   transition: .2s;
 }
 
-section.main-block-news .content .suggest .body .slide-block .swiper-slide .icon-ship img {
-  margin-top: 0;
-  width: 100%;
+section.main-block-news .content .suggest .body .slide-block .swiper-slide .icon-ship svg {
+  width: 20px;
 }
 
 section.main-block-news .content .suggest .body .slide-block .swiper-slide .text {
