@@ -359,7 +359,7 @@ section.search-block {
                     height: 30px;
                     width: 30px;
                     display: block;
-                    background-color: white;
+                    background-color: #F8F8F8;
                     position: absolute;
                     left: 40%;
                     transform: rotate(45deg);
@@ -418,7 +418,7 @@ section.top-local {
             // width: 19% !important;
             display: block;
             background: #FFFFFF 0% 0% no-repeat padding-box;
-            box-shadow: 0px 2px 6px #00000029;
+            // box-shadow: 0px 2px 6px #00000029;
             border: 1px solid #E5E5E5;
             text-decoration: none;
             color: black;
@@ -661,8 +661,8 @@ section.sale {
 
                 .item {
                     background: #FFFFFF 0% 0% no-repeat padding-box;
-                    -webkit-box-shadow: 0px 2px 6px #00000029;
-                    box-shadow: 0px 2px 6px #00000029;
+                    // -webkit-box-shadow: 0px 2px 6px #00000029;
+                    // box-shadow: 0px 2px 6px #00000029;
                     border: 1px solid #E5E5E5;
 
                     .image {
@@ -2227,7 +2227,7 @@ section.main-block-news{
             padding: 0 10px;
         }
         .mininal-widget{
-            height: 35px !important;
+            height: 40px !important;
             overflow: hidden;
         }
         .widget{
@@ -2381,6 +2381,10 @@ section.main-block-news{
                                 color: black;
                             }
                         }
+                        .list-icon{
+                            opacity: 1;
+                            visibility: unset;
+                        }
                     }
                     &:nth-child(odd){
                         background-color: #333333;
@@ -2415,8 +2419,11 @@ section.main-block-news{
                         }
                     }
                     .list-icon{
+                        opacity: 0;
+                        visibility: hidden;
                         width: 35%;
                         display: flex;
+                        transition: .2s;
                         justify-content: center;
                         .icon{
                             display: block;                            
@@ -2636,14 +2643,77 @@ section.main-block-news{
                     .swiper-container{
                         padding: 0;
                     }
-                    .item{
-                        display: block;
-                        background-color: #212121;
-                        border: 1px dashed #363636;
-                        padding: 3px;
-                        img{
-                            width: 100%;
-                            margin-top: 0;
+                    
+                    .swiper-slide{
+                        position: relative;
+                        &:hover{
+                            .text{
+z-index: 1;
+opacity: 1;
+                            }
+                            .rate{
+                                z-index: 2;
+                                opacity: 1;
+                            }
+                        }
+                        .image{
+                            background-color: #212121;
+                            border: 1px dashed #363636;
+                            padding: 4px;
+                            .item{
+                                background-position: center;
+                                background-size: cover;
+                                background-repeat: no-repeat;
+                                height: 13rem;
+                                display: block;
+                               
+                                width: 100%;                       
+                            }
+                        }
+                        .text{
+                            position: absolute;
+                            bottom: 0;
+                            z-index: -1;
+                            background-color: $root-color;
+                            color: white;
+                            font-weight: bold;
+                            text-align: center;
+                            font-size: 14px;
+                            padding: 5px ;
+                            display: block;
+                            text-decoration: none;
+                            margin: 0 4px;
+                            opacity: 0;
+                            transition: .2s;
+                            &::after{
+                                content: "";
+                                width: 15px;
+                                height: 15px;
+                                display: block;
+                                left: 45%;
+                                top: -4px;
+                                transform: rotate(45deg);
+                                background: $root-color;
+                                z-index: 1;
+                                position: absolute;
+                            }
+                        }
+                        .rate{
+                            transition: .2s;
+                            opacity: 0;
+                            z-index: -1;
+                            text-align: center;
+    position: absolute;
+    top: 61%;   
+    width: 45%;
+    background-color: #212121;
+    left: 28%;
+    height: 15px;
+    line-height: 13px;
+                            img{
+                                margin-top: 0;
+                                width: 10px;                                
+                            }
                         }
                     }
                     .slider-in-news-navication{
@@ -2651,10 +2721,11 @@ section.main-block-news{
                         width: 100%;
                         display: flex;
                         top: 43%;
-                        z-index: 1;
+                        
                         justify-content: space-between;
                         div{
                             width: 35px;
+                            z-index: 1;
                             height: 35px;
                             border-radius: 50%;
                             text-align: center;
