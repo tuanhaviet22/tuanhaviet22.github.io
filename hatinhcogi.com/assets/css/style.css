@@ -3109,6 +3109,19 @@ section.main-block-news .content .widget {
   margin-bottom: 2rem;
 }
 
+section.main-block-news .content .widget svg {
+  margin-top: -8px;
+}
+
+section.main-block-news .content .widget svg .a {
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+section.main-block-news .content .widget a.icon:hover svg .a {
+  fill: #FB0D45 !important;
+}
+
 section.main-block-news .content .widget .head {
   text-transform: uppercase;
   color: white;
@@ -3359,6 +3372,10 @@ section.main-block-news .content .related-item .body .item .list-icon .icon {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+section.main-block-news .content .related-item .body .item .list-icon .icon svg {
+  margin-top: -8px;
 }
 
 section.main-block-news .content .related-item .body .item .list-icon .icon:hover div {
@@ -3698,7 +3715,7 @@ section.main-block-news .content .suggest .body .slide-block .swiper-slide .icon
   position: absolute;
   z-index: -1;
   top: 10%;
-  left: 45%;
+  left: 42%;
   opacity: 0;
   border: 1px solid #FFFFFF;
   border-radius: 6px;
