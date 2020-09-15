@@ -3334,7 +3334,6 @@ section.main-block-news .content .related-item .body .item .name {
 
 section.main-block-news .content .related-item .body .item .name a {
   font-size: 18px;
-  display: block;
   color: white;
 }
 
@@ -3669,6 +3668,11 @@ section.main-block-news .content .suggest .body .slide-block .swiper-slide:hover
   opacity: 1;
 }
 
+section.main-block-news .content .suggest .body .slide-block .swiper-slide:hover .icon-ship {
+  z-index: 1;
+  opacity: 1;
+}
+
 section.main-block-news .content .suggest .body .slide-block .swiper-slide .image {
   background-color: #212121;
   border: 1px dashed #363636;
@@ -3684,9 +3688,32 @@ section.main-block-news .content .suggest .body .slide-block .swiper-slide .imag
   width: 100%;
 }
 
+section.main-block-news .content .suggest .body .slide-block .swiper-slide .icon-ship {
+  background-color: #FB0D45;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  line-height: 20px;
+  padding: 4px;
+  position: absolute;
+  z-index: -1;
+  top: 10%;
+  left: 45%;
+  opacity: 0;
+  border: 1px solid #FFFFFF;
+  border-radius: 6px;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+section.main-block-news .content .suggest .body .slide-block .swiper-slide .icon-ship img {
+  margin-top: 0;
+  width: 100%;
+}
+
 section.main-block-news .content .suggest .body .slide-block .swiper-slide .text {
   position: absolute;
-  bottom: 0;
+  bottom: 4px;
   z-index: -1;
   background-color: #FB0D45;
   color: white;

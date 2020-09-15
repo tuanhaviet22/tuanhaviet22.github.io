@@ -1,6 +1,9 @@
 var thumb_video_slide = new Swiper('.thumb-video-slide', {
     spaceBetween: 10,
     slidesPerView: 2,
+    autoplay: {
+        delay: 3000,
+      },
     navigation: {
         nextEl: '.next-thumb-video',
         prevEl: '.prev-thumb-video',
@@ -16,6 +19,9 @@ var header_slide = new Swiper('.header-slide', {
     slidesPerView: 6,
     spaceBetween: 5,
     loop: true,
+    autoplay: {
+        delay: 3000,
+      },
     navigation: {
         nextEl: '.h-next',
         prevEl: '.h-prev',
@@ -39,6 +45,9 @@ var header_slide = new Swiper('.header-slide', {
 var sale_slide = new Swiper('.sale-slide-1', {
     slidesPerView: 4,
     spaceBetween: 15,
+    autoplay: {
+        delay: 3000,
+      },
     loop: true,
     observer: true,
     observeParents: true,
@@ -70,6 +79,9 @@ var sale_slide_2 = new Swiper('.sale-slide-2', {
     slidesPerView: 4,
     spaceBetween: 15,
     loop: true,
+    autoplay: {
+        delay: 3000,
+      },
     observer: true,
     observeParents: true,
     pagination: {
@@ -100,6 +112,9 @@ var top_local_slide_1 = new Swiper('.top-local-slide-1', {
     slidesPerView: 5,
     spaceBetween: 10,
     loop: true,
+    autoplay: {
+        delay: 3000,
+      },
     observer: true,
     observeParents: true,
     pagination: {
@@ -131,6 +146,9 @@ var top_local_slide_2 = new Swiper('.top-local-slide-2', {
     slidesPerView: 5,
     spaceBetween: 10,
     loop: true,
+    autoplay: {
+        delay: 3000,
+      },
     observer: true,
     observeParents: true,
     pagination: {
@@ -157,6 +175,9 @@ var top_local_slide_3 = new Swiper('.top-local-slide-3', {
     slidesPerView: 5,
     spaceBetween: 10,
     loop: true,
+    autoplay: {
+        delay: 3000,
+      },
     observer: true,
     observeParents: true,
     pagination: {
@@ -185,6 +206,9 @@ var top_local_slide_4 = new Swiper('.top-local-slide-4', {
     loop: true,
     observer: true,
     observeParents: true,
+    autoplay: {
+        delay: 3000,
+      },
     pagination: {
         el: '.local-slide-pagination-4',
         type: 'bullets',
@@ -210,6 +234,9 @@ var store_night_slide = new Swiper('.store-night-slide', {
     slidesPerView: 5,
     spaceBetween: 10,
     loop: true,
+    autoplay: {
+        delay: 3000,
+      },
     pagination: {
         el: '.store-night-pagination',
         type: 'bullets',
@@ -240,6 +267,9 @@ var gift_slide = new Swiper('.gift-slide', {
     slidesPerView: 4,
     spaceBetween: 10,
     loop: true,
+    autoplay: {
+        delay: 5000,
+      },
     pagination: {
         el: '.gift-slide-pagination',
         type: 'bullets',
@@ -269,6 +299,9 @@ var fix_services = new Swiper('.fix-services-slide', {
     slidesPerView: 5,
     spaceBetween: 10,
     loop: true,
+    autoplay: {
+        delay: 3000,
+      },
     pagination: {
         el: '.fix-services-pagination',
         type: 'bullets',
@@ -298,6 +331,9 @@ var fix_services = new Swiper('.fix-services-slide', {
 var slide_in_news = new Swiper('.slide-in-news',{
     loop: true,
     spaceBetween :10,
+    autoplay: {
+        delay: 3000,
+      },
     slidesPerView: 4,
     navigation: {
         nextEl: '.sn-next',
