@@ -725,3 +725,15 @@ div.breadcumb{
   [disabled].noUi-origin,[disabled] .noUi-handle {
     cursor: not-allowed;
   }
+
+
+
+  .tooltip-inner {
+   font-size: 13px;
+   padding: 3px 3px;
+//    margin-bottom: -5px;
+}
+  
+.tooltip.bs-tooltip-auto[x-placement^=bottom] .arrow::before, .tooltip.bs-tooltip-bottom .arrow::before {    
+    bottom: -10px;
+}

@@ -293,3 +293,19 @@ var fix_services = new Swiper('.fix-services-slide', {
         }
     }
 });
+
+
+var slide_in_news = new Swiper('.slide-in-news',{
+    loop: true,
+    spaceBetween :10,
+    slidesPerView: 4,
+    navigation: {
+        nextEl: '.sn-next',
+        prevEl: '.sn-prev',
+    },
+    pagination: {
+        el: '.slider-in-news-pagination',
+        type: 'bullets',
+        clickable: true,
+    }    
+})
