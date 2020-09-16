@@ -735,3 +735,11 @@ div.breadcumb{
 .tooltip.bs-tooltip-auto[x-placement^=bottom] .arrow::before, .tooltip.bs-tooltip-bottom .arrow::before {    
     bottom: -10px;
 }
+
+
+.CodeMirror{
+    min-height:100px !important;
+}
+.CodeMirror-scroll{
+    min-height: 100px !important;
+}

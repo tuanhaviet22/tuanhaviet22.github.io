@@ -19,9 +19,9 @@ var header_slide = new Swiper('.header-slide', {
     slidesPerView: 6,
     spaceBetween: 5,
     loop: true,
-    autoplay: {
-        delay: 3000,
-      },
+    // autoplay: {
+    //     delay: 3000,
+    //   },
     navigation: {
         nextEl: '.h-next',
         prevEl: '.h-prev',

@@ -134,9 +134,24 @@ $(document).ready(function () {
             $this.closest('.widget').addClass('mininal-widget');
         }
     });
+    $('.show-reply').click(function(){
+        let $this = $(this);
+        if($this.hasClass('hide-reply')){
+            $this.removeClass('hide-reply');
+            $this.parent().find('.list-reply-comment').removeClass('list-reply-comment-hidden')
+        }else{
+            $this.addClass('hide-reply');
+            $this.parent().find('.list-reply-comment').addClass('list-reply-comment-hidden')
+        }
+    })
 })
 
 
 $(function () {
+    var simplemde = new SimpleMDE({ 
+        element: document.getElementById("comment") ,
+        status: false
+    });
     $('[data-toggle="tooltip"]').tooltip()
-  })
+  });
+
