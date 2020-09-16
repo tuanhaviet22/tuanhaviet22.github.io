@@ -344,4 +344,21 @@ var slide_in_news = new Swiper('.slide-in-news',{
         type: 'bullets',
         clickable: true,
     }    
+});
+
+var slide_method = new Swiper('.slide-method-login',{
+    observer: true,
+    observeParents: true,
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView : 1,
+    
+});
+
+$('#loginBtn').change(function(){
+    if(this.checked) {
+        slide_method.slideTo(1);
+    }else{
+        slide_method.slideTo(2);
+    }
 })

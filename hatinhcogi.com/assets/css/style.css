@@ -852,24 +852,14 @@ header .main .logo a img {
 }
 
 header .main .slide {
-  width: 60%;
+  width: 55%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-header .main .slide .qr {
-  width: 11%;
-  text-align: center;
-  margin-right: 1rem;
-}
-
-header .main .slide .qr img {
-  width: 83px;
-}
-
 header .main .slide .header-slide {
-  width: 85%;
+  width: 100%;
 }
 
 header .main .slide .header-slide div.item {
@@ -890,16 +880,18 @@ header .main .slide .header-slide div.item {
 }
 
 header .main .action {
-  width: 23%;
+  width: 27%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-left: 10px;
+  position: relative;
 }
 
 @media (max-width: 1023px) {
@@ -913,6 +905,11 @@ header .main .action {
     right: 0;
     width: unset;
   }
+}
+
+header .main .action .navication {
+  width: 20%;
+  z-index: 2;
 }
 
 header .main .action .navication div {
@@ -961,6 +958,300 @@ header .main .register {
   padding: 0 20px;
   font-weight: bold;
   border-radius: 40px;
+}
+
+header .main .register-new {
+  width: 80%;
+  padding-top: 20px;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  height: 80px;
+}
+
+header .main .register-new:hover {
+  height: 25rem;
+  background-color: white;
+  border: 1px solid #EEEEEE;
+  z-index: 3;
+}
+
+header .main .register-new:hover .blocks {
+  display: block;
+}
+
+header .main .register-new .blocks {
+  margin-top: 10px;
+  padding: 0 15px;
+  -webkit-transition: .2s;
+  transition: .2s;
+  display: none;
+}
+
+header .main .register-new .blocks .qr-block {
+  text-align: center;
+}
+
+header .main .register-new .blocks .qr-block .image img {
+  width: 70%;
+}
+
+header .main .register-new .blocks .qr-block .text {
+  color: #434343;
+  font-size: 13px;
+}
+
+header .main .register-new .blocks .qr-block .link {
+  margin-top: 5px;
+}
+
+header .main .register-new .blocks .qr-block .link a {
+  display: block;
+  color: #434343;
+  font-size: 13px;
+  text-decoration: underline;
+}
+
+header .main .register-new .blocks .qr-block .link .text-root {
+  color: #FB0D45;
+  font-weight: bold;
+  text-decoration: unset;
+}
+
+header .main .register-new .blocks .login-block form .username {
+  position: relative;
+}
+
+header .main .register-new .blocks .login-block form .username::before {
+  content: '\f007';
+  position: absolute;
+  top: 10px;
+  font-size: 14px;
+  font-family: "Font Awesome 5 Pro";
+  z-index: 1;
+  color: #DCDCDC;
+  left: 6px;
+}
+
+header .main .register-new .blocks .login-block form .password {
+  position: relative;
+}
+
+header .main .register-new .blocks .login-block form .password::before {
+  content: '\f6f3';
+  position: absolute;
+  top: 10px;
+  font-size: 14px;
+  font-family: "Font Awesome 5 Pro";
+  z-index: 1;
+  color: #DCDCDC;
+  left: 6px;
+}
+
+header .main .register-new .blocks .login-block form input {
+  position: relative;
+  height: 40px;
+  display: block;
+  line-height: 40px;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 14px;
+  border: 1px solid #EEEEEE;
+  padding-left: 25px;
+}
+
+header .main .register-new .blocks .login-block form input:focus {
+  outline: none !important;
+  border: 2px solid #FB0D45;
+}
+
+header .main .register-new .blocks .login-block form input::-webkit-input-placeholder {
+  color: #AAAAAA;
+  font-size: 13px;
+}
+
+header .main .register-new .blocks .login-block form input:-ms-input-placeholder {
+  color: #AAAAAA;
+  font-size: 13px;
+}
+
+header .main .register-new .blocks .login-block form input::-ms-input-placeholder {
+  color: #AAAAAA;
+  font-size: 13px;
+}
+
+header .main .register-new .blocks .login-block form input::placeholder {
+  color: #AAAAAA;
+  font-size: 13px;
+}
+
+header .main .register-new .blocks .login-block form button {
+  margin-top: 10px;
+}
+
+header .main .register-new .blocks .login-block button {
+  background-color: #FB0D45;
+  color: white;
+  text-align: center;
+  display: block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  border: none;
+}
+
+header .main .register-new .blocks .login-block button:focus {
+  outline: none;
+}
+
+header .main .register-new .blocks .login-block button i {
+  color: white;
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+header .main .register-new .blocks .login-block .fb-button {
+  background-color: #1762B8;
+  font-weight: bold;
+}
+
+header .main .register-new .blocks .login-block .gg-button {
+  background-color: #C70606;
+  font-weight: bold;
+}
+
+header .main .register-new .blocks .login-block .register-link {
+  text-align: right;
+  margin-top: 10px;
+}
+
+header .main .register-new .blocks .login-block .register-link a {
+  font-weight: bold;
+  font-size: 14px;
+  color: #FB0D45;
+}
+
+header .main .register-new .blocks .login-block .liner-other {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #EFEFEF;
+  line-height: 0.1em;
+  margin: 15px 0 20px;
+}
+
+header .main .register-new .blocks .login-block .liner-other span {
+  background: #fff;
+  padding: 0 10px;
+  color: #B1B1B1;
+  font-size: 12px;
+}
+
+header .main .register-new .switch {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 180px;
+  height: 40px;
+}
+
+header .main .register-new .switch input {
+  display: none;
+}
+
+header .main .register-new .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #434343;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+header .main .register-new .slider:before {
+  position: absolute;
+  content: "\f007";
+  font-family: "Font Awesome 5 Pro";
+  height: 35px;
+  width: 35px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  text-align: center;
+  line-height: 36px;
+  color: #434343;
+  font-size: 18px;
+}
+
+header .main .register-new input:checked + .slider {
+  background-color: #FB0D45;
+}
+
+header .main .register-new input:checked + .slider::before {
+  background-image: url(../images/qrcodescan@2x.png);
+  background-position: center;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  content: "";
+  font-family: unset;
+  position: absolute;
+  height: 35px;
+  width: 35px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+}
+
+header .main .register-new input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #434343;
+          box-shadow: 0 0 1px #434343;
+}
+
+header .main .register-new input:checked + .slider:before {
+  -webkit-transform: translateX(133px);
+          transform: translateX(133px);
+}
+
+header .main .register-new .on {
+  display: none !important;
+}
+
+header .main .register-new .on,
+header .main .register-new .off {
+  color: white;
+  font-size: 14px;
+  line-height: 40px;
+  text-align: center;
+  display: block;
+}
+
+header .main .register-new .on i,
+header .main .register-new .off i {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+header .main .register-new .on {
+  padding-right: 14px;
+}
+
+header .main .register-new input:checked + .slider .on {
+  display: block !important;
+}
+
+header .main .register-new input:checked + .slider .off {
+  display: none !important;
+}
+
+header .main .register-new .slider.round {
+  border-radius: 34px;
+}
+
+header .main .register-new .slider.round:before {
+  border-radius: 50%;
 }
 
 header .main .icon-user {

@@ -104,21 +104,21 @@ header {
         }
 
         .slide {
-            width: 60%;
+            width: 55%;
             display: flex;
 
-            .qr {
-                width: 11%;
-                text-align: center;
-                margin-right: 1rem;
+            // .qr {
+            //     width: 11%;
+            //     text-align: center;
+            //     margin-right: 1rem;
 
-                img {
-                    width: 83px;
-                }
-            }
+            //     img {
+            //         width: 83px;
+            //     }
+            // }
 
             .header-slide {
-                width: 85%;
+                width: 100%;
 
                 div.item {
                     background-size: cover;
@@ -138,10 +138,12 @@ header {
         }
 
         .action {
-            width: 23%;
+            width: 27%;
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
             align-items: center;
+            padding-left: 10px;
+            position: relative;
 
             @include mobile {
                 position: absolute;
@@ -153,6 +155,8 @@ header {
             }
 
             .navication {
+                width: 20%;
+                z-index: 2;
                 div {
                     &:focus {
                         outline: none;
@@ -199,6 +203,294 @@ header {
             padding: 0 20px;
             font-weight: bold;
             border-radius: 40px;
+        }
+
+        .register-new {
+            width: 80%;
+            // display: flex;
+            // align-items: center;
+            
+            padding-top: 20px;           
+            
+            position: absolute;
+            z-index: 1;
+            
+            top: 0;
+            height: 80px;            
+            &:hover{
+                height: 25rem;
+                background-color: white;
+                border: 1px solid #EEEEEE;
+                z-index: 3;
+                .blocks{
+                    display: block;
+                }
+            }
+            .blocks {
+                margin-top: 10px;
+                padding: 0 15px;
+                transition: .2s;
+                display: none;
+                .qr-block {
+                    text-align: center;
+
+                    .image {
+                        img {
+                            width: 70%;
+                        }
+                    }
+
+                    .text {
+                        color: #434343;
+                        font-size: 13px;
+
+                    }
+
+                    .link {
+                        margin-top: 5px;
+
+                        a {
+                            display: block;
+                            color: #434343;
+                            font-size: 13px;
+                            text-decoration: underline;
+                        }
+
+                        .text-root {
+                            color: $root-color;
+                            font-weight: bold;
+                            text-decoration: unset;
+                        }
+                    }
+                }
+
+                .login-block {
+                    // input:focus + .username::before{
+                    //     color: $root-color !important;
+                    // }
+                    form {
+                        .username {
+                            position: relative;
+                            
+                            &::before {
+                                content: '\f007';
+                                position: absolute;
+                                top: 10px;
+                                font-size: 14px;
+                                font-family: "Font Awesome 5 Pro";
+                                z-index: 1;
+                                color: #DCDCDC;
+                                left: 6px;
+                            }
+                        }
+                        .password{
+                            position: relative;
+
+                            &::before {
+                                content: '\f6f3';
+                                position: absolute;
+                                top: 10px;
+                                font-size: 14px;
+                                font-family: "Font Awesome 5 Pro";
+                                z-index: 1;
+                                color: #DCDCDC;
+                                left: 6px;
+                            }
+                        }
+
+                        input {
+                            position: relative;
+                            height: 40px;
+                            display: block;
+                            line-height: 40px;
+                            width: 100%;
+                            margin-bottom: 10px;
+                            font-size: 14px;
+                            border: 1px solid #EEEEEE;
+                            padding-left: 25px;
+
+                            &:focus {
+                                outline: none !important;
+                                border: 2px solid $root-color;
+
+                            }
+
+                            &::placeholder {
+                                color: #AAAAAA;
+                                font-size: 13px;
+                            }
+                        }
+
+                        button {
+                            margin-top: 10px;
+                        }
+                    }
+
+                    button {
+                        background-color: $root-color;
+                        color: white;
+                        text-align: center;
+                        display: block;
+                        width: 100%;
+                        height: 40px;
+                        line-height: 40px;
+                        font-size: 16px;
+                        border: none;
+
+                        &:focus {
+                            outline: none;
+                        }
+
+                        i {
+                            color: white;
+                            font-size: 18px;
+                            margin-right: 5px;
+                        }
+                    }
+
+                    .fb-button {
+                        background-color: #1762B8;
+                        font-weight: bold;
+                    }
+
+                    .gg-button {
+                        background-color: #C70606;
+                        font-weight: bold;
+                    }
+
+                    .register-link {
+                        text-align: right;
+                        margin-top: 10px;
+
+                        a {
+                            font-weight: bold;
+                            font-size: 14px;
+                            color: $root-color;
+                        }
+                    }
+
+                    .liner-other {
+                        width: 100%;
+                        text-align: center;
+                        border-bottom: 1px solid #EFEFEF;
+                        line-height: 0.1em;
+                        margin: 15px 0 20px;
+
+                        span {
+                            background: #fff;
+                            padding: 0 10px;
+                            color: #B1B1B1;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+
+            .switch {
+                position: relative;
+                display: block;
+                margin: 0 auto;
+                width: 180px;
+                height: 40px;
+
+            }
+
+            .switch input {
+                display: none;
+            }
+
+            .slider {
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: #434343;
+                transition: .4s;
+            }
+
+            .slider:before {
+                position: absolute;
+                content: "\f007";
+                font-family: "Font Awesome 5 Pro";
+                height: 35px;
+                width: 35px;
+                left: 4px;
+                bottom: 3px;
+                background-color: white;
+                text-align: center;
+                line-height: 36px;
+                color: #434343;
+                font-size: 18px;
+
+            }
+
+            input:checked+.slider {
+                background-color: $root-color;
+            }
+
+            input:checked+.slider::before {
+                background-image: url(../images/qrcodescan@2x.png);
+                background-position: center;
+                background-size: 60%;
+                background-repeat: no-repeat;
+                content: "";
+                font-family: unset;
+                position: absolute;
+                height: 35px;
+                width: 35px;
+                left: 4px;
+                bottom: 3px;
+                background-color: white;
+            }
+
+            input:focus+.slider {
+                box-shadow: 0 0 1px #434343;
+            }
+
+            input:checked+.slider:before {
+                transform: translateX(133px);
+            }
+
+            .on {
+                display: none !important;
+            }
+
+            .on,
+            .off {
+                color: white;
+                font-size: 14px;
+                line-height: 40px;
+                text-align: center;
+                display: block;
+
+                i {
+                    font-size: 18px;
+                    margin-right: 5px;
+
+                }
+            }
+
+            .on {
+                padding-right: 14px;
+            }
+
+            input:checked+.slider .on {
+                display: block !important;
+            }
+
+            input:checked+.slider .off {
+                display: none !important;
+            }
+
+            .slider.round {
+                border-radius: 34px;
+            }
+
+            .slider.round:before {
+                border-radius: 50%;
+            }
         }
 
         .icon-user {
@@ -3106,13 +3398,15 @@ section.main-block-news {
         background-color: white;
         margin-top: 2rem;
         padding-bottom: 2rem;
-        .view-more-comment{
+
+        .view-more-comment {
             margin: 1rem 0;
             font-weight: bold;
             color: $root-color;
             font-size: 14px;
             padding: 10px 20px;
         }
+
         .write-comment {
             padding: 10px 20px;
 
@@ -3169,20 +3463,23 @@ section.main-block-news {
         .list-comment {
             padding: 0 20px;
             margin-bottom: 1rem;
+
             .comment-item {
                 display: flex;
                 justify-content: space-between;
                 border-top: 2px dashed #E3E3E3;
                 padding: 1rem 0;
-                &:first-child{
+
+                &:first-child {
                     border-top: none;
                 }
+
                 .left-col {
                     width: 13%;
                     text-align: center;
                     position: relative;
-                    
-                    .bonus-info{
+
+                    .bonus-info {
                         position: absolute;
                         width: 20rem;
                         right: -21rem;
@@ -3193,31 +3490,37 @@ section.main-block-news {
                         background: white;
                         border: 1px solid #EFEFEF;
                         padding: 10px;
-                        .title{
+
+                        .title {
                             display: flex;
                             justify-content: space-between;
-                            .name{
+
+                            .name {
                                 color: $root-color;
                                 font-size: 13px;
                                 font-weight: bold;
                                 text-transform: uppercase;
                             }
-                            .rate{
-                                img{
+
+                            .rate {
+                                img {
                                     margin-top: -8px;
                                     width: 16px;
                                 }
                             }
                         }
-                        .bio{
+
+                        .bio {
                             text-align: left;
                             color: #4E4E4E;
                             font-size: 14px;
                         }
+
                         .list-icon {
                             padding: 5px 0;
                             display: flex;
-                            justify-content: flex-start;            
+                            justify-content: flex-start;
+
                             a.icon {
                                 &:hover {
                                     svg {
@@ -3227,31 +3530,31 @@ section.main-block-news {
                                     }
                                 }
                             }
-            
+
                             .icon {
                                 display: block;
                                 display: flex;
                                 align-items: center;
-            
+
                                 svg {
                                     margin-top: -8px;
-            
+
                                     .a {
                                         transition: .2s;
                                         fill: $root-color;
                                     }
                                 }
-            
+
                                 &:hover {
                                     div {
                                         background-color: $root-color;
-            
+
                                         i {
                                             color: white;
                                         }
                                     }
                                 }
-            
+
                                 div {
                                     transition: .2s;
                                     height: 30px;
@@ -3261,13 +3564,13 @@ section.main-block-news {
                                     text-align: center;
                                     border-radius: 9px;
                                 }
-            
+
                                 i {
                                     color: $root-color;
                                     font-size: 18px;
                                     transition: .2s;
                                 }
-            
+
                                 img {
                                     width: 22px;
                                     margin-top: -7px;
@@ -3276,13 +3579,15 @@ section.main-block-news {
                         }
 
                     }
+
                     .avatar {
-                        &:hover{
-                            .bonus-info{
+                        &:hover {
+                            .bonus-info {
                                 opacity: 1;
                                 z-index: 1;
                             }
                         }
+
                         padding: 5px;
                         background-color: #F3F3F3;
 
@@ -3329,21 +3634,25 @@ section.main-block-news {
                     }
 
                     .content-comment {
-                        .list-image{
+                        .list-image {
                             display: flex;
                             justify-content: flex-start;
                             padding: 5px 0;
-                            .item{
+
+                            .item {
                                 margin-right: 10px;
                                 max-width: 100px;
-                                img{
+
+                                img {
                                     width: 100%;
                                 }
                             }
-                            .number{
+
+                            .number {
                                 display: flex;
                                 align-items: center;
-                                div{
+
+                                div {
                                     font-weight: bold;
                                     text-align: center;
                                     letter-spacing: 3px;
@@ -3351,6 +3660,7 @@ section.main-block-news {
                                 }
                             }
                         }
+
                         div.contentt {
                             color: #343434;
                             font-weight: 500;
@@ -3408,18 +3718,22 @@ section.main-block-news {
                                 transition: .2s;
                             }
                         }
-                        .hide-reply{
-                            i{
+
+                        .hide-reply {
+                            i {
                                 transform: rotate(180deg);
                             }
                         }
-                        .list-reply-comment-hidden{
+
+                        .list-reply-comment-hidden {
                             overflow: hidden;
                             height: 0 !important;
                         }
+
                         .list-reply-comment {
                             transition: .2s;
                             height: auto;
+
                             .item-comment-reply {
                                 border-top: 2px dashed #E3E3E3;
                                 display: flex;
@@ -3431,16 +3745,19 @@ section.main-block-news {
                                     width: 13%;
                                     text-align: center;
                                     position: relative;
+
                                     ._avatar {
                                         background-color: #F3F3F3;
                                         padding: 4px;
-                                        &:hover{
-                                            .bonus-info{
+
+                                        &:hover {
+                                            .bonus-info {
                                                 opacity: 1;
                                                 z-index: 1;
                                             }
                                         }
-                                        .bonus-info{
+
+                                        .bonus-info {
                                             position: absolute;
                                             width: 20rem;
                                             right: -21rem;
@@ -3451,31 +3768,37 @@ section.main-block-news {
                                             background: white;
                                             border: 1px solid #EFEFEF;
                                             padding: 10px;
-                                            .title{
+
+                                            .title {
                                                 display: flex;
                                                 justify-content: space-between;
-                                                .name{
+
+                                                .name {
                                                     color: $root-color;
                                                     font-size: 13px;
                                                     font-weight: bold;
                                                     text-transform: uppercase;
                                                 }
-                                                .rate{
-                                                    img{
+
+                                                .rate {
+                                                    img {
                                                         margin-top: -8px;
                                                         width: 16px;
                                                     }
                                                 }
                                             }
-                                            .bio{
+
+                                            .bio {
                                                 text-align: left;
                                                 color: #4E4E4E;
                                                 font-size: 14px;
                                             }
+
                                             .list-icon {
                                                 padding: 5px 0;
                                                 display: flex;
-                                                justify-content: flex-start;            
+                                                justify-content: flex-start;
+
                                                 a.icon {
                                                     &:hover {
                                                         svg {
@@ -3485,31 +3808,31 @@ section.main-block-news {
                                                         }
                                                     }
                                                 }
-                                
+
                                                 .icon {
                                                     display: block;
                                                     display: flex;
                                                     align-items: center;
-                                
+
                                                     svg {
                                                         margin-top: -8px;
-                                
+
                                                         .a {
                                                             transition: .2s;
                                                             fill: $root-color;
                                                         }
                                                     }
-                                
+
                                                     &:hover {
                                                         div {
                                                             background-color: $root-color;
-                                
+
                                                             i {
                                                                 color: white;
                                                             }
                                                         }
                                                     }
-                                
+
                                                     div {
                                                         transition: .2s;
                                                         height: 30px;
@@ -3519,21 +3842,22 @@ section.main-block-news {
                                                         text-align: center;
                                                         border-radius: 9px;
                                                     }
-                                
+
                                                     i {
                                                         color: $root-color;
                                                         font-size: 18px;
                                                         transition: .2s;
                                                     }
-                                
+
                                                     img {
                                                         width: 22px;
                                                         margin-top: -7px;
                                                     }
                                                 }
                                             }
-                    
+
                                         }
+
                                         img {
                                             width: 100%;
                                         }
@@ -3626,10 +3950,12 @@ section.main-block-news {
             }
         }
     }
-    .hot-store{
-        .head{
+
+    .hot-store {
+        .head {
             background-color: $root-color;
         }
+
         .body {
             padding: 15px 10px;
 
@@ -3639,6 +3965,7 @@ section.main-block-news {
                 color: #747474;
                 margin-bottom: 10px;
                 text-decoration: none;
+
                 &:hover {
                     .image {
                         img {
@@ -3667,15 +3994,17 @@ section.main-block-news {
                         font-size: 14px;
                         @include line-clamp(1);
                     }
-                    .detail{
+
+                    .detail {
                         color: #9F9F9F;
                         font-size: 14px;
-                        
+
                     }
                 }
             }
         }
     }
+
     .ship-to-home {
         .head {
             background-color: $root-color;
