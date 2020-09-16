@@ -209,7 +209,7 @@ header {
             width: 80%;
             // display: flex;
             // align-items: center;
-            
+            right: 0;
             padding-top: 20px;           
             
             position: absolute;
@@ -432,17 +432,19 @@ header {
 
             input:checked+.slider::before {
                 background-image: url(../images/qrcodescan@2x.png);
-                background-position: center;
-                background-size: 60%;
-                background-repeat: no-repeat;
-                content: "";
-                font-family: unset;
-                position: absolute;
-                height: 35px;
-                width: 35px;
-                left: 4px;
-                bottom: 3px;
-                background-color: white;
+    background-position: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    content: "";
+    font-family: unset;
+    position: absolute;
+    height: 34px;
+    width: 35px;
+    left: 9px;
+    bottom: 3px;
+    background-color: white;
+
+}
             }
 
             input:focus+.slider {
@@ -450,7 +452,7 @@ header {
             }
 
             input:checked+.slider:before {
-                transform: translateX(133px);
+                transform: translateX(139px);
             }
 
             .on {
