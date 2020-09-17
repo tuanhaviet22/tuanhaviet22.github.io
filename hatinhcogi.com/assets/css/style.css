@@ -866,7 +866,7 @@ header .main .slide .header-slide div.item {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 80px;
   height: 80px;
   min-width: 80px;
   border-radius: 5px;
@@ -912,6 +912,12 @@ header .main .action .navication {
   z-index: 2;
 }
 
+@media (min-width: 1024px) {
+  header .main .action .navication {
+    margin-top: -10px;
+  }
+}
+
 header .main .action .navication div {
   background-color: white;
   height: 30px;
@@ -939,13 +945,20 @@ header .main .action .navication div i {
   -webkit-transition: 0.6s;
   transition: 0.6s;
   font-size: 18px;
+  position: relative;
 }
 
-header .main .action .navication .h-next {
+header .main .action .navication div i::before {
+  position: absolute;
+  top: -16px;
+  left: -6px;
+}
+
+header .main .action .h-prev {
   margin-top: 5px;
 }
 
-header .main .register {
+header .register {
   background-color: white;
   -webkit-box-shadow: 0px 0px 3px #00000029;
           box-shadow: 0px 0px 3px #00000029;
@@ -960,8 +973,9 @@ header .main .register {
   border-radius: 40px;
 }
 
-header .main .register-new {
+header .register-new {
   width: 80%;
+  right: 0;
   padding-top: 20px;
   position: absolute;
   z-index: 1;
@@ -969,18 +983,18 @@ header .main .register-new {
   height: 80px;
 }
 
-header .main .register-new:hover {
+header .register-new:hover {
   height: 25rem;
   background-color: white;
   border: 1px solid #EEEEEE;
   z-index: 3;
 }
 
-header .main .register-new:hover .blocks {
+header .register-new:hover .blocks {
   display: block;
 }
 
-header .main .register-new .blocks {
+header .register-new .blocks {
   margin-top: 10px;
   padding: 0 15px;
   -webkit-transition: .2s;
@@ -988,41 +1002,45 @@ header .main .register-new .blocks {
   display: none;
 }
 
-header .main .register-new .blocks .qr-block {
+header .register-new .blocks .hide {
+  display: none;
+}
+
+header .register-new .blocks .qr-block {
   text-align: center;
 }
 
-header .main .register-new .blocks .qr-block .image img {
+header .register-new .blocks .qr-block .image img {
   width: 70%;
 }
 
-header .main .register-new .blocks .qr-block .text {
+header .register-new .blocks .qr-block .text {
   color: #434343;
   font-size: 13px;
 }
 
-header .main .register-new .blocks .qr-block .link {
+header .register-new .blocks .qr-block .link {
   margin-top: 5px;
 }
 
-header .main .register-new .blocks .qr-block .link a {
+header .register-new .blocks .qr-block .link a {
   display: block;
   color: #434343;
   font-size: 13px;
   text-decoration: underline;
 }
 
-header .main .register-new .blocks .qr-block .link .text-root {
+header .register-new .blocks .qr-block .link .text-root {
   color: #FB0D45;
   font-weight: bold;
   text-decoration: unset;
 }
 
-header .main .register-new .blocks .login-block form .username {
+header .register-new .blocks .login-block form .username {
   position: relative;
 }
 
-header .main .register-new .blocks .login-block form .username::before {
+header .register-new .blocks .login-block form .username::before {
   content: '\f007';
   position: absolute;
   top: 10px;
@@ -1033,11 +1051,11 @@ header .main .register-new .blocks .login-block form .username::before {
   left: 6px;
 }
 
-header .main .register-new .blocks .login-block form .password {
+header .register-new .blocks .login-block form .password {
   position: relative;
 }
 
-header .main .register-new .blocks .login-block form .password::before {
+header .register-new .blocks .login-block form .password::before {
   content: '\f6f3';
   position: absolute;
   top: 10px;
@@ -1048,7 +1066,7 @@ header .main .register-new .blocks .login-block form .password::before {
   left: 6px;
 }
 
-header .main .register-new .blocks .login-block form input {
+header .register-new .blocks .login-block form input {
   position: relative;
   height: 40px;
   display: block;
@@ -1060,36 +1078,36 @@ header .main .register-new .blocks .login-block form input {
   padding-left: 25px;
 }
 
-header .main .register-new .blocks .login-block form input:focus {
+header .register-new .blocks .login-block form input:focus {
   outline: none !important;
   border: 2px solid #FB0D45;
 }
 
-header .main .register-new .blocks .login-block form input::-webkit-input-placeholder {
+header .register-new .blocks .login-block form input::-webkit-input-placeholder {
   color: #AAAAAA;
   font-size: 13px;
 }
 
-header .main .register-new .blocks .login-block form input:-ms-input-placeholder {
+header .register-new .blocks .login-block form input:-ms-input-placeholder {
   color: #AAAAAA;
   font-size: 13px;
 }
 
-header .main .register-new .blocks .login-block form input::-ms-input-placeholder {
+header .register-new .blocks .login-block form input::-ms-input-placeholder {
   color: #AAAAAA;
   font-size: 13px;
 }
 
-header .main .register-new .blocks .login-block form input::placeholder {
+header .register-new .blocks .login-block form input::placeholder {
   color: #AAAAAA;
   font-size: 13px;
 }
 
-header .main .register-new .blocks .login-block form button {
+header .register-new .blocks .login-block form button {
   margin-top: 10px;
 }
 
-header .main .register-new .blocks .login-block button {
+header .register-new .blocks .login-block button {
   background-color: #FB0D45;
   color: white;
   text-align: center;
@@ -1101,38 +1119,38 @@ header .main .register-new .blocks .login-block button {
   border: none;
 }
 
-header .main .register-new .blocks .login-block button:focus {
+header .register-new .blocks .login-block button:focus {
   outline: none;
 }
 
-header .main .register-new .blocks .login-block button i {
+header .register-new .blocks .login-block button i {
   color: white;
   font-size: 18px;
   margin-right: 5px;
 }
 
-header .main .register-new .blocks .login-block .fb-button {
+header .register-new .blocks .login-block .fb-button {
   background-color: #1762B8;
   font-weight: bold;
 }
 
-header .main .register-new .blocks .login-block .gg-button {
+header .register-new .blocks .login-block .gg-button {
   background-color: #C70606;
   font-weight: bold;
 }
 
-header .main .register-new .blocks .login-block .register-link {
+header .register-new .blocks .login-block .register-link {
   text-align: right;
   margin-top: 10px;
 }
 
-header .main .register-new .blocks .login-block .register-link a {
+header .register-new .blocks .login-block .register-link a {
   font-weight: bold;
   font-size: 14px;
   color: #FB0D45;
 }
 
-header .main .register-new .blocks .login-block .liner-other {
+header .register-new .blocks .login-block .liner-other {
   width: 100%;
   text-align: center;
   border-bottom: 1px solid #EFEFEF;
@@ -1140,14 +1158,14 @@ header .main .register-new .blocks .login-block .liner-other {
   margin: 15px 0 20px;
 }
 
-header .main .register-new .blocks .login-block .liner-other span {
+header .register-new .blocks .login-block .liner-other span {
   background: #fff;
   padding: 0 10px;
   color: #B1B1B1;
   font-size: 12px;
 }
 
-header .main .register-new .switch {
+header .register-new .switch {
   position: relative;
   display: block;
   margin: 0 auto;
@@ -1155,11 +1173,11 @@ header .main .register-new .switch {
   height: 40px;
 }
 
-header .main .register-new .switch input {
+header .register-new .switch input {
   display: none;
 }
 
-header .main .register-new .slider {
+header .register-new .slider {
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -1171,26 +1189,26 @@ header .main .register-new .slider {
   transition: .4s;
 }
 
-header .main .register-new .slider:before {
+header .register-new .slider:before {
   position: absolute;
   content: "\f007";
   font-family: "Font Awesome 5 Pro";
-  height: 35px;
+  height: 34px;
   width: 35px;
   left: 4px;
   bottom: 3px;
   background-color: white;
   text-align: center;
-  line-height: 36px;
+  line-height: 35px;
   color: #434343;
   font-size: 18px;
 }
 
-header .main .register-new input:checked + .slider {
+header .register-new input:checked + .slider {
   background-color: #FB0D45;
 }
 
-header .main .register-new input:checked + .slider::before {
+header .register-new input:checked + .slider::before {
   background-image: url(../images/qrcodescan@2x.png);
   background-position: center;
   background-size: 60%;
@@ -1198,29 +1216,29 @@ header .main .register-new input:checked + .slider::before {
   content: "";
   font-family: unset;
   position: absolute;
-  height: 35px;
+  height: 34px;
   width: 35px;
-  left: 4px;
+  left: 9px;
   bottom: 3px;
   background-color: white;
 }
 
-header .main .register-new input:focus + .slider {
+header input:focus + .slider {
   -webkit-box-shadow: 0 0 1px #434343;
           box-shadow: 0 0 1px #434343;
 }
 
-header .main .register-new input:checked + .slider:before {
+header input:checked + .slider:before {
   -webkit-transform: translateX(133px);
           transform: translateX(133px);
 }
 
-header .main .register-new .on {
+header .on {
   display: none !important;
 }
 
-header .main .register-new .on,
-header .main .register-new .off {
+header .on,
+header .off {
   color: white;
   font-size: 14px;
   line-height: 40px;
@@ -1228,33 +1246,33 @@ header .main .register-new .off {
   display: block;
 }
 
-header .main .register-new .on i,
-header .main .register-new .off i {
+header .on i,
+header .off i {
   font-size: 18px;
   margin-right: 5px;
 }
 
-header .main .register-new .on {
+header .on {
   padding-right: 14px;
 }
 
-header .main .register-new input:checked + .slider .on {
+header input:checked + .slider .on {
   display: block !important;
 }
 
-header .main .register-new input:checked + .slider .off {
+header input:checked + .slider .off {
   display: none !important;
 }
 
-header .main .register-new .slider.round {
+header .slider.round {
   border-radius: 34px;
 }
 
-header .main .register-new .slider.round:before {
+header .slider.round:before {
   border-radius: 50%;
 }
 
-header .main .icon-user {
+.icon-user {
   background-color: white;
   text-align: center;
   height: 45px;
@@ -1267,7 +1285,7 @@ header .main .icon-user {
   border-radius: 50%;
 }
 
-header .main .icon-user i {
+.icon-user i {
   font-size: 16px;
 }
 
@@ -3173,6 +3191,10 @@ section.main-store .main-box .center-col .list-item .item .info {
   height: 30px;
 }
 
+section.main-store .main-box .center-col .list-item .item .info .view i {
+  margin-right: 0;
+}
+
 section.main-store .main-box .center-col .list-item .item .info div {
   margin: 0 8px;
   font-size: 13px;
@@ -3182,6 +3204,16 @@ section.main-store .main-box .center-col .list-item .item .info div {
 section.main-store .main-box .center-col .list-item .item .info div i {
   font-size: 13px;
   color: #818181;
+  margin-right: 5px;
+}
+
+section.main-store .main-box .center-col .list-item .item .info div svg {
+  width: 18px;
+  margin-top: -3px;
+}
+
+section.main-store .main-box .center-col .list-item .item .info div svg a {
+  fill: #818181 !important;
 }
 
 section.main-store .main-box .center-col .list-item .item .info .comment {
@@ -4578,7 +4610,7 @@ section.main-block-news .comment-block .list-comment .comment-item .right-col .c
 section.main-block-news .comment-block .list-comment .comment-item .right-col .content-comment div.contentt {
   color: #343434;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 15px;
   padding: 5px 0;
 }
 
@@ -4811,7 +4843,7 @@ section.main-block-news .comment-block .list-comment .comment-item .right-col .c
 section.main-block-news .comment-block .list-comment .comment-item .right-col .content-comment .list-reply-comment .item-comment-reply ._right-col ._content-comment ._content {
   color: #343434;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 15px;
   padding: 5px 0;
 }
 

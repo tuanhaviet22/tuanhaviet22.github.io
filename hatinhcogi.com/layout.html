@@ -7,6 +7,8 @@
     <title>Hatinhcogi.com</title>
     <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/style.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+    <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
 </head>
 
 <body>
@@ -88,12 +90,12 @@
                 </div>
                 <div class="action">
                     <div class="navication d-none-mb">
-                        <div class="h-prev">
-                            <i class="fas fa-caret-left"></i>
-                        </div>
                         <div class="h-next">
                             <i class="fas fa-caret-right"></i>
                         </div>
+                        <div class="h-prev">
+                            <i class="fas fa-caret-left"></i>
+                        </div>                        
                     </div>
                     <!-- <div class="notify">
                         <img src="" alt="">
@@ -111,7 +113,7 @@
                             </div>
                         </label>
                         <div class="blocks">
-                            <div class="swiper-container slide-method-login">
+                            <!-- <div class="swiper-container slide-method-login">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide swiper-no-swiping">
                                         <div class="login-block">
@@ -159,9 +161,48 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div> -->
+                            <div class="login-block">
+                                <form action="#">
+                                    <div class="username">
+                                        <input type="text"  placeholder="Tên đăng nhập/ số điện thoại">
+                                    </div>
+                                    <div class="password">
+                                        <input type="password" placeholder="Mật khẩu" name="" id="">
+                                    </div>
+                                    
+                                    <button type="submit">Đăng nhập</button>
+                                </form>
+                                <div class="liner-other">
+                                    <span>
+                                        Lựa chọn khác
+                                    </span>
+                                </div>
+                                <button class="fb-button" type="button"><i class="fab fa-facebook-f"></i>Facebook</button>
+                                <button class="gg-button mt-2" type="button"><i class="fab fa-google"></i>Google</button>
+                                <div class="register-link">
+                                    <a href="#">Đăng ký</a>
+                                </div>
                             </div>
-                            
-                            
+                            <div class="qr-block hide">
+                                <div class="image">
+                                    <img src="./assets/images/testQr.png" alt="">
+                                </div>   
+                                <div class="text">
+                                    Quét mã QR Code trên ứng dung để đăng nhập tài khoản
+                                </div> 
+                                <div class="link">
+                                    <a href="#">
+                                        Hướng dẫn đăng nhập bằng mã QR
+                                    </a>
+                                    <a href="#" class="text-root mt-3">
+                                        Bạn chưa có tài khoản?
+                                    </a>
+                                    <a href="#" class="text-root">
+                                        Bạn chưa cài app trên điện thoại?
+                                    </a>
+                                </div>                        
+                            </div>
                         </div>
                     </div>
                     <a href="#" class="icon-user nd-none-mb">

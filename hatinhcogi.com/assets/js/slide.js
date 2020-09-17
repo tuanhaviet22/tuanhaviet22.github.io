@@ -16,7 +16,6 @@ var thumb_video_slide = new Swiper('.thumb-video-slide', {
 });
 
 var header_slide = new Swiper('.header-slide', {
-    slidesPerView: 6,
     spaceBetween: 5,
     loop: true,
     // autoplay: {
@@ -36,7 +35,7 @@ var header_slide = new Swiper('.header-slide', {
             spaceBetween: 5
         },
         1024: {
-            slidesPerView: 6,
+            slidesPerView: 8,
             spaceBetween: 5
         }
     }
@@ -357,8 +356,12 @@ var slide_method = new Swiper('.slide-method-login',{
 
 $('#loginBtn').change(function(){
     if(this.checked) {
-        slide_method.slideTo(1);
+        $('.qr-block').addClass('hide');
+        $('.login-block').removeClass('hide');
+        // slide_method.slideTo(1);
     }else{
-        slide_method.slideTo(2);
+        // slide_method.slideTo(2);
+        $('.qr-block').removeClass('hide');
+        $('.login-block').addClass('hide');
     }
 })
