@@ -1,0 +1,129 @@
+$root-color : #D90429;
+// $second-color : #753F65;
+$mobile : 525px;
+$table: 768px;
+$desktop :1024px;
+
+@mixin mobile {
+    @media (max-width: #{$mobile - 1px}) {
+        @content;
+    }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+@mixin tablet {
+    @media (min-width: #{$table}) and (max-width: #{$desktop - 1px}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+@mixin xl-desktop {
+    @media (min-width: 1500px) {
+        @content;
+    }
+}
+
+
+.bg-f2 {
+    background-color: #f2f2f2;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-f1 {
+    background-color: #f1f1f1;
+}
+
+.no-focus {
+    &:focus {
+        outline: none;
+    }
+}
+@mixin box-shadow {
+    border-image: initial !important;
+    -webkit-box-direction: normal !important;
+    -webkit-box-orient: horizontal !important;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 8px;
+    white-space: normal;
+}
+
+@mixin line-clamp($number) {
+    display: -webkit-box;
+    -webkit-line-clamp: $number;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.d-none-mb {
+    @include mobile() {
+        display: none !important;
+    }
+}
+
+.nd-none-mb {
+    @media only screen and (min-width: $mobile) {
+        display: none !important;
+    }
+}
+
+// .container{
+//     @include desktop(){
+//         min-width: 1250px;
+//     }
+// }
+.bg-root{
+    background-color: $root-color;
+}
+
+section{
+    padding: 2rem 0;
+    ._head{
+        h2{
+            text-align: center;
+            color: $root-color;
+            font-size: 28px;     
+            font-weight: 700;
+            text-transform: uppercase;   
+            // font-family: 'Lato', sans-serif;
+            position: relative;
+            // &::after{
+            //     content: "";
+            //     background-image: url(../images/arrow.svg);
+            //     position: absolute;
+            //     background-size: cover;
+            //     background-repeat: no-repeat;
+            //     bottom: 0;
+            //     height: 30px;
+            //     width: 10rem;
+            // }
+        }
+        .arrow{
+            img{
+                width: 8rem;
+            }
+        }
+    }
+}
+
