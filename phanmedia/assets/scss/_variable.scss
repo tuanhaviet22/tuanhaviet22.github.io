@@ -106,22 +106,19 @@ section{
             font-size: 28px;     
             font-weight: 700;
             text-transform: uppercase;   
-            // font-family: 'Lato', sans-serif;
+ 
             position: relative;
-            // &::after{
-            //     content: "";
-            //     background-image: url(../images/arrow.svg);
-            //     position: absolute;
-            //     background-size: cover;
-            //     background-repeat: no-repeat;
-            //     bottom: 0;
-            //     height: 30px;
-            //     width: 10rem;
-            // }
+            
+            @include mobile(){
+                font-size: 20px;
+            }
         }
         .arrow{
             img{
                 width: 8rem;
+                @include mobile(){
+                    width: 6rem;
+                }
             }
         }
     }

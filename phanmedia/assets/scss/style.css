@@ -59,8 +59,20 @@ section ._head h2 {
   position: relative;
 }
 
+@media (max-width: 524px) {
+  section ._head h2 {
+    font-size: 20px;
+  }
+}
+
 section ._head .arrow img {
   width: 8rem;
+}
+
+@media (max-width: 524px) {
+  section ._head .arrow img {
+    width: 6rem;
+  }
 }
 
 * {
@@ -126,6 +138,14 @@ header {
   transition: .4s;
 }
 
+@media (max-width: 524px) {
+  header .container {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+}
+
 header .menu-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -133,6 +153,12 @@ header .menu-block {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 524px) {
+  header .menu-block {
+    display: none;
+  }
 }
 
 header .menu-block ul li {
@@ -182,6 +208,12 @@ header .menu-block ul li .search i {
   margin: 0 7px;
 }
 
+@media (max-width: 524px) {
+  #banner .banner-pagination .swiper-pagination-bullet {
+    width: 40px;
+  }
+}
+
 #banner .banner-pagination .swiper-pagination-bullet-active {
   background: white;
 }
@@ -205,7 +237,7 @@ header .menu-block ul li .search i {
 }
 
 #banner .banner-slider .item .content .wrapper-content {
-  width: 40%;
+  width: 70%;
 }
 
 #banner .banner-slider .item .content .wrapper-content .title {
@@ -230,10 +262,24 @@ header .menu-block ul li .search i {
   border-radius: 20px;
 }
 
+@media (max-width: 524px) {
+  #banner .banner-slider .item .content .wrapper-content a {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
 #career ._body .item {
-  border: 5px solid #FCE8E8;
+  border: 5px solid #f2f2f2;
   border-radius: 10px;
   padding: 2rem;
+}
+
+@media (max-width: 524px) {
+  #career ._body .item {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
 }
 
 #career ._body .item .icon {
@@ -241,6 +287,12 @@ header .menu-block ul li .search i {
   height: 60px;
   line-height: 70px;
   border-radius: 50%;
+}
+
+@media (max-width: 524px) {
+  #career ._body .item .icon {
+    margin: 0 auto !important;
+  }
 }
 
 #career ._body .item .icon i {
@@ -260,6 +312,13 @@ header .menu-block ul li .search i {
   text-align: justify;
 }
 
+@media (max-width: 524px) {
+  #career ._body .item .content {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
 #contact {
   background-image: url(../images/background-contact-form.png);
   background-size: cover;
@@ -273,6 +332,7 @@ header .menu-block ul li .search i {
   text-transform: uppercase;
   font-weight: 600;
   margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 #contact #map {
@@ -306,39 +366,50 @@ header .menu-block ul li .search i {
   margin-right: 3px;
 }
 
+#contact form {
+  width: 70%;
+  margin: 0 auto;
+}
+
+@media (max-width: 524px) {
+  #contact form {
+    width: 100%;
+  }
+}
+
 #contact form input, #contact form textarea {
   display: block;
-  border: 1px solid #FF6882;
+  border: none;
   border-radius: 5px;
   width: 100%;
   margin-bottom: 1rem;
-  color: white;
+  color: #333;
   padding-left: 10px;
-  background: rgba(219, 20, 54, 0.5);
+  background: white;
 }
 
 #contact form input::-webkit-input-placeholder, #contact form textarea::-webkit-input-placeholder {
-  color: white;
+  color: #333;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 #contact form input:-ms-input-placeholder, #contact form textarea:-ms-input-placeholder {
-  color: white;
+  color: #333;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 #contact form input::-ms-input-placeholder, #contact form textarea::-ms-input-placeholder {
-  color: white;
+  color: #333;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 #contact form input::placeholder, #contact form textarea::placeholder {
-  color: white;
+  color: #333;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 #contact form input {
@@ -353,7 +424,8 @@ header .menu-block ul li .search i {
 }
 
 #contact form button {
-  float: right;
+  display: block;
+  margin: 0 auto;
   border: none;
   background-color: white;
   padding: 10px 20px;
@@ -365,11 +437,23 @@ header .menu-block ul li .search i {
   font-size: 14px;
 }
 
+@media (max-width: 524px) {
+  #customer ._body .row {
+    margin-top: 0 !important;
+  }
+}
+
 #customer ._body .item {
   background-color: #2F2F2F;
   border-radius: 5px;
   text-align: center;
   padding: 1.5rem 0;
+}
+
+@media (max-width: 524px) {
+  #customer ._body .item {
+    margin-bottom: 1rem;
+  }
 }
 
 #customer ._body .item img {
@@ -405,6 +489,12 @@ header .menu-block ul li .search i {
   position: relative;
 }
 
+@media (max-width: 524px) {
+  #project ._body .list-block .item {
+    margin: 0 5px;
+  }
+}
+
 #project ._body .list-block .item:hover::after {
   opacity: 1;
 }
@@ -425,7 +515,6 @@ header .menu-block ul li .search i {
 
 #project ._body .project-slide .project-item {
   overflow: hidden;
-  border: 5px solid #D90429;
   border-radius: 10px;
   display: block;
   margin-top: 1.5rem;
@@ -433,6 +522,24 @@ header .menu-block ul li .search i {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+@media (max-width: 524px) {
+  #project ._body .project-slide .project-item {
+    height: 10rem;
+  }
+}
+
+#project ._body .project-slide .project-item:hover {
+  -o-border-image: initial !important;
+     border-image: initial !important;
+  -webkit-box-direction: normal !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 8px;
+          box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 8px;
+  white-space: normal;
 }
 
 #introduce .title {
@@ -441,6 +548,12 @@ header .menu-block ul li .search i {
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 2rem;
+}
+
+@media (max-width: 524px) {
+  #introduce .title {
+    margin: 1rem 0;
+  }
 }
 
 #introduce .content {
@@ -460,8 +573,20 @@ header .menu-block ul li .search i {
   text-align: center;
 }
 
+@media (max-width: 524px) {
+  #skill ._body .col-md-3 {
+    margin-bottom: 1rem;
+  }
+}
+
 #skill ._body .col-md-3 img {
   width: 90%;
+}
+
+@media (max-width: 524px) {
+  #skill ._body .col-md-3 img {
+    width: 60%;
+  }
 }
 
 #map-company {
@@ -483,5 +608,11 @@ header .menu-block ul li .search i {
 
 #map-company ._body img {
   width: 80%;
+}
+
+@media (max-width: 524px) {
+  #map-company ._body img {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -64,11 +64,17 @@ header {
     .logo-block {
         img {}
     }
-
+    @include mobile{
+        .container{
+            justify-content: center !important;
+        }
+    }
     .menu-block {
         display: flex;
         align-items: center;
-
+        @include mobile{
+            display: none;
+        }
         ul {
             li {
                 margin-right: 1rem;
@@ -114,6 +120,9 @@ header {
             border-radius: 2px;
             transition: .4s;
             margin: 0 7px;
+            @include mobile{
+                width: 40px;
+            }
         }
         .swiper-pagination-bullet-active{
             background: white;
@@ -131,7 +140,7 @@ header {
                 color: white;
                 min-height: 35rem;
                 .wrapper-content{
-                    width: 40%;
+                    width: 70%;
                     .title{
                         text-transform: uppercase;
                         font-size: 20px;
@@ -150,6 +159,10 @@ header {
                         font-weight: 600;
                         /* margin-top: 2rem; */
                         border-radius: 20px;
+                        @include mobile{
+                            font-size: 14px;
+                            padding: 10px 20px;
+                        }
                     }
                 }
             }
@@ -160,14 +173,21 @@ header {
 #career{
     ._body{
         .item{
-            border: 5px solid #FCE8E8;
+            border: 5px solid #f2f2f2;
             border-radius: 10px;
             padding: 2rem;
+            @include mobile{
+                text-align: center;
+                margin-bottom: 1rem;
+            }
             .icon{
                 width: 60px;
                 height: 60px;
                 line-height: 70px;
                 border-radius: 50%;
+                @include mobile{              
+                    margin: 0 auto !important;
+                }
                 i{
                     color: white;
                     font-size: 24px;
@@ -182,6 +202,10 @@ header {
             .content{
                 font-size: 16px;
                 text-align: justify;
+                @include mobile{
+                    font-size: 14px;
+                    text-align: center;
+                }
             }
         }
     }
@@ -198,6 +222,7 @@ header {
         text-transform: uppercase;
         font-weight: 600;
         margin-bottom: 1.5rem;
+        text-align: center;
     }
     #map{
         height: 15rem;
@@ -224,19 +249,25 @@ header {
     }
 
     form{        
+        @include mobile{
+            width: 100%;
+        }
+        width: 70%;
+        margin : 0 auto;
         input,textarea{
             display: block;
-            border: 1px solid #FF6882;
+            // border: 1px solid #FF6882;
+            border: none;
             border-radius: 5px;
             width: 100%;
             margin-bottom: 1rem;
-            color: white;
+            color: #333;
             padding-left: 10px;
-            background: rgba(219, 20, 54, 0.5);
+            background: white;
             &::placeholder{
-                color: white;
+                color: #333;
                 font-size: 14px;
-                font-weight: 500;
+                font-weight: 400;
             }
         }
         input{
@@ -249,7 +280,9 @@ header {
             resize: none;
         }
         button{
-            float: right;
+            // float: right;
+            display: block;
+            margin: 0 auto;
             border: none;
             background-color: white;
             padding: 10px 20px;
@@ -265,11 +298,19 @@ header {
 
 #customer{
    ._body{
+       .row{
+           @include mobile{
+               margin-top: 0 !important;
+           }
+       }
        .item{
            background-color: #2F2F2F;
            border-radius: 5px;
            text-align: center;
            padding: 1.5rem 0;
+           @include mobile{
+               margin-bottom: 1rem;
+           }
            img{
                width: 60%;
            }
@@ -294,6 +335,9 @@ header {
                 text-transform: uppercase;
                 font-weight: 600;
                 margin: 0 2rem;
+                @include mobile{
+                    margin: 0 5px;
+                }
                 cursor: pointer;
                 transition: .4s;
                 position: relative;               
@@ -319,7 +363,7 @@ header {
         .project-slide{
             .project-item{
                 overflow: hidden;
-                border: 5px solid $root-color;
+                // border: 5px solid $root-color;
                 border-radius: 10px;
                 display: block;
                 margin-top: 1.5rem;
@@ -327,7 +371,19 @@ header {
                 background-position: center;
                 background-size: cover;
                 background-repeat: no-repeat;
+                transition: .4s;
+                @include mobile{
+                    height: 10rem;
+                }
+                &:hover{
+                    border-image: initial !important;
+                    -webkit-box-direction: normal !important;
+                    -webkit-box-orient: horizontal !important;
+                    box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 8px;
+                    white-space: normal;
+                }
             }
+
         }
     }
 }
@@ -343,6 +399,9 @@ header {
         font-size: 24px;
         font-weight: 700;
         margin-bottom: 2rem;
+        @include mobile{
+            margin: 1rem 0;
+        }
     }
     .content{
         line-height: 25px;
@@ -360,8 +419,14 @@ header {
         margin-top: 3rem;
         .col-md-3{
             text-align: center;
+            @include mobile{
+                margin-bottom: 1rem;
+            }
             img{
                 width: 90%;
+                @include mobile{
+                    width: 60%;
+                }
             }
         }
     }
@@ -383,6 +448,9 @@ header {
         margin-top: 3rem;
         img{
             width: 80%;
+            @include mobile {
+                width: 100%;
+            }
         }
     }
 }
